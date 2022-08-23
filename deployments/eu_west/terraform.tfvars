@@ -2,7 +2,7 @@ tags = {
   "CreatedBy" = "PaloAltoNetworks"
 }
 location        = "West Europe"
-subscription_id = "d47f1af8-9795-4e86-bbce-da72cfd0f8ec"
+subscription_id = "xxxxx-xxx-xxxxx"
 
 name_prefix = "euw-"
 
