@@ -67,7 +67,7 @@ module "private_lb" {
 
   frontend_ips = {
     "ha-ports" = {
-      subnet_id                     = module.vnet.subnet_ids["private"]
+      subnet_id                     = module.vnet.subnet_ids["mint-neu-core-sub-priv"]
       private_ip_address_allocation = "Static"
       private_ip_address            = var.private_lb_ip
       availability_zone             = var.enable_zones ? null : "No-Zone" # For the regions without AZ support.
@@ -104,13 +104,13 @@ module "vmseries" {
   interfaces = [
     {
       name                = "${var.name_prefix}${each.key}-mgmt"
-      subnet_id           = lookup(module.vnet.subnet_ids, "mgmt", null)
+      subnet_id           = lookup(module.vnet.subnet_ids, "mint-neu-core-sub-ngfw", null)
       create_public_ip    = true
       enable_backend_pool = false
     },
     {
       name                = "${var.name_prefix}${each.key}-public"
-      subnet_id           = lookup(module.vnet.subnet_ids, "public", null)
+      subnet_id           = lookup(module.vnet.subnet_ids, "mint-neu-core-sub-pa-untrust", null)
       lb_backend_pool_id  = module.public_lb.backend_pool_id
       enable_backend_pool = true
       create_public_ip    = true
@@ -118,7 +118,7 @@ module "vmseries" {
     },
     {
       name                = "${var.name_prefix}${each.key}-private"
-      subnet_id           = lookup(module.vnet.subnet_ids, "private", null)
+      subnet_id           = lookup(module.vnet.subnet_ids, "mint-neu-core-sub-priv", null)
       lb_backend_pool_id  = module.private_lb.backend_pool_id
       enable_backend_pool = true
 

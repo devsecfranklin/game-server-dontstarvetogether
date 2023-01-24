@@ -7,13 +7,14 @@ tags = {
 }
 
 location        = "North Europe"
-subscription_id = "2c5e3a0c-7fbc-4252-80cd-17f9ef2bb3fe"
+subscription_id = "2c5e3a0c-7fbc-4252-80cd-17f9ef2bb3fe" //mint-core.eu
 
 name_prefix = "mint-eune-"
 
-resource_group_name      = "mint-neu-core-rg-ngfw"
-vnet_resource_group_name = "mint-neu-core-rg-cktsci"
-virtual_network_name     = "mint-neu-core-vnet-ntw"
+// don't forget to set subscription `az account set --subscription mint-core-eu`
+resource_group_name      = "mint-neu-core-rg-cktsci" //existing RG
+vnet_resource_group_name = "mint-neu-core-rg-cktsci" //existing RG
+virtual_network_name     = "mint-neu-core-vnet-ntw"  // existing VNet, also the subnets already exist
 vnet_address_space       = ["10.174.0.0/20"]
 
 network_security_groups = {
@@ -24,7 +25,7 @@ network_security_groups = {
         direction                  = "Inbound"
         access                     = "Allow"
         protocol                   = "Tcp"
-        source_address_prefixes    = ["10.0.0.0/8"] # <- TODO - modify
+        source_address_prefixes    = ["10.0.0.0/8"] # Customer chose this value
         source_port_range          = "*"
         destination_address_prefix = "10.0.0.0/28"
         destination_port_range     = "443"
@@ -80,17 +81,17 @@ route_tables = {
 }
 
 subnets = {
-  "mint-neu-core-sub-ngfw" = {
+  "mint-neu-core-sub-ngfw" = { // already exists
     address_prefixes       = ["10.174.1.0/27"]
     network_security_group = "mgmt"
     route_table            = "mgmt"
   }
-  "mint-neu-core-sub-priv" = {
+  "mint-neu-core-sub-priv" = { // already exists
     address_prefixes       = ["10.174.0.64/27"]
     network_security_group = "private"
     route_table            = "private" //there is an existing route table, name?
   }
-  "mint-neu-core-sub-pa-untrust" = {
+  "mint-neu-core-sub-pa-untrust" = { // already exists
     address_prefixes       = ["10.174.4.0/23"]
     network_security_group = "public"
     route_table            = "public"
@@ -113,8 +114,9 @@ public_inbound_rules = {
   }
 }
 
+// this should come from the "free for use" values in TRD and customer spreadheet
 private_lb_name = "private_lb"
-private_lb_ip   = "10.174.0.73" //see section 4.2.4 of TRD
+private_lb_ip   = "10.174.0.73" //see section 4.2.4 of TRD 
 
 enable_zones = true
 
