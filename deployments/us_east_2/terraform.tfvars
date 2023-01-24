@@ -1,6 +1,11 @@
 tags = {
-  "CreatedBy" = "PaloAltoNetworks"
+  "DataClassification" = "Private"
+  "Environment" = "Core"
+  "ProjectCode" = "50104"
+  "ResourceManagedBy" = "Chris Misson"
+  "SecurityProfile" = "Internal"
 }
+
 location        = "East US 2"
 subscription_id = "xxxxx-xxx-xxxxx"
 

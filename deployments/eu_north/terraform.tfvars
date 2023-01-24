@@ -1,14 +1,19 @@
 tags = {
-  "CreatedBy" = "PaloAltoNetworks"
+  "DataClassification" = "Private"
+  "Environment" = "Core"
+  "ProjectCode" = "50104"
+  "ResourceManagedBy" = "Chris Misson"
+  "SecurityProfile" = "Internal"
 }
+
 location        = "North Europe"
-subscription_id = "xxxxx-xxx-xxxxx"
+subscription_id = "2c5e3a0c-7fbc-4252-80cd-17f9ef2bb3fe"
 
-name_prefix = "eun-"
+name_prefix = "mint-eune-"
 
-resource_group_name      = "vmseries-rg"
+resource_group_name      = "mna-use2-core-vnet-ntw "
 vnet_resource_group_name = "eun-vnet-rg"
-virtual_network_name     = "eun-vmseries-vnet"
+virtual_network_name     = "mint-neu-core-vnet-ntw"
 vnet_address_space       = ["10.0.0.0/24"]
 
 network_security_groups = {

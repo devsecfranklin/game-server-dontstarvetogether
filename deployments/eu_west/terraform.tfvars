@@ -1,8 +1,13 @@
 tags = {
-  "CreatedBy" = "PaloAltoNetworks"
+  "DataClassification" = "Private"
+  "Environment" = "Core"
+  "ProjectCode" = "50104"
+  "ResourceManagedBy" = "Chris Misson"
+  "SecurityProfile" = "Internal"
 }
+
 location        = "West Europe"
-subscription_id = "xxxxx-xxx-xxxxx"
+subscription_id = "2c5e3a0c-7fbc-4252-80cd-17f9ef2bb3fe"
 
 name_prefix = "euw-"
 
