@@ -11,7 +11,7 @@ variable "subscription_id" {
 
   If skipped, subscription set when login to Azure (i.e. `az login`) will be used.
   EOF
-  default     = null
+  default     = "2c5e3a0c-7fbc-4252-80cd-17f9ef2bb3fe"
   type        = string
 }
 
@@ -50,6 +50,7 @@ variable "vnet_address_space" {
 }
 
 variable "subnets" {
+  default     = {}
   description = "Map of Subnets to create. Refer to the `vnet` module documentation for more information."
 }
 
