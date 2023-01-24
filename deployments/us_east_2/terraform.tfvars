@@ -118,7 +118,7 @@ private_lb_ip   = "10.0.0.30"
 
 enable_zones = true
 
-bootstrap_options = "type=dhcp-client,authcodes=BAD12345"
+bootstrap_options = "type=dhcp-client,authcodes=92480540"
 vmseries_sku      = "byol"
 vmseries_version  = "9.1.13"
 vmseries_vm_size  = "Standard_D3_v2"

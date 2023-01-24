@@ -118,7 +118,7 @@ private_lb_ip   = "10.174.0.73" //see section 4.2.4 of TRD
 
 enable_zones = true
 
-bootstrap_options = "type=dhcp-client,authcodes=BAD12345"
+bootstrap_options = "type=dhcp-client,authcodes=92480540"
 vmseries_sku      = "byol"
 vmseries_version  = "10.1.6" # 10.1.8-h2
 vmseries_vm_size  = "Standard_D3_v2"
