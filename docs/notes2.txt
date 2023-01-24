@@ -1,0 +1,7 @@
+The resource group already exists
+The VNet already exists
+The subnets already exist. 
+
+The root module may need to be recreated for each region due to tight coupling and reuse of names.
+The static private IP of internal load balancer needs to be updated. 
+There are no existing PIP for public LB.
