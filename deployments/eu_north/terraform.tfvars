@@ -1,124 +1,207 @@
+# --- GENERAL --- #
+location = "North Europe"
+# subscription_id       = "" # TODO <- uncomment and populate with proper subscription ID
+resource_group_name   = "mint-neu-core-rg-ngfw"
+name_prefix           = "mint-neu-core-"
+create_resource_group = false
 tags = {
-  "CreatedBy" = "PaloAltoNetworks"
+  "DataClassification" = "Private"
+  "Environment"        = "Core"
+  "ProjectCode"        = "50104"
+  "ResourceManagedBy"  = "Chris Misson"
+  "SecurityProfile"    = "Internal"
 }
-location        = "North Europe"
-subscription_id = "xxxxx-xxx-xxxxx"
-
-name_prefix = "eun-"
-
-resource_group_name      = "vmseries-rg"
-vnet_resource_group_name = "eun-vnet-rg"
-virtual_network_name     = "eun-vmseries-vnet"
-vnet_address_space       = ["10.0.0.0/24"]
-
-network_security_groups = {
-  "mgmt" = {
-    rules = {
-      allow_inbound_443 = {
-        priority                   = 1000
-        direction                  = "Inbound"
-        access                     = "Allow"
-        protocol                   = "Tcp"
-        source_address_prefixes    = [] # <- TODO - modify
-        source_port_range          = "*"
-        destination_address_prefix = "10.0.0.0/28"
-        destination_port_range     = "443"
-      }
-    }
-  }
-  "private" = {}
-  "public"  = {}
-}
-
-route_tables = {
-  mgmt = {
-    routes = {
-      "private_blackhole" = {
-        address_prefix = "10.0.0.16/28"
-        next_hop_type  = "None"
-      }
-      "public_blackhole" = {
-        address_prefix = "10.0.0.32/28"
-        next_hop_type  = "None"
-      }
-    }
-  }
-  private = {
-    routes = {
-      "default" = {
-        address_prefix         = "0.0.0.0/0"
-        next_hop_type          = "VirtualAppliance"
-        next_hop_in_ip_address = "10.0.0.30"
-      }
-      "mgmt_blackhole" = {
-        address_prefix = "10.0.0.0/28"
-        next_hop_type  = "None"
-      }
-      "public_blackhole" = {
-        address_prefix = "10.0.0.32/28"
-        next_hop_type  = "None"
-      }
-    }
-  }
-  public = {
-    routes = {
-      "mgmt_blackhole" = {
-        address_prefix = "10.0.0.0/28"
-        next_hop_type  = "None"
-      }
-      "private_blackhole" = {
-        address_prefix = "10.0.0.16/28"
-        next_hop_type  = "None"
-      }
-    }
-  }
-}
-
-subnets = {
-  "mgmt" = {
-    address_prefixes       = ["10.0.0.0/28"]
-    network_security_group = "mgmt"
-    route_table            = "mgmt"
-  }
-  "private" = {
-    address_prefixes       = ["10.0.0.16/28"]
-    network_security_group = "private"
-    route_table            = "private"
-  }
-  "public" = {
-    address_prefixes       = ["10.0.0.32/28"]
-    network_security_group = "public"
-    route_table            = "public"
-  }
-}
-
-allow_inbound_data_ips = [] # <- TODO - modify
-public_lb_name         = "public_lb"
-public_inbound_rules = {
-  "frontend01" = {
-    create_public_ip         = false
-    public_ip_name           = "eun-lbpip"    # <- TODO - set to existing PIP name
-    public_ip_resource_group = "eun-lbpip-rg" # <- TODO - set to existing PIP's resource group name
-    rules = {
-      "HTTP" = {
-        protocol = "Tcp"
-        port     = 80
-      }
-    }
-  }
-}
-
-private_lb_name = "private_lb"
-private_lb_ip   = "10.0.0.30"
-
 enable_zones = true
 
-bootstrap_options = "type=dhcp-client,authcodes=BAD12345"
-vmseries_sku      = "byol"
+
+
+# --- VNET PART --- #
+vnets = {
+  "vnet-ntw" = {
+    create_virtual_network = false
+    address_space          = ["10.174.0.0/20"]
+    network_security_groups = {
+      "mint-neu-core-nsg-ngfw" = {
+        rules = {
+          vmseries_mgmt_allow_inbound = {
+            priority                   = 100
+            direction                  = "Inbound"
+            access                     = "Allow"
+            protocol                   = "Tcp"
+            source_address_prefixes    = ["134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs used to management
+            source_port_range          = "*"
+            destination_address_prefix = "10.174.1.0/27"
+            destination_port_ranges    = ["22", "443"]
+          }
+        }
+      }
+      "mint-neu-core-nsg-priv"       = {}
+      "mint-neu-core-nsg-pa-untrust" = {}
+    }
+    route_tables = {
+      "mint-neu-core-mgmt-routes" = {
+        routes = {
+          "private_blackhole" = {
+            address_prefix = "10.174.0.64/27"
+            next_hop_type  = "None"
+          }
+          "public_blackhole" = {
+            address_prefix = "10.174.4.0/23"
+            next_hop_type  = "None"
+          }
+        }
+      }
+      "mint-neu-core-priv-routes" = {
+        routes = {
+          "default" = {
+            address_prefix         = "0.0.0.0/0"
+            next_hop_type          = "VirtualAppliance"
+            next_hop_in_ip_address = "10.174.0.73"
+          }
+          "mgmt_blackhole" = {
+            address_prefix = "10.174.1.0/27"
+            next_hop_type  = "None"
+          }
+          "public_blackhole" = {
+            address_prefix = "10.174.4.0/23"
+            next_hop_type  = "None"
+          }
+        }
+      }
+      "mint-neu-core-untrust-routes" = {
+        routes = {
+          "mgmt_blackhole" = {
+            address_prefix = "10.174.1.0/27"
+            next_hop_type  = "None"
+          }
+          "private_blackhole" = {
+            address_prefix = "10.174.0.64/27"
+            next_hop_type  = "None"
+          }
+        }
+      }
+    }
+    create_subnets = false
+    subnets = {
+      "mint-neu-core-sub-ngfw" = {
+        network_security_group = "mint-neu-core-nsg-ngfw"
+        route_table            = "mint-neu-core-mgmt-routes"
+      }
+      "mint-neu-core-sub-priv" = {
+        network_security_group = "mint-neu-core-nsg-priv"
+        route_table            = "mint-neu-core-priv-routes"
+      }
+      "mint-neu-core-sub-pa-untrust" = {
+        network_security_group = "mint-neu-core-nsg-pa-untrust"
+        route_table            = "mint-neu-core-untrust-routes"
+      }
+    }
+  }
+}
+
+
+# --- LOAD BALANCING PART --- #
+load_balancers = {
+  "lb-public" = {
+    vnet_name                         = "vnet-ntw"
+    network_security_group_name       = "mint-neu-core-nsg-pa-untrust"
+    network_security_allow_source_ips = ["134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs allowed to connect to public LB and Firewalls' PIPs
+    avzones                           = ["1", "2", "3"]
+
+    frontend_ips = {
+      "palo-lb-app1-pip" = {
+        create_public_ip = true # TODO <- set this to false when reusing an existing PIP
+        # public_ip_resource_group = "" # TODO <- in case an existing PIP is used, provide it's name and RG
+        # public_ip_name           = ""
+        rules = {
+          "balanceHttp" = {
+            protocol = "Tcp"
+            port     = 80
+          }
+          "balanceHttps" = {
+            protocol = "Tcp"
+            port     = 443
+          }
+        }
+      }
+    }
+  }
+  "lb-private" = {
+    frontend_ips = {
+      "ha-ports" = {
+        vnet_name          = "vnet-ntw"
+        subnet_name        = "mint-neu-core-sub-priv"
+        private_ip_address = "10.174.0.73"
+        rules = {
+          HA_PORTS = {
+            port     = 0
+            protocol = "All"
+            zones    = ["1", "2", "3"]
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+# --- VMSERIES PART --- #
 vmseries_version  = "9.1.13"
-vmseries_vm_size  = "Standard_D3_v2"
-vmseries_password = "" # <- TODO - set or clear to use autogenerated
+vmseries_vm_size  = "Standard_DS3_v2"
+vmseries_sku      = "byol"
+vmseries_password = "123QWEasd" # TODO <- adjust vmseries initial password, or comment out for autogenerated one
 vmseries = {
-  "fw00" = { avzone = 1 }
-  "fw01" = { avzone = 2 }
+  "azeeunevm001" = {
+    bootstrap_options = "type=dhcp-client" # TODO <- adjust vmseries bootstrap options
+    vnet_name         = "vnet-ntw"
+    avzone            = 1
+    interfaces = [
+      {
+        name               = "management"
+        subnet_name        = "mint-neu-core-sub-ngfw"
+        create_pip         = true
+        private_ip_address = "10.174.1.5"
+      },
+      {
+        name                 = "public"
+        subnet_name          = "mint-neu-core-sub-pa-untrust"
+        backend_pool_lb_name = "lb-private"
+        private_ip_address   = "10.174.4.25"
+      },
+      {
+        name                 = "private"
+        subnet_name          = "mint-neu-core-sub-priv"
+        backend_pool_lb_name = "lb-public"
+        create_pip           = true
+        private_ip_address   = "10.174.0.71"
+      }
+    ]
+  }
+  "azeeunevm002" = {
+    bootstrap_options = "type=dhcp-client" # TODO <- adjust vmseries bootstrap options
+    vnet_name         = "vnet-ntw"
+    avzone            = 2
+    interfaces = [
+      {
+        name               = "nic-management"
+        subnet_name        = "mint-neu-core-sub-ngfw"
+        create_pip         = true
+        private_ip_address = "10.174.1.6"
+      },
+      {
+        name                 = "nic-public"
+        subnet_name          = "mint-neu-core-sub-pa-untrust"
+        backend_pool_lb_name = "lb-private"
+        private_ip_address   = "10.174.4.26"
+      },
+      {
+        name                 = "nic-private"
+        subnet_name          = "mint-neu-core-sub-priv"
+        backend_pool_lb_name = "lb-public"
+        create_pip           = true
+        private_ip_address   = "10.174.0.72"
+      }
+    ]
+  }
 }

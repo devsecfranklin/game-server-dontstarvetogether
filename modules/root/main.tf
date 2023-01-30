@@ -1,11 +1,3 @@
-# Create the Resource Group.
-resource "azurerm_resource_group" "this" {
-  name     = "${var.name_prefix}${var.resource_group_name}"
-  location = var.location
-
-  tags = var.tags
-}
-
 # Generate a random password.
 resource "random_password" "this" {
   count = var.vmseries_password == null ? 1 : 0
@@ -22,108 +14,109 @@ locals {
   vmseries_password = coalesce(var.vmseries_password, try(random_password.this[0].result, null))
 }
 
-# Create the network required for the topology.
+# Create or source the Resource Group.
+resource "azurerm_resource_group" "this" {
+  count    = var.create_resource_group ? 1 : 0
+  name     = "${var.name_prefix}${var.resource_group_name}"
+  location = var.location
+
+  tags = var.tags
+}
+
+data "azurerm_resource_group" "this" {
+  count = var.create_resource_group ? 0 : 1
+  name  = var.resource_group_name
+}
+
+locals {
+  resource_group = var.create_resource_group ? azurerm_resource_group.this[0] : data.azurerm_resource_group.this[0]
+}
+
+# Manage the network required for the topology.
 module "vnet" {
-  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/vnet?ref=v0.3.0"
+  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/vnet?ref=5355404"
 
-  create_virtual_network  = false
-  resource_group_name     = var.vnet_resource_group_name
-  virtual_network_name    = var.virtual_network_name
-  address_space           = var.vnet_address_space
-  location                = var.location
-  network_security_groups = var.network_security_groups
-  route_tables            = var.route_tables
-  subnets                 = var.subnets
+  for_each = var.vnets
 
-  tags = var.tags
-}
+  create_virtual_network = try(each.value.create_virtual_network, true)
+  virtual_network_name   = "${var.name_prefix}${each.key}"
+  address_space          = each.value.address_space
+  resource_group_name    = try(each.value.resource_group_name, local.resource_group.name)
+  location               = var.location
 
-# The Inbound Load Balancer for handling the traffic from the Internet.
-module "public_lb" {
-  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/loadbalancer?ref=v0.3.0"
+  create_subnets = try(each.value.create_subnets, true)
+  subnets        = each.value.subnets
 
-  name                = "${var.name_prefix}${var.public_lb_name}"
-  location            = var.location
-  resource_group_name = azurerm_resource_group.this.name
-  enable_zones        = var.enable_zones
-
-  frontend_ips = var.public_inbound_rules
-
-  network_security_resource_group_name = var.vnet_resource_group_name
-  network_security_group_name          = "public"
-  network_security_allow_source_ips    = var.allow_inbound_data_ips
+  network_security_groups = each.value.network_security_groups
+  route_tables            = each.value.route_tables
 
   tags = var.tags
 }
 
-# The Outbound Load Balancer for handling the traffic from the private networks.
-module "private_lb" {
-  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/loadbalancer?ref=v0.3.0"
+# create load balancers, both internal and external
+module "load_balancer" {
+  source  = "PaloAltoNetworks/vmseries-modules/azurerm//modules/loadbalancer"
+  version = "0.5.0"
 
-  name                = "${var.name_prefix}${var.private_lb_name}"
+  for_each = var.load_balancers
+
+  name                = "${var.name_prefix}${each.key}"
   location            = var.location
-  resource_group_name = azurerm_resource_group.this.name
+  resource_group_name = local.resource_group.name
   enable_zones        = var.enable_zones
+  avzones             = try(each.value.avzones, null)
+
+  network_security_resource_group_name = try(var.vnets[each.value.vnet_name].resource_group_name, local.resource_group.name)
+  network_security_group_name          = try(each.value.network_security_group_name, null)
+  network_security_allow_source_ips    = try(each.value.network_security_allow_source_ips, [])
 
   frontend_ips = {
-    "ha-ports" = {
-      subnet_id                     = module.vnet.subnet_ids["private"]
-      private_ip_address_allocation = "Static"
-      private_ip_address            = var.private_lb_ip
-      availability_zone             = var.enable_zones ? null : "No-Zone" # For the regions without AZ support.
-      rules = {
-        HA_PORTS = {
-          port     = 0
-          protocol = "All"
-        }
-      }
+    for k, v in each.value.frontend_ips : k => {
+      create_public_ip              = try(v.create_public_ip, false)
+      public_ip_name                = try(v.public_ip_name, null)
+      public_ip_resource_group      = try(v.public_ip_resource_group, null)
+      private_ip_address            = try(v.private_ip_address, null)
+      private_ip_address_allocation = can(v.private_ip_address) ? "Static" : null
+      subnet_id                     = try(module.vnet[v.vnet_name].subnet_ids[v.subnet_name], null)
+      rules                         = v.rules
+      zones                         = var.enable_zones ? try(v.zones, null) : null # For the regions without AZ support.
     }
   }
 
-  tags = var.tags
+  tags       = var.tags
+  depends_on = [module.vnet]
 }
 
 module "vmseries" {
-  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/vmseries?ref=v0.3.0"
+  source  = "PaloAltoNetworks/vmseries-modules/azurerm//modules/vmseries"
+  version = "0.5.0"
 
   for_each = var.vmseries
 
-  location                  = var.location
-  resource_group_name       = azurerm_resource_group.this.name
-  name                      = "${var.name_prefix}${each.key}"
-  avzone                    = try(each.value.avzone, 1)
-  username                  = var.username
-  password                  = local.vmseries_password
-  img_version               = var.vmseries_version
-  img_sku                   = var.vmseries_sku
-  vm_size                   = var.vmseries_vm_size
-  tags                      = var.tags
-  enable_zones              = var.enable_zones
-  bootstrap_options         = var.bootstrap_options
-  metrics_retention_in_days = 0
-  interfaces = [
-    {
-      name                = "${var.name_prefix}${each.key}-mgmt"
-      subnet_id           = lookup(module.vnet.subnet_ids, "mgmt", null)
-      create_public_ip    = true
-      enable_backend_pool = false
-    },
-    {
-      name                = "${var.name_prefix}${each.key}-public"
-      subnet_id           = lookup(module.vnet.subnet_ids, "public", null)
-      lb_backend_pool_id  = module.public_lb.backend_pool_id
-      enable_backend_pool = true
-      create_public_ip    = true
-      # public_ip_address_id = azurerm_public_ip.public[each.key].id
-    },
-    {
-      name                = "${var.name_prefix}${each.key}-private"
-      subnet_id           = lookup(module.vnet.subnet_ids, "private", null)
-      lb_backend_pool_id  = module.private_lb.backend_pool_id
-      enable_backend_pool = true
+  location            = var.location
+  resource_group_name = local.resource_group.name
 
-      # Optional static private IP
-      private_ip_address = try(each.value.trust_private_ip, null)
-    },
-  ]
+  name                  = each.key
+  username              = var.vmseries_username
+  password              = local.vmseries_password
+  img_version           = var.vmseries_version
+  img_sku               = var.vmseries_sku
+  vm_size               = var.vmseries_vm_size
+  app_insights_settings = try(each.value.app_insights_settings, null)
+
+  enable_zones      = var.enable_zones
+  avzone            = try(each.value.avzone, 1)
+  bootstrap_options = try(each.value.bootstrap_options, "")
+
+  interfaces = [for v in each.value.interfaces : {
+    name                = "${each.key}-${v.name}"
+    subnet_id           = lookup(module.vnet[each.value.vnet_name].subnet_ids, v.subnet_name, null)
+    create_public_ip    = try(v.create_pip, false)
+    enable_backend_pool = can(v.backend_pool_lb_name) ? true : false
+    lb_backend_pool_id  = try(module.load_balancer[v.backend_pool_lb_name].backend_pool_id, null)
+    private_ip_address  = try(v.private_ip_address, null)
+  }]
+
+  tags       = var.tags
+  depends_on = [module.vnet]
 }
