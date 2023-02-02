@@ -11,18 +11,12 @@ variable "subscription_id" {
   If skipped, subscription set when login to Azure (i.e. `az login`) will be used.
   EOF
   default     = "2c5e3a0c-7fbc-4252-80cd-17f9ef2bb3fe"
-  type        = map(string)
+  type        = string
 }
 
 variable "location" {
   description = "The Azure region to use."
   type        = string
-}
-
-variable "subscription_id" {
-  description = "An ID of a subscription, if overriding a default subscription is required."
-  type        = string
-  default     = null
 }
 
 variable "name_prefix" {

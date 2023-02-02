@@ -1,5 +1,5 @@
 module "vmseries_deployment" {
-  source = "../../modules/root"
+  source = "../../modules/eu_north"
 
   name_prefix = var.name_prefix
 
