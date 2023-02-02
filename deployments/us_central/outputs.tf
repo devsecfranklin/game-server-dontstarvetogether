@@ -11,10 +11,10 @@ output "password" {
 
 output "mgmt_ip_addresses" {
   description = "IP Addresses for VM-Series management (https or ssh)."
-  value       = module.vmseries_deployment.mgmt_ip_addresses
+  value       = module.vmseries_deployment.vmseries_mgmt_ip
 }
 
 output "public_lb_pips" {
   description = "IP Addresses of the inbound load balancer."
-  value       = module.vmseries_deployment.public_lb_pips
+  value       = module.vmseries_deployment.frontend_ips
 }
