@@ -1,0 +1,18 @@
+https://discuss.hashicorp.com/t/what-is-the-best-practise-with-terraform-lock-hcl-in-modules-commit-or-not/28648/2
+
+.terraform.lock.hcl is part of Terraform’s strategy for defense against supply-chain
+attacks where an attacker might somehow cause your system to install a modified version
+of a provider. The checksums recorded in .terraform.lock.hcl serve to ensure that you’re
+still running the same provider version you ran last time. However, there are other
+mechanism in place that complement the lock file:
+
+    Terraform verifies the certificate of the remote registry against your system’s trusted
+    certificate store, preventing certain kinds of misdirection or man-in-the-middle attacks.
+    If you’re using the default direct installation method then Terraform checks the downloaded
+    package against a set of approved checksums signed using a signature selected by the
+    registry, so an attacker would need to compromise the checksums, the signature, and the package.
+
+If you’re running terraform validate in an isolated environment without access to any
+credentials then you might conclude also that the risk of executing arbitrary untrusted
+code is relatively low in this case.
+
