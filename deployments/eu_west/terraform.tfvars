@@ -9,6 +9,7 @@ tags = {
   "Environment"        = "Core"
   "ProjectCode"        = "50104"
   "ResourceManagedBy"  = "Chris Misson"
+  "ResourceOwnedBy"    = "Mark Baltz"
   "SecurityProfile"    = "Internal"
 }
 enable_zones = true
