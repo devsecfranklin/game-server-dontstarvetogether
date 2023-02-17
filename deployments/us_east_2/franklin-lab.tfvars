@@ -1,6 +1,6 @@
 # --- GENERAL --- #
-location = "East US 2"
-subscription_id     = "d47f1af8-9795-4e86-bbce-da72cfd0f8ec"
+location              = "East US 2"
+subscription_id       = "d47f1af8-9795-4e86-bbce-da72cfd0f8ec"
 resource_group_name   = "mna-use2-core-rg-ngfw"
 name_prefix           = "mna-use2-core-"
 create_resource_group = false
