@@ -19,12 +19,6 @@ variable "location" {
   type        = string
 }
 
-variable "subscription_id" {
-  description = "An ID of a subscription, if overriding a default subscription is required."
-  type        = string
-  default     = null
-}
-
 variable "name_prefix" {
   description = <<-EOF
   A prefix that will be added to all created resources.
