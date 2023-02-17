@@ -57,3 +57,39 @@ public_lb_pips = {
 }
 username = "panadmin"
 ```
+
+US Central Lab:
+```
+mgmt_ip_addresses = {
+  "azeeuwevm001" = "40.77.20.177"
+  "azeeuwevm002" = "40.77.20.202"
+}
+password = <sensitive>
+public_lb_pips = {
+  "lb-private" = {
+    "ha-ports" = "10.74.0.73"
+  }
+  "lb-public" = {
+    "palo-lb-app1-pip" = "20.84.233.131"
+  }
+}
+username = "panadmin"
+```
+
+US East2 Lab:
+```
+mgmt_ip_addresses = {
+  "azeeuwevm001" = "172.176.249.52"
+  "azeeuwevm002" = "172.176.249.96"
+}
+password = <sensitive>
+public_lb_pips = {
+  "lb-private" = {
+    "ha-ports" = "10.72.0.73"
+  }
+  "lb-public" = {
+    "palo-lb-app1-pip" = "20.22.106.118"
+  }
+}
+username = "panadmin"
+```
