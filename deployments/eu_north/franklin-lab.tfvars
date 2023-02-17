@@ -1,15 +1,12 @@
-# --- GENERAL --- #
 location = "North Europe"
-# subscription_id       = "" # TODO <- uncomment and populate with proper subscription ID
+subscription_id       = "d47f1af8-9795-4e86-bbce-da72cfd0f8ec" // Palo Home Tenant ID
 resource_group_name   = "mint-neu-core-rg-ngfw"
 name_prefix           = "mint-neu-core-"
 create_resource_group = false
 tags = {
-  "DataClassification" = "Private"
-  "Environment"        = "Core"
-  "ProjectCode"        = "50104"
-  "ResourceManagedBy"  = "Chris Misson"
-  "SecurityProfile"    = "Internal"
+  "Environment"        = "lab"
+  "ProjectCode"        = "P-849728"
+  "ResourceManagedBy"  = "PS East Teeam"
 }
 enable_zones = true
 
@@ -25,7 +22,7 @@ vnets = {
             direction                  = "Inbound"
             access                     = "Allow"
             protocol                   = "Tcp"
-            source_address_prefixes    = ["134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs used to management
+            source_address_prefixes    = ["68.38.137.81", "34.134.31.136", "34.136.90.64", "137.83.195.1","137.83.195.10"]
             source_port_range          = "*"
             destination_address_prefix = "10.174.1.0/27"
             destination_port_ranges    = ["22", "443"]
@@ -96,8 +93,6 @@ vnets = {
   }
 }
 
-
-# --- LOAD BALANCING PART --- #
 load_balancers = {
   "lb-public" = {
     vnet_name                         = "vnet-ntw"
@@ -141,9 +136,6 @@ load_balancers = {
   }
 }
 
-
-
-# --- VMSERIES PART --- #
 vmseries_version  = "10.1.8"
 vmseries_vm_size  = "Standard_DS3_v2"
 vmseries_sku      = "byol"
