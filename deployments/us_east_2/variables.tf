@@ -11,9 +11,13 @@ variable "location" {
 }
 
 variable "subscription_id" {
-  description = "An ID of a subscription, if overriding a default subscription is required."
+  description = <<-EOF
+  An ID of the subscription that will host the resources. 
+
+  If skipped, subscription set when login to Azure (i.e. `az login`) will be used.
+  EOF
+  default     = "2c5e3a0c-7fbc-4252-80cd-17f9ef2bb3fe"
   type        = string
-  default     = null
 }
 
 variable "name_prefix" {

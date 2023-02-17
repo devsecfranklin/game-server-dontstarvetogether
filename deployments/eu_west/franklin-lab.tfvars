@@ -1,5 +1,5 @@
-location = "West Europe"
-subscription_id     = "d47f1af8-9795-4e86-bbce-da72cfd0f8ec"
+location              = "West Europe"
+subscription_id       = "d47f1af8-9795-4e86-bbce-da72cfd0f8ec"
 resource_group_name   = "mint-weu-core-rg-ngfw"
 name_prefix           = "mint-weu-core-"
 create_resource_group = false

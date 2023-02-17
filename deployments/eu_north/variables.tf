@@ -11,7 +11,7 @@ variable "subscription_id" {
   If skipped, subscription set when login to Azure (i.e. `az login`) will be used.
   EOF
   default     = "2c5e3a0c-7fbc-4252-80cd-17f9ef2bb3fe"
-  type        = map(string)
+  type        = string
 }
 
 variable "location" {
