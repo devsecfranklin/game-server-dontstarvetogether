@@ -160,14 +160,14 @@ vmseries = {
         private_ip_address = "10.72.1.5"
       },
       {
-        name                 = "public"
-        subnet_name          = "mna-use2-core-sub-pa-untrust"
+        name                 = "private"
+        subnet_name          = "mna-use2-core-sub-priv"
         backend_pool_lb_name = "lb-private"
         private_ip_address   = "10.72.4.25"
       },
       {
-        name                 = "private"
-        subnet_name          = "mna-use2-core-sub-priv"
+        name                 = "public"
+        subnet_name          = "mna-use2-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
         private_ip_address   = "10.72.0.71"
@@ -186,14 +186,14 @@ vmseries = {
         private_ip_address = "10.72.1.6"
       },
       {
-        name                 = "nic-public"
-        subnet_name          = "mna-use2-core-sub-pa-untrust"
+        name                 = "nic-private"
+        subnet_name          = "mna-use2-core-sub-priv"
         backend_pool_lb_name = "lb-private"
         private_ip_address   = "10.72.4.26"
       },
       {
-        name                 = "nic-private"
-        subnet_name          = "mna-use2-core-sub-priv"
+        name                 = "nic-public"
+        subnet_name          = "mna-use2-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
         private_ip_address   = "10.72.0.72"

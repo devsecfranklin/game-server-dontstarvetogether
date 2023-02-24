@@ -1,4 +1,9 @@
-# next_hop_in_ip_address
+# Notes
+
+Create TAR file like so:
+ `tar cvf pso-azure-Markel-849728-v0.2.tar $(git ls-files | grep -v docs | grep -v brownfield)`
+
+Send file to customer via TAC case
 
 ## Sept 15 testing
 
@@ -11,19 +16,20 @@
 - Please provide VM series auth key when possible.
 - It was mentioned that a Virtual Network Gateway with ExpressRoute circuit to datacenter will
   allow the existing on prem Panorama to connect to management subnets. What is the status of 
-  these circuits? 
+  these circuits?
 
 ## Jan 24 testing
 
 - The resource group already exists
 - The VNet already exists
-- The subnets already exist. 
+- The subnets already exist.
 - The root module may need to be recreated for each region due to tight coupling and reuse of names.
-- The static private IP of internal load balancer needs to be updated. 
+- The static private IP of internal load balancer needs to be updated.
 - There are no existing PIP for public LB.
 
 EU North Lab:
-```
+
+```json
 mgmt_ip_addresses = {
     azeeunevm001 = "20.238.77.180"
     azeeunevm002 = "20.238.77.140"
@@ -41,7 +47,8 @@ username = "panadmin"
 ```
 
 EU West LAB:
-```
+
+```json
 mgmt_ip_addresses = {
   "azeeuwevm001" = "20.229.201.119"
   "azeeuwevm002" = "20.229.201.187"
@@ -59,7 +66,8 @@ username = "panadmin"
 ```
 
 US Central Lab:
-```
+
+```json
 mgmt_ip_addresses = {
   "azeeuwevm001" = "40.77.20.177"
   "azeeuwevm002" = "40.77.20.202"
@@ -77,7 +85,8 @@ username = "panadmin"
 ```
 
 US East2 Lab:
-```
+
+```json
 mgmt_ip_addresses = {
   "azeeuwevm001" = "172.176.249.52"
   "azeeuwevm002" = "172.176.249.96"

@@ -162,14 +162,14 @@ vmseries = {
         private_ip_address = "10.174.1.5"
       },
       {
-        name                 = "public"
-        subnet_name          = "mint-neu-core-sub-pa-untrust"
+        name                 = "private"
+        subnet_name          = "mint-neu-core-sub-priv"
         backend_pool_lb_name = "lb-private"
         private_ip_address   = "10.174.4.25"
       },
       {
-        name                 = "private"
-        subnet_name          = "mint-neu-core-sub-priv"
+        name                 = "public"
+        subnet_name          = "mint-neu-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true //what if I flip this to false? How do I add existing public IP?
         private_ip_address   = "10.174.0.71"
@@ -188,14 +188,14 @@ vmseries = {
         private_ip_address = "10.174.1.6"
       },
       {
-        name                 = "nic-public"
-        subnet_name          = "mint-neu-core-sub-pa-untrust"
+        name                 = "nic-private"
+        subnet_name          = "mint-neu-core-sub-priv"
         backend_pool_lb_name = "lb-private"
         private_ip_address   = "10.174.4.26"
       },
       {
-        name                 = "nic-private"
-        subnet_name          = "mint-neu-core-sub-priv"
+        name                 = "nic-public"
+        subnet_name          = "mint-neu-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
         private_ip_address   = "10.174.0.72"
