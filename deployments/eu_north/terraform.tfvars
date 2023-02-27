@@ -165,14 +165,14 @@ vmseries = {
         name                 = "private"
         subnet_name          = "mint-neu-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.174.4.25"
+        private_ip_address   = "10.174.0.71"
       },
       {
         name                 = "public"
         subnet_name          = "mint-neu-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
-        create_pip           = true //what if I flip this to false? How do I add existing public IP?
-        private_ip_address   = "10.174.0.71"
+        create_pip           = true //what if I flip this to false? How do I add existing public IP? 
+        private_ip_address   = "10.174.4.25"
       }
     ]
   }
@@ -191,14 +191,14 @@ vmseries = {
         name                 = "nic-private"
         subnet_name          = "mint-neu-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.174.4.26"
+        private_ip_address   = "10.174.0.72"
       },
       {
         name                 = "nic-public"
         subnet_name          = "mint-neu-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.174.0.72"
+        private_ip_address   = "10.174.4.26"
       }
     ]
   }

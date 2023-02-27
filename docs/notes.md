@@ -27,7 +27,7 @@ Send file to customer via TAC case
 - The static private IP of internal load balancer needs to be updated.
 - There are no existing PIP for public LB.
 
-EU North Lab:
+## EU North Lab
 
 ```json
 mgmt_ip_addresses = {
@@ -43,62 +43,58 @@ public_lb_pips = {
         palo-lb-app1-pip = "20.223.72.127"
     }
 }
-username = "panadmin"
 ```
 
-EU West LAB:
+## EU West LAB
 
 ```json
 mgmt_ip_addresses = {
-  "azeeuwevm001" = "20.229.201.119"
-  "azeeuwevm002" = "20.229.201.187"
+    azeeuwevm001 = "20.224.149.128"
+    azeeuwevm002 = "108.142.214.74"
 }
-password = <sensitive>
+password = (sensitive value)
 public_lb_pips = {
-  "lb-private" = {
-    "ha-ports" = "10.172.0.73"
-  }
-  "lb-public" = {
-    "palo-lb-app1-pip" = "20.82.56.94"
-  }
+    lb-private = {
+        ha-ports = "10.172.0.73"
+    }
+    lb-public  = {
+        palo-lb-app1-pip = "20.31.199.50"
+    }
 }
-username = "panadmin"
 ```
 
-US Central Lab:
+## US Central Lab
 
 ```json
 mgmt_ip_addresses = {
-  "azeeuwevm001" = "40.77.20.177"
-  "azeeuwevm002" = "40.77.20.202"
+    azeeuwevm001 = "20.9.81.243"
+    azeeuwevm002 = "20.9.82.199"
 }
-password = <sensitive>
+password = (sensitive value)
 public_lb_pips = {
-  "lb-private" = {
-    "ha-ports" = "10.74.0.73"
-  }
-  "lb-public" = {
-    "palo-lb-app1-pip" = "20.84.233.131"
-  }
+    lb-private = {
+        ha-ports = "10.74.0.73"
+    }
+    lb-public  = {
+        palo-lb-app1-pip = "13.86.32.168"
+    }
 }
-username = "panadmin"
 ```
 
-US East2 Lab:
+## US East2 Lab
 
 ```json
 mgmt_ip_addresses = {
-  "azeeuwevm001" = "172.176.249.52"
-  "azeeuwevm002" = "172.176.249.96"
+    azeeuwevm001 = "20.122.116.80"
+    azeeuwevm002 = "20.122.116.76"
 }
-password = <sensitive>
+password = (sensitive value)
 public_lb_pips = {
-  "lb-private" = {
-    "ha-ports" = "10.72.0.73"
-  }
-  "lb-public" = {
-    "palo-lb-app1-pip" = "20.22.106.118"
-  }
+    lb-private = {
+        ha-ports = "10.72.0.73"
+    }
+    lb-public  = {
+        palo-lb-app1-pip = "20.96.94.140"
+    }
 }
-username = "panadmin"
 ```

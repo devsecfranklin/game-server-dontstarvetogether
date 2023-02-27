@@ -101,7 +101,7 @@ load_balancers = {
   "lb-public" = {
     vnet_name                         = "vnet-ntw"
     network_security_group_name       = "mna-usce-core-nsg-pa-untrust"
-    network_security_allow_source_ips = ["134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs allowed to connect to public LB and Firewalls' PIPs
+    network_security_allow_source_ips = ["68.38.137.81","134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs allowed to connect to public LB and Firewalls' PIPs
     avzones                           = ["1", "2", "3"]
 
     frontend_ips = {
@@ -160,14 +160,14 @@ vmseries = {
         name                 = "private"
         subnet_name          = "mna-usce-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.74.4.25"
+        private_ip_address   = "10.74.0.71"
       },
       {
         name                 = "public"
         subnet_name          = "mna-usce-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.74.0.71"
+        private_ip_address   = "10.74.4.25"
       }
     ]
   }
@@ -186,14 +186,14 @@ vmseries = {
         name                 = "nic-private"
         subnet_name          = "mna-usce-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.74.4.26"
+        private_ip_address   = "10.74.0.72"
       },
       {
         name                 = "nic-public"
         subnet_name          = "mna-usce-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.74.0.72"
+        private_ip_address   = "10.74.4.26"
       }
     ]
   }

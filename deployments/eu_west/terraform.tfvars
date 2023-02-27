@@ -161,14 +161,14 @@ vmseries = {
         name                 = "private"
         subnet_name          = "mint-weu-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.172.4.25"
+        private_ip_address   = "10.172.0.71"
       },
       {
         name                 = "public"
         subnet_name          = "mint-weu-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.172.0.71"
+        private_ip_address   = "10.172.4.25"
       }
     ]
   }
@@ -187,14 +187,14 @@ vmseries = {
         name                 = "nic-private"
         subnet_name          = "mint-weu-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.172.4.26"
+        private_ip_address   = "10.172.0.72"
       },
       {
         name                 = "nic-public"
         subnet_name          = "mint-weu-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.172.0.72"
+        private_ip_address   = "10.172.4.26"
       }
     ]
   }

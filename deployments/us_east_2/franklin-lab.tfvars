@@ -13,9 +13,6 @@ tags = {
 }
 enable_zones = true
 
-
-
-# --- VNET PART --- #
 vnets = {
   "vnet-ntw" = {
     create_virtual_network = false
@@ -28,7 +25,7 @@ vnets = {
             direction                  = "Inbound"
             access                     = "Allow"
             protocol                   = "Tcp"
-            source_address_prefixes    = ["134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs used to management
+            source_address_prefixes    = ["68.38.137.81","134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs used to management
             source_port_range          = "*"
             destination_address_prefix = "10.72.1.0/27"
             destination_port_ranges    = ["22", "443"]
@@ -99,8 +96,6 @@ vnets = {
   }
 }
 
-
-# --- LOAD BALANCING PART --- #
 load_balancers = {
   "lb-public" = {
     vnet_name                         = "vnet-ntw"
@@ -144,9 +139,6 @@ load_balancers = {
   }
 }
 
-
-
-# --- VMSERIES PART --- #
 vmseries_version  = "10.1.8"
 vmseries_vm_size  = "Standard_DS3_v2"
 vmseries_sku      = "byol"
@@ -167,14 +159,14 @@ vmseries = {
         name                 = "private"
         subnet_name          = "mna-use2-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.72.4.25"
+        private_ip_address   = "10.72.0.71"
       },
       {
         name                 = "public"
         subnet_name          = "mna-use2-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.72.0.71"
+        private_ip_address   = "10.72.4.25"
       }
     ]
   }
@@ -190,17 +182,17 @@ vmseries = {
         private_ip_address = "10.72.1.6"
       },
       {
-        name                 = "nic-public"
-        subnet_name          = "mna-use2-core-sub-pa-untrust"
+        name                 = "private"
+        subnet_name          = "mna-use2-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.72.4.26"
+        private_ip_address   = "10.72.0.72"
       },
       {
-        name                 = "nic-private"
-        subnet_name          = "mna-use2-core-sub-priv"
+        name                 = "public"
+        subnet_name          = "mna-use2-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.72.0.72"
+        private_ip_address   = "10.72.4.26"
       }
     ]
   }
