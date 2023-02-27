@@ -101,7 +101,7 @@ load_balancers = {
   "lb-public" = {
     vnet_name                         = "vnet-ntw"
     network_security_group_name       = "mna-usce-core-nsg-pa-untrust"
-    network_security_allow_source_ips = ["134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs allowed to connect to public LB and Firewalls' PIPs
+    network_security_allow_source_ips = ["68.38.137.81","134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs allowed to connect to public LB and Firewalls' PIPs
     avzones                           = ["1", "2", "3"]
 
     frontend_ips = {

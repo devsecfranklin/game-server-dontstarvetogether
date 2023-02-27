@@ -28,7 +28,7 @@ vnets = {
             direction                  = "Inbound"
             access                     = "Allow"
             protocol                   = "Tcp"
-            source_address_prefixes    = ["134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs used to management
+            source_address_prefixes    = ["68.38.137.81","134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs used to management
             source_port_range          = "*"
             destination_address_prefix = "10.72.1.0/27"
             destination_port_ranges    = ["22", "443"]
@@ -144,9 +144,6 @@ load_balancers = {
   }
 }
 
-
-
-# --- VMSERIES PART --- #
 vmseries_version  = "10.1.8"
 vmseries_vm_size  = "Standard_DS3_v2"
 vmseries_sku      = "byol"
