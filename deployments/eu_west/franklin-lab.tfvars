@@ -1,6 +1,5 @@
-# --- GENERAL --- #
-location = "West Europe"
-# subscription_id       = "" # TODO <- uncomment and populate with proper subscription ID
+location              = "West Europe"
+subscription_id       = "d47f1af8-9795-4e86-bbce-da72cfd0f8ec"
 resource_group_name   = "mint-weu-core-rg-ngfw"
 name_prefix           = "mint-weu-core-"
 create_resource_group = false
@@ -9,7 +8,6 @@ tags = {
   "Environment"        = "Core"
   "ProjectCode"        = "50104"
   "ResourceManagedBy"  = "Chris Misson"
-  "ResourceOwnedBy"    = "Mark Baltz"
   "SecurityProfile"    = "Internal"
 }
 enable_zones = true
@@ -26,7 +24,7 @@ vnets = {
             direction                  = "Inbound"
             access                     = "Allow"
             protocol                   = "Tcp"
-            source_address_prefixes    = ["134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs used to management
+            source_address_prefixes    = ["68.38.137.81", "134.238.135.137", "134.238.135.14"] # TODO <- whitelist public IPs used to management
             source_port_range          = "*"
             destination_address_prefix = "10.172.1.0/27"
             destination_port_ranges    = ["22", "443"]
@@ -141,6 +139,9 @@ load_balancers = {
   }
 }
 
+
+
+# --- VMSERIES PART --- #
 vmseries_version  = "10.1.8"
 vmseries_vm_size  = "Standard_DS3_v2"
 vmseries_sku      = "byol"
