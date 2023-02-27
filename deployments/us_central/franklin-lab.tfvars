@@ -160,14 +160,14 @@ vmseries = {
         name                 = "private"
         subnet_name          = "mna-usce-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.74.4.25"
+        private_ip_address   = "10.74.0.71"
       },
       {
         name                 = "public"
         subnet_name          = "mna-usce-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.74.0.71"
+        private_ip_address   = "10.74.4.25"
       }
     ]
   }
@@ -186,14 +186,14 @@ vmseries = {
         name                 = "nic-private"
         subnet_name          = "mna-usce-core-sub-priv"
         backend_pool_lb_name = "lb-private"
-        private_ip_address   = "10.74.4.26"
+        private_ip_address   = "10.74.0.72"
       },
       {
         name                 = "nic-public"
         subnet_name          = "mna-usce-core-sub-pa-untrust"
         backend_pool_lb_name = "lb-public"
         create_pip           = true
-        private_ip_address   = "10.74.0.72"
+        private_ip_address   = "10.74.4.26"
       }
     ]
   }
