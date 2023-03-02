@@ -1,31 +1,22 @@
-terraform {
-  required_version = ">= 1.00, < 2.0"
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 3.7"
-    }
-    random = {
-      source  = "hashicorp/random"
-      version = "~> 3.1"
-    }
+resource "azurerm_storage_account" "tfstate" {
+  name                     = "franklintfstateuscen"
+  resource_group_name      = "franklin-lab"
+  location                 = var.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+
+  tags = {
+    environment = "staging"
   }
 }
 
-provider "azurerm" {
-  features {}
-  subscription_id = var.subscription_id
+// import the container like so:
+//terraform import azurerm_storage_container.tfstate https://franklintfstate.blob.core.windows.net/tfstateeuwest
+resource "azurerm_storage_container" "tfstate_us_central" {
+  name                  = "tfstateuscentral"
+  storage_account_name  = azurerm_storage_account.tfstate.name
+  container_access_type = "private"
 }
-
-variable "prefix" {}
-variable "location" {}
-variable "subscription_id" {
-  default = null
-}
-variable "resource_group_name" {}
-variable "vnet_name" {}
-variable "vnet_address_space" {}
-variable "subnets" {}
 
 module "brownfield" {
   source = "../../modules/brownfield"

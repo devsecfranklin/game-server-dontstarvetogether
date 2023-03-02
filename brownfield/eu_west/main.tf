@@ -1,6 +1,7 @@
+
 resource "azurerm_storage_account" "tfstate" {
-  name                     = "franklintfstate"
-  resource_group_name      = azurerm_resource_group.franklin_lab.name
+  name                     = "franklintfstateeuwest"
+  resource_group_name      = "franklin-lab"
   location                 = var.location
   account_tier             = "Standard"
   account_replication_type = "LRS"
@@ -8,6 +9,14 @@ resource "azurerm_storage_account" "tfstate" {
   tags = {
     environment = "staging"
   }
+}
+
+// import the container like so:
+//terraform import azurerm_storage_container.tfstate https://franklintfstate.blob.core.windows.net/tfstateeuwest
+resource "azurerm_storage_container" "tfstate_eu_west" {
+  name                  = "tfstateeuwest"
+  storage_account_name  = azurerm_storage_account.tfstate.name
+  container_access_type = "private"
 }
 
 module "brownfield" {
