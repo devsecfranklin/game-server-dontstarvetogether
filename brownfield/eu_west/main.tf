@@ -1,31 +1,14 @@
-terraform {
-  required_version = ">= 1.00, < 2.0"
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~> 3.7"
-    }
-    random = {
-      source  = "hashicorp/random"
-      version = "~> 3.1"
-    }
+resource "azurerm_storage_account" "tfstate" {
+  name                     = "franklintfstate"
+  resource_group_name      = azurerm_resource_group.franklin_lab.name
+  location                 = var.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+
+  tags = {
+    environment = "staging"
   }
 }
-
-provider "azurerm" {
-  features {}
-  subscription_id = var.subscription_id
-}
-
-variable "prefix" {}
-variable "location" {}
-variable "subscription_id" {
-  default = null
-}
-variable "resource_group_name" {}
-variable "vnet_name" {}
-variable "vnet_address_space" {}
-variable "subnets" {}
 
 module "brownfield" {
   source = "../../modules/brownfield"
