@@ -4,7 +4,6 @@
 # - using only a public Load Balancer for balancing inbound traffic.
 # - using NAT Gateway for outgoing traffic - two NAT GWs are deployed each in a Zone matching VMseries' appliance Zone (zone resiliency architecure).
 
-# --- GENERAL --- #
 location              = "North Europe"
 resource_group_name   = "common-refarch"
 name_prefix           = "fosix-"
@@ -15,9 +14,6 @@ tags = {
 }
 enable_zones = true
 
-
-
-# --- VNET PART --- #
 vnets = {
   "transit-vnet" = {
     create_virtual_network = true
@@ -64,8 +60,6 @@ vnets = {
   }
 }
 
-
-# --- LOAD BALANCING PART --- #
 load_balancers = {
   "lb-public" = {
     vnet_name                   = "transit-vnet"
@@ -110,9 +104,6 @@ load_balancers = {
   }
 }
 
-
-
-# --- VMSERIES PART --- #
 vmseries_version  = "10.2.0"
 vmseries_vm_size  = "Standard_DS3_v2"
 vmseries_sku      = "byol"
