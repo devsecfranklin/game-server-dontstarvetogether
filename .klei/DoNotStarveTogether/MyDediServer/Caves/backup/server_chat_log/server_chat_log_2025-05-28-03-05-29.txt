@@ -1,0 +1,24 @@
+[00:01:43]: [Join Announcement] FrankTheTank
+[00:14:59]: [Leave Announcement] FrankTheTank
+[00:18:59]: [Join Announcement] FrankTheTank
+[00:19:27]: [Death Announcement] FrankTheTank was killed by Darkness. He became a spooky ghost!
+[00:31:05]: [Death Announcement] FrankTheTank was killed by Darkness. She became a spooky ghost!
+[01:20:25]: [Leave Announcement] FrankTheTank
+[02:58:19]: [Join Announcement] FrankTheTank
+[03:00:42]: [Join Announcement] slyburger
+[03:03:01]: [Leave Announcement] slyburger
+[03:03:23]: [Leave Announcement] FrankTheTank
+[03:10:46]: [Join Announcement] slyburger
+[03:22:06]: [Join Announcement] FrankTheTank
+[03:43:24]: [Say] (KU_QFsp3bke) FrankTheTank: hit y to text
+[03:43:37]: [Say] (KU_QFsp4GB2) slyburger: oooOooo
+[03:51:42]: [Say] (KU_QFsp3bke) FrankTheTank: hit Y to chat
+[03:51:46]: [Say] (KU_QFsp4GB2) slyburger: gears or clockworks
+[03:51:52]: [Say] (KU_QFsp3bke) FrankTheTank: dont have any yet
+[03:52:36]: [Say] (KU_QFsp3bke) FrankTheTank: need to find water
+[03:57:27]: [Say] (KU_QFsp3bke) FrankTheTank: pick up this meat
+[03:57:40]: [Say] (KU_QFsp3bke) FrankTheTank: there is meat on the ground
+[03:58:05]: [Say] (KU_QFsp3bke) FrankTheTank: oops
+[03:58:24]: [Vote Announcement] rollback passed
+[04:14:09]: [Leave Announcement] slyburger
+[04:14:29]: [Leave Announcement] FrankTheTank
