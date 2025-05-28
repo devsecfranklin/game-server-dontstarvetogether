@@ -56,7 +56,7 @@ module "vnet" {
 # create load balancers, both internal and external
 module "load_balancer" {
   source  = "PaloAltoNetworks/vmseries-modules/azurerm//modules/loadbalancer"
-  version = "0.5.0"
+  version = "1.2.4"
 
   for_each = var.load_balancers
 
@@ -89,7 +89,7 @@ module "load_balancer" {
 
 module "vmseries" {
   source                = "PaloAltoNetworks/vmseries-modules/azurerm//modules/vmseries"
-  version               = "0.5.0"
+  version               = "1.2.4"
   for_each              = var.vmseries
   location              = var.location
   resource_group_name   = local.resource_group.name
