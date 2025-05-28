@@ -24,7 +24,7 @@ locals {
 
 # Create the network required for the topology.
 module "vnet" {
-  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/vnet?ref=v0.3.0"
+  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/vnet?ref=v1.2.4"
 
   create_virtual_network  = false
   resource_group_name     = var.vnet_resource_group_name
@@ -40,7 +40,7 @@ module "vnet" {
 
 # The Inbound Load Balancer for handling the traffic from the Internet.
 module "public_lb" {
-  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/loadbalancer?ref=v0.3.0"
+  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/loadbalancer?ref=v1.2.4"
 
   name                = "${var.name_prefix}${var.public_lb_name}"
   location            = var.location
@@ -58,7 +58,7 @@ module "public_lb" {
 
 # The Outbound Load Balancer for handling the traffic from the private networks.
 module "private_lb" {
-  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/loadbalancer?ref=v0.3.0"
+  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/loadbalancer?ref=v1.2.4"
 
   name                = "${var.name_prefix}${var.private_lb_name}"
   location            = var.location
@@ -84,7 +84,7 @@ module "private_lb" {
 }
 
 module "vmseries" {
-  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/vmseries?ref=v0.3.0"
+  source = "github.com/PaloAltoNetworks/terraform-azurerm-vmseries-modules//modules/vmseries?ref=v1.2.4"
 
   for_each = var.vmseries
 
