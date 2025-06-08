@@ -1,0 +1,8 @@
+TheWorld.topology.overrides.autumn = "verylongseason"
+TheWorld.topology.overrides.deerclops = "rare"
+TheWorld.topology.overrides.extrastartingitems = "20"
+TheWorld.topology.overrides.krampus = "default"
+TheWorld.topology.overrides.disease_delay = "none"
+
+c_save()
+c_reset()

@@ -1,0 +1,627 @@
+[00:00:00]: PersistRootStorage is now /home/dst/.klei//DoNotStarveTogether/ 
+[00:00:00]: Starting Up
+[00:00:00]: Version: 665003
+[00:00:00]: Current time: Wed May 28 19:17:51 2025
+
+[00:00:00]: System Name: Linux
+[00:00:00]: Host Name: games
+[00:00:00]: Release(Kernel) Version: 6.1.0-26-amd64
+[00:00:00]: Kernel Build Timestamp: #1 SMP PREEMPT_DYNAMIC Debian 6.1.112-1 (2024-09-30)
+[00:00:00]: Machine Arch: x86_64
+[00:00:00]: Don't Starve Together: 665003 LINUX_STEAM
+[00:00:00]: Build Date: 3004
+[00:00:00]: Mode: 64-bit
+[00:00:00]: Parsing command line
+[00:00:00]: Command Line Arguments: 
+[00:00:00]: Initializing distribution platform
+[00:00:02]: Steam AppBuildID: 18136769
+[00:00:02]: ....Done
+[00:00:02]: PersistUserStorage is now /home/dst/.klei//DoNotStarveTogether/56899563/ 
+[00:00:02]: THREAD - started 'GAClient' (140190659008192)
+[00:00:02]: CurlRequestManager::ClientThread::Main()
+[00:00:02]: ProfileIndex:5.11
+[00:00:02]: Mounting file system databundles/klump.zip successful.
+[00:00:02]: Mounting file system databundles/shaders.zip successful.
+[00:00:02]: Mounting file system databundles/fonts.zip successful.
+[00:00:02]: Mounting file system databundles/anim_dynamic.zip successful.
+[00:00:02]: Mounting file system databundles/bigportraits.zip successful.
+[00:00:02]: Mounting file system databundles/images.zip successful.
+[00:00:02]: Mounting file system databundles/scripts.zip successful.
+[00:00:02]: THREAD - started 'IC' (140190653757120)
+[00:00:06]: Texture Streaming: ENABLED
+[00:00:06]: Texture Streaming: DISABLED
+[00:00:06]: Threaded Renderer: DISABLED
+[00:00:07]: [Connect] PendingConnection::Reset(true)
+[00:00:07]: Platform: 1
+[00:00:07]: Network tick rate: U=15(2), D=0
+[00:00:07]: THREAD - started 'StreamInput' (140190622410432)
+[00:00:07]: could not load ping_cache
+[00:00:07]: Offline user ID: OU_76561198017165291
+[00:00:07]: SteamID: 76561198017165291
+[00:00:07]: THREAD - started 'AsynTextureLoadthread' (140190240720576)
+[00:00:07]: THREAD - started 'AsynTextureLoadthread' (140190488192704)
+[00:00:07]: cGame::InitializeOnMainThread
+[00:00:07]: WindowManager::Initialize
+[00:00:07]: Creating window with size 1280x720 at 805240832x805240832
+[00:00:08]: THREAD - started 'SDLInputManager' (140190230992576)
+[00:00:08]: Num Joysticks detected: 0
+[00:00:08]: GLInfo
+[00:00:08]: ~~~~~~
+[00:00:08]: GL_VENDOR: Mesa/X.org
+[00:00:08]: GL_RENDERER: llvmpipe (LLVM 15.0.6, 256 bits)
+[00:00:08]: GL_VERSION: 4.5 (Compatibility Profile) Mesa 22.3.6
+[00:00:08]: GL_SHADING_LANGUAGE_VERSION: 4.50
+[00:00:08]: OpenGL 3.0 present, detecting extensions the new way
+[00:00:08]: OpenGL extensions (302, 302):
+[00:00:08]: GL_3DFX_texture_compression_FXT1
+[00:00:08]: GL_AMD_conservative_depth
+[00:00:08]: GL_AMD_draw_buffers_blend
+[00:00:08]: GL_AMD_multi_draw_indirect
+[00:00:08]: GL_AMD_pinned_memory
+[00:00:08]: GL_AMD_query_buffer_object
+[00:00:08]: GL_AMD_seamless_cubemap_per_texture
+[00:00:08]: GL_AMD_shader_stencil_export
+[00:00:08]: GL_AMD_shader_trinary_minmax
+[00:00:08]: GL_AMD_texture_texture4
+[00:00:08]: GL_AMD_vertex_shader_layer
+[00:00:08]: GL_AMD_vertex_shader_viewport_index
+[00:00:08]: GL_ANGLE_texture_compression_dxt3
+[00:00:08]: GL_ANGLE_texture_compression_dxt5
+[00:00:08]: GL_APPLE_packed_pixels
+[00:00:08]: GL_ARB_ES2_compatibility
+[00:00:08]: GL_ARB_ES3_1_compatibility
+[00:00:08]: GL_ARB_ES3_2_compatibility
+[00:00:08]: GL_ARB_ES3_compatibility
+[00:00:08]: GL_ARB_arrays_of_arrays
+[00:00:08]: GL_ARB_base_instance
+[00:00:08]: GL_ARB_blend_func_extended
+[00:00:08]: GL_ARB_buffer_storage
+[00:00:08]: GL_ARB_clear_buffer_object
+[00:00:08]: GL_ARB_clear_texture
+[00:00:08]: GL_ARB_clip_control
+[00:00:08]: GL_ARB_color_buffer_float
+[00:00:08]: GL_ARB_compatibility
+[00:00:08]: GL_ARB_compressed_texture_pixel_storage
+[00:00:08]: GL_ARB_compute_shader
+[00:00:08]: GL_ARB_conditional_render_inverted
+[00:00:08]: GL_ARB_conservative_depth
+[00:00:08]: GL_ARB_copy_buffer
+[00:00:08]: GL_ARB_copy_image
+[00:00:08]: GL_ARB_cull_distance
+[00:00:08]: GL_ARB_debug_output
+[00:00:08]: GL_ARB_depth_buffer_float
+[00:00:08]: GL_ARB_depth_clamp
+[00:00:08]: GL_ARB_depth_texture
+[00:00:08]: GL_ARB_derivative_control
+[00:00:08]: GL_ARB_direct_state_access
+[00:00:08]: GL_ARB_draw_buffers
+[00:00:08]: GL_ARB_draw_buffers_blend
+[00:00:08]: GL_ARB_draw_elements_base_vertex
+[00:00:08]: GL_ARB_draw_indirect
+[00:00:08]: GL_ARB_draw_instanced
+[00:00:08]: GL_ARB_enhanced_layouts
+[00:00:08]: GL_ARB_explicit_attrib_location
+[00:00:08]: GL_ARB_explicit_uniform_location
+[00:00:08]: GL_ARB_fragment_coord_conventions
+[00:00:08]: GL_ARB_fragment_layer_viewport
+[00:00:08]: GL_ARB_fragment_program
+[00:00:08]: GL_ARB_fragment_program_shadow
+[00:00:08]: GL_ARB_fragment_shader
+[00:00:08]: GL_ARB_framebuffer_no_attachments
+[00:00:08]: GL_ARB_framebuffer_object
+[00:00:08]: GL_ARB_framebuffer_sRGB
+[00:00:08]: GL_ARB_get_program_binary
+[00:00:08]: GL_ARB_get_texture_sub_image
+[00:00:08]: GL_ARB_gl_spirv
+[00:00:08]: GL_ARB_gpu_shader5
+[00:00:08]: GL_ARB_gpu_shader_fp64
+[00:00:08]: GL_ARB_gpu_shader_int64
+[00:00:08]: GL_ARB_half_float_pixel
+[00:00:08]: GL_ARB_half_float_vertex
+[00:00:08]: GL_ARB_indirect_parameters
+[00:00:08]: GL_ARB_instanced_arrays
+[00:00:08]: GL_ARB_internalformat_query
+[00:00:08]: GL_ARB_internalformat_query2
+[00:00:08]: GL_ARB_invalidate_subdata
+[00:00:08]: GL_ARB_map_buffer_alignment
+[00:00:08]: GL_ARB_map_buffer_range
+[00:00:08]: GL_ARB_multi_bind
+[00:00:08]: GL_ARB_multi_draw_indirect
+[00:00:08]: GL_ARB_multisample
+[00:00:08]: GL_ARB_multitexture
+[00:00:08]: GL_ARB_occlusion_query
+[00:00:08]: GL_ARB_occlusion_query2
+[00:00:08]: GL_ARB_parallel_shader_compile
+[00:00:08]: GL_ARB_pipeline_statistics_query
+[00:00:08]: GL_ARB_pixel_buffer_object
+[00:00:08]: GL_ARB_point_parameters
+[00:00:08]: GL_ARB_point_sprite
+[00:00:08]: GL_ARB_polygon_offset_clamp
+[00:00:08]: GL_ARB_post_depth_coverage
+[00:00:08]: GL_ARB_program_interface_query
+[00:00:08]: GL_ARB_provoking_vertex
+[00:00:08]: GL_ARB_query_buffer_object
+[00:00:08]: GL_ARB_robust_buffer_access_behavior
+[00:00:08]: GL_ARB_robustness
+[00:00:08]: GL_ARB_sample_shading
+[00:00:08]: GL_ARB_sampler_objects
+[00:00:08]: GL_ARB_seamless_cube_map
+[00:00:08]: GL_ARB_seamless_cubemap_per_texture
+[00:00:08]: GL_ARB_separate_shader_objects
+[00:00:08]: GL_ARB_shader_atomic_counter_ops
+[00:00:08]: GL_ARB_shader_atomic_counters
+[00:00:08]: GL_ARB_shader_ballot
+[00:00:08]: GL_ARB_shader_bit_encoding
+[00:00:08]: GL_ARB_shader_clock
+[00:00:08]: GL_ARB_shader_draw_parameters
+[00:00:08]: GL_ARB_shader_group_vote
+[00:00:08]: GL_ARB_shader_image_load_store
+[00:00:08]: GL_ARB_shader_image_size
+[00:00:08]: GL_ARB_shader_objects
+[00:00:08]: GL_ARB_shader_precision
+[00:00:08]: GL_ARB_shader_stencil_export
+[00:00:08]: GL_ARB_shader_storage_buffer_object
+[00:00:08]: GL_ARB_shader_subroutine
+[00:00:08]: GL_ARB_shader_texture_image_samples
+[00:00:08]: GL_ARB_shader_texture_lod
+[00:00:08]: GL_ARB_shader_viewport_layer_array
+[00:00:08]: GL_ARB_shading_language_100
+[00:00:08]: GL_ARB_shading_language_420pack
+[00:00:08]: GL_ARB_shading_language_include
+[00:00:08]: GL_ARB_shading_language_packing
+[00:00:08]: GL_ARB_shadow
+[00:00:08]: GL_ARB_spirv_extensions
+[00:00:08]: GL_ARB_stencil_texturing
+[00:00:08]: GL_ARB_sync
+[00:00:08]: GL_ARB_tessellation_shader
+[00:00:08]: GL_ARB_texture_barrier
+[00:00:08]: GL_ARB_texture_border_clamp
+[00:00:08]: GL_ARB_texture_buffer_object
+[00:00:08]: GL_ARB_texture_buffer_object_rgb32
+[00:00:08]: GL_ARB_texture_buffer_range
+[00:00:08]: GL_ARB_texture_compression
+[00:00:08]: GL_ARB_texture_compression_bptc
+[00:00:08]: GL_ARB_texture_compression_rgtc
+[00:00:08]: GL_ARB_texture_cube_map
+[00:00:08]: GL_ARB_texture_cube_map_array
+[00:00:08]: GL_ARB_texture_env_add
+[00:00:08]: GL_ARB_texture_env_combine
+[00:00:08]: GL_ARB_texture_env_crossbar
+[00:00:08]: GL_ARB_texture_env_dot3
+[00:00:08]: GL_ARB_texture_filter_anisotropic
+[00:00:08]: GL_ARB_texture_filter_minmax
+[00:00:08]: GL_ARB_texture_float
+[00:00:08]: GL_ARB_texture_gather
+[00:00:08]: GL_ARB_texture_mirror_clamp_to_edge
+[00:00:08]: GL_ARB_texture_mirrored_repeat
+[00:00:08]: GL_ARB_texture_multisample
+[00:00:08]: GL_ARB_texture_non_power_of_two
+[00:00:08]: GL_ARB_texture_query_levels
+[00:00:08]: GL_ARB_texture_query_lod
+[00:00:08]: GL_ARB_texture_rectangle
+[00:00:08]: GL_ARB_texture_rg
+[00:00:08]: GL_ARB_texture_rgb10_a2ui
+[00:00:08]: GL_ARB_texture_stencil8
+[00:00:08]: GL_ARB_texture_storage
+[00:00:08]: GL_ARB_texture_storage_multisample
+[00:00:08]: GL_ARB_texture_swizzle
+[00:00:08]: GL_ARB_texture_view
+[00:00:08]: GL_ARB_timer_query
+[00:00:08]: GL_ARB_transform_feedback2
+[00:00:08]: GL_ARB_transform_feedback3
+[00:00:08]: GL_ARB_transform_feedback_instanced
+[00:00:08]: GL_ARB_transform_feedback_overflow_query
+[00:00:08]: GL_ARB_transpose_matrix
+[00:00:08]: GL_ARB_uniform_buffer_object
+[00:00:08]: GL_ARB_vertex_array_bgra
+[00:00:08]: GL_ARB_vertex_array_object
+[00:00:08]: GL_ARB_vertex_attrib_64bit
+[00:00:08]: GL_ARB_vertex_attrib_binding
+[00:00:08]: GL_ARB_vertex_buffer_object
+[00:00:08]: GL_ARB_vertex_program
+[00:00:08]: GL_ARB_vertex_shader
+[00:00:08]: GL_ARB_vertex_type_10f_11f_11f_rev
+[00:00:08]: GL_ARB_vertex_type_2_10_10_10_rev
+[00:00:08]: GL_ARB_viewport_array
+[00:00:08]: GL_ARB_window_pos
+[00:00:08]: GL_ARM_shader_framebuffer_fetch_depth_stencil
+[00:00:08]: GL_ATI_blend_equation_separate
+[00:00:08]: GL_ATI_draw_buffers
+[00:00:08]: GL_ATI_fragment_shader
+[00:00:08]: GL_ATI_separate_stencil
+[00:00:08]: GL_ATI_texture_compression_3dc
+[00:00:08]: GL_ATI_texture_env_combine3
+[00:00:08]: GL_ATI_texture_float
+[00:00:08]: GL_ATI_texture_mirror_once
+[00:00:08]: GL_EXT_EGL_image_storage
+[00:00:08]: GL_EXT_EGL_sync
+[00:00:08]: GL_EXT_abgr
+[00:00:08]: GL_EXT_bgra
+[00:00:08]: GL_EXT_blend_color
+[00:00:08]: GL_EXT_blend_equation_separate
+[00:00:08]: GL_EXT_blend_func_separate
+[00:00:08]: GL_EXT_blend_minmax
+[00:00:08]: GL_EXT_blend_subtract
+[00:00:08]: GL_EXT_compiled_vertex_array
+[00:00:08]: GL_EXT_copy_texture
+[00:00:08]: GL_EXT_debug_label
+[00:00:08]: GL_EXT_direct_state_access
+[00:00:08]: GL_EXT_draw_buffers2
+[00:00:08]: GL_EXT_draw_instanced
+[00:00:08]: GL_EXT_draw_range_elements
+[00:00:08]: GL_EXT_fog_coord
+[00:00:08]: GL_EXT_framebuffer_blit
+[00:00:08]: GL_EXT_framebuffer_multisample
+[00:00:08]: GL_EXT_framebuffer_multisample_blit_scaled
+[00:00:08]: GL_EXT_framebuffer_object
+[00:00:08]: GL_EXT_framebuffer_sRGB
+[00:00:08]: GL_EXT_gpu_program_parameters
+[00:00:08]: GL_EXT_gpu_shader4
+[00:00:08]: GL_EXT_memory_object
+[00:00:08]: GL_EXT_memory_object_fd
+[00:00:08]: GL_EXT_multi_draw_arrays
+[00:00:08]: GL_EXT_packed_depth_stencil
+[00:00:08]: GL_EXT_packed_float
+[00:00:08]: GL_EXT_packed_pixels
+[00:00:08]: GL_EXT_pixel_buffer_object
+[00:00:08]: GL_EXT_point_parameters
+[00:00:08]: GL_EXT_polygon_offset_clamp
+[00:00:08]: GL_EXT_provoking_vertex
+[00:00:08]: GL_EXT_rescale_normal
+[00:00:08]: GL_EXT_secondary_color
+[00:00:08]: GL_EXT_separate_specular_color
+[00:00:08]: GL_EXT_shader_framebuffer_fetch
+[00:00:08]: GL_EXT_shader_framebuffer_fetch_non_coherent
+[00:00:08]: GL_EXT_shader_integer_mix
+[00:00:08]: GL_EXT_shadow_funcs
+[00:00:08]: GL_EXT_stencil_two_side
+[00:00:08]: GL_EXT_stencil_wrap
+[00:00:08]: GL_EXT_subtexture
+[00:00:08]: GL_EXT_texture
+[00:00:08]: GL_EXT_texture3D
+[00:00:08]: GL_EXT_texture_array
+[00:00:08]: GL_EXT_texture_buffer_object
+[00:00:08]: GL_EXT_texture_compression_dxt1
+[00:00:08]: GL_EXT_texture_compression_latc
+[00:00:08]: GL_EXT_texture_compression_rgtc
+[00:00:08]: GL_EXT_texture_compression_s3tc
+[00:00:08]: GL_EXT_texture_cube_map
+[00:00:08]: GL_EXT_texture_edge_clamp
+[00:00:08]: GL_EXT_texture_env_add
+[00:00:08]: GL_EXT_texture_env_combine
+[00:00:08]: GL_EXT_texture_env_dot3
+[00:00:08]: GL_EXT_texture_filter_anisotropic
+[00:00:08]: GL_EXT_texture_filter_minmax
+[00:00:08]: GL_EXT_texture_integer
+[00:00:08]: GL_EXT_texture_lod_bias
+[00:00:08]: GL_EXT_texture_mirror_clamp
+[00:00:08]: GL_EXT_texture_object
+[00:00:08]: GL_EXT_texture_rectangle
+[00:00:08]: GL_EXT_texture_sRGB
+[00:00:08]: GL_EXT_texture_sRGB_R8
+[00:00:08]: GL_EXT_texture_sRGB_RG8
+[00:00:08]: GL_EXT_texture_sRGB_decode
+[00:00:08]: GL_EXT_texture_shadow_lod
+[00:00:08]: GL_EXT_texture_shared_exponent
+[00:00:08]: GL_EXT_texture_snorm
+[00:00:08]: GL_EXT_texture_swizzle
+[00:00:08]: GL_EXT_timer_query
+[00:00:08]: GL_EXT_transform_feedback
+[00:00:08]: GL_EXT_vertex_array
+[00:00:08]: GL_EXT_vertex_array_bgra
+[00:00:08]: GL_EXT_vertex_attrib_64bit
+[00:00:08]: GL_IBM_multimode_draw_arrays
+[00:00:08]: GL_IBM_rasterpos_clip
+[00:00:08]: GL_IBM_texture_mirrored_repeat
+[00:00:08]: GL_INGR_blend_func_separate
+[00:00:08]: GL_INTEL_shader_atomic_float_minmax
+[00:00:08]: GL_KHR_blend_equation_advanced
+[00:00:08]: GL_KHR_blend_equation_advanced_coherent
+[00:00:08]: GL_KHR_context_flush_control
+[00:00:08]: GL_KHR_debug
+[00:00:08]: GL_KHR_no_error
+[00:00:08]: GL_KHR_parallel_shader_compile
+[00:00:08]: GL_KHR_robust_buffer_access_behavior
+[00:00:08]: GL_KHR_robustness
+[00:00:08]: GL_KHR_texture_compression_astc_ldr
+[00:00:08]: GL_KHR_texture_compression_astc_sliced_3d
+[00:00:08]: GL_MESA_framebuffer_flip_y
+[00:00:08]: GL_MESA_pack_invert
+[00:00:08]: GL_MESA_shader_integer_functions
+[00:00:08]: GL_MESA_texture_signed_rgba
+[00:00:08]: GL_MESA_window_pos
+[00:00:08]: GL_MESA_ycbcr_texture
+[00:00:08]: GL_NV_ES1_1_compatibility
+[00:00:08]: GL_NV_blend_square
+[00:00:08]: GL_NV_conditional_render
+[00:00:08]: GL_NV_copy_depth_to_color
+[00:00:08]: GL_NV_copy_image
+[00:00:08]: GL_NV_depth_clamp
+[00:00:08]: GL_NV_fog_distance
+[00:00:08]: GL_NV_half_float
+[00:00:08]: GL_NV_light_max_exponent
+[00:00:08]: GL_NV_packed_depth_stencil
+[00:00:08]: GL_NV_primitive_restart
+[00:00:08]: GL_NV_shader_atomic_float
+[00:00:08]: GL_NV_texgen_reflection
+[00:00:08]: GL_NV_texture_barrier
+[00:00:08]: GL_NV_texture_env_combine4
+[00:00:08]: GL_NV_texture_rectangle
+[00:00:08]: GL_OES_EGL_image
+[00:00:08]: GL_OES_read_format
+[00:00:08]: GL_S3_s3tc
+[00:00:08]: GL_SGIS_generate_mipmap
+[00:00:08]: GL_SGIS_texture_border_clamp
+[00:00:08]: GL_SGIS_texture_edge_clamp
+[00:00:08]: GL_SGIS_texture_lod
+[00:00:08]: GL_SUN_multi_draw_arrays
+[00:00:08]: GL_MAX_TEXTURE_SIZE = 16384
+[00:00:08]: GL_MAX_TEXTURE_IMAGE_UNITS = 32
+[00:00:08]: GL_MAX_RENDERBUFFER_SIZE = 16384
+[00:00:08]: GL_MAX_VIEWPORT_DIMS = 16384, 16384
+[00:00:08]: GL_MAX_VARYING_VECTORS = 32
+[00:00:08]: GL_MAX_VERTEX_ATTRIBS = 16
+[00:00:08]: GL_MAX_VERTEX_UNIFORM_VECTORS = 4096
+[00:00:08]: GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS = 32
+[00:00:08]: GL_MAX_FRAGMENT_UNIFORM_VECTORS = 4096
+[00:00:08]: 12 compressed texture formats
+[00:00:08]: texture format 0x86b0
+[00:00:08]: texture format 0x86b1
+[00:00:08]: texture format 0x83f0
+[00:00:08]: texture format 0x83f2
+[00:00:08]: texture format 0x83f3
+[00:00:08]: texture format 0x9274
+[00:00:08]: texture format 0x9278
+[00:00:08]: texture format 0x9270
+[00:00:08]: texture format 0x9272
+[00:00:08]: texture format 0x9271
+[00:00:08]: texture format 0x9273
+[00:00:08]: texture format 0x9276
+[00:00:08]: FMOD Error: Error initializing output device. 
+[00:00:08]: SoundSystem::Initialize failed
+[00:00:08]: Renderer initialize: Okay
+[00:00:08]: AnimManager initialize: Okay
+[00:00:08]: Buffers initialize: Okay
+[00:00:08]: cDontStarveGame::DoGameSpecificInitialize()
+[00:00:08]: FMOD Error: An invalid object handle was used. 
+[00:00:08]: GameSpecific initialize: Okay
+[00:00:08]: cGame::StartPlaying
+[00:00:08]: AppVersion::GetArchitecture() x64
+[00:00:08]: LOADING LUA
+[00:00:08]: DoLuaFile scripts/main.lua
+[00:00:08]: DoLuaFile loading buffer scripts/main.lua
+[00:00:09]:   taskgrouplist:	default	Together	
+[00:00:09]:   taskgrouplist:	classic	Classic	
+[00:00:09]:   taskgrouplist:	cave_default	Underground	
+[00:00:09]:   taskgrouplist:	lavaarena_taskset	The Forge	
+[00:00:09]:   taskgrouplist:	quagmire_taskset	The Gorge	
+[00:00:09]: Running main.lua
+	
+[00:00:09]: Could not load modindex	
+[00:00:09]: ModIndex: Beginning normal load sequence.
+	
+[00:00:09]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:09]: Failed to load skilltree file itself!	
+[00:00:09]: Trying to apply online cache of skilltree data..	
+[00:00:09]: Which also failed. This error is unrecoverable. Skill tree will be cleared.	
+[00:00:09]: FMOD Error: An invalid object handle was used. 
+[00:00:09]: FMOD Error: An invalid object handle was used. 
+[00:00:09]: FMOD Error: An invalid object handle was used. 
+[00:00:09]: FMOD Error: An invalid object handle was used. 
+[00:00:09]: FMOD Error: An invalid object handle was used. 
+[00:00:09]: FMOD Error: An invalid object handle was used. 
+[00:00:09]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:10]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:24]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:25]: FMOD Error: An invalid object handle was used. 
+[00:00:29]: FMOD Error: An invalid object handle was used. 
+[00:00:33]: LOADING LUA SUCCESS
+[00:00:33]: PlayerDeaths could not load morgue	
+[00:00:33]: PlayerHistory could not load player_history	
+[00:00:33]: ServerPreferences could not load server_preferences	
+[00:00:33]: ConsoleScreenSettings could not load consolescreen	
+[00:00:33]: bloom_enabled	true	
+[00:00:33]: EnableShadeRenderer: 	true	
+[00:00:33]: OnFilesLoaded()	
+[00:00:33]: OnUpdatePurchaseStateComplete	
+[00:00:33]: Klump load on boot started.	
+[00:00:33]: Klump files loaded: 	0	
+[00:00:38]: 	Load FE	
+[00:00:39]: 	Load FE: done	
+[00:00:39]: THREAD - started 'FilesExistAsyncThread' (140190092125888)
+[00:00:39]: FilesExistAsyncThread started (26628 files)...
+[00:00:39]: OnLoadPermissionList: /home/dst/.klei//DoNotStarveTogether/56899563/client_save/blocklist.txt (Failure)
+[00:00:39]: OnLoadPermissionList: /home/dst/.klei//DoNotStarveTogether/56899563/client_save/adminlist.txt (Failure)
+[00:00:39]: OnLoadUserIdList: /home/dst/.klei//DoNotStarveTogether/56899563/client_save/whitelist.txt (Failure)
+[00:00:39]: [MOTD] Downloading info from	https://motd.klei.com/motd.json/?game=dst&platform=STEAM&locale=US&lang=english&version=665003	
+[00:00:39]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:00:39]: Check for write access: TRUE
+[00:00:39]: Check for read access: TRUE
+[00:00:39]: Available disk space for save files: 19760 MB
+[00:00:39]: ModIndex: Load sequence finished successfully.	
+[00:00:39]: Reset() returning
+[00:00:39]: Do AutoLogin	
+[00:00:39]: [Steam] Auth Session Ticket requested...
+[00:00:39]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:00:39]: [MOTD] Done Loading.	
+[00:00:39]: [MOTD] Downloading image for box8 from https://klei-motd.klei.com/dst/febskill/steam/en/DST_SkillSpotlight_MOTD_b73aa.tex
+[00:00:39]: [Steam] Got Auth Session Ticket
+[00:00:40]: ... FilesExistAsyncThread complete
+[00:00:40]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box8.tex
+[00:00:40]: [MOTD] Downloading image for box4 from https://klei-motd.klei.com/dst/febskill/steam/en/MOTD_Ancient_Skins_beec4.tex
+[00:00:40]: [200] Account Communication Success (3)
+[00:00:40]: Cached userid (null) saved to /home/dst/.klei//DoNotStarveTogether/56899563/client_save/cached_userid
+[00:00:40]: Logging in as KU_QFsp3bke
+[00:00:41]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box4.tex
+[00:00:41]: [MOTD] Downloading image for box7 from https://klei-motd.klei.com/dst/febskill/steam/en/MOTD_Relic_abfbc.tex
+[00:00:42]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:00:42]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box7.tex
+[00:00:42]: [MOTD] Downloading image for box5 from https://klei-motd.klei.com/dst/febskill/steam/en/MOTD_LostAndFound_faf43.tex
+[00:00:43]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/pricing_cache
+[00:00:43]: There is no active event to get the status of.
+[00:00:43]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box5.tex
+[00:00:43]: [MOTD] Downloading image for box9 from https://klei-motd.klei.com/dst/febskill/steam/en/discord_776e2.tex
+[00:00:44]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box9.tex
+[00:00:44]: [MOTD] Downloading image for box1 from https://klei-motd.klei.com/dst/febskill/steam/en/LABRAT_item_3fffa.tex
+[00:00:44]: could not load pending_keyvalues_prod
+[00:00:44]: [MOTD] MOTDImageLoader: Downloaded image: ../data/images/motd_box1.tex
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_cookbook_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_plantregistry_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_generic_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_skilltree_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook0_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook1_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook2_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook3_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook4_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook5_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook6_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook7_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook8_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook9_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook10_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook11_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook12_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook13_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook14_prod
+[00:00:45]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/keyvalue_scrapbook15_prod
+[00:00:45]: could not load inventory_cache_prod
+[00:00:46]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/inventory_cache_prod
+[00:00:46]: saved /home/dst/.klei//DoNotStarveTogether/56899563/client_save/inventory_cache_prod_sig
+[00:00:46]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:00:55]: [Workshop] ItemQuery got this many results: 11, matching: 11
+[00:00:55]: [Workshop] ModQuery got 11 results
+[00:00:55]: [Workshop] ModQuery queued to download IDs: 3489012616 3436020204 3151929150 2078243581 1894295075 1207269058 1185229307 727774324 378160973 376333686 362175979
+[00:00:55]: [Workshop] ItemQuery finished all queries, moving to download phase
+[00:00:55]: [Workshop] ItemQuery downloading 3 pending mods marked to download
+[00:00:55]: [Workshop] DownloadPublishedFile [7] 2078243581
+[00:00:55]: [Workshop] DownloadPublishedFile [7] 1894295075
+[00:00:55]: [Workshop] DownloadPublishedFile [7] 362175979
+[00:00:56]: [Workshop] OnDownloadPublishedUGCFile [1] 2078243581
+[00:00:56]: [Workshop] ODPUF noticed this is a legacy item
+[00:00:56]: [Workshop] ODPUF is trying to unpack the mod into folder: /home/dst/.local/share/Steam/steamapps/workshop/content/322330/2078243581/1007061823171787096_legacy.bin
+[00:00:56]: [Workshop] OnDownloadPublishedUGCFile [1] 1894295075
+[00:00:56]: [Workshop] ODPUF noticed this is a legacy item
+[00:00:56]: THREAD - started 'cUnpackModThread' (140189542852288)
+[00:00:56]: [Workshop] ODPUF is trying to unpack the mod into folder: /home/dst/.local/share/Steam/steamapps/workshop/content/322330/1894295075/1019446043998366689_legacy.bin
+[00:00:56]: THREAD - started 'cUnpackModThread' (140189551244992)
+[00:00:56]: [Workshop] OnDownloadPublishedUGCFile [1] 362175979
+[00:00:56]: [Workshop] ODPUF noticed this is a legacy item
+[00:00:56]: [Workshop] ODPUF is trying to unpack the mod into folder: /home/dst/.local/share/Steam/steamapps/workshop/content/322330/362175979/609478105747897135_legacy.bin
+[00:00:56]: [Workshop] ODPUF subscribed mods completed
+[00:00:56]: THREAD - started 'cUnpackModThread' (140190123288256)
+[00:00:56]: [Workshop] UMFD is now trying to unpack the mod
+[00:00:56]: Could not open directory [../mods/workshop-2078243581] 2 (/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together/data)
+[00:00:56]: cWorkshopMod::UnzipMod ../mods/workshop-2078243581
+[00:00:56]: [Workshop] UMFD is now trying to unpack the mod
+[00:00:56]: Could not open directory [../mods/workshop-1894295075] 2 (/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together/data)
+[00:00:56]: cWorkshopMod::UnzipMod ../mods/workshop-1894295075
+[00:00:56]: [Workshop] UMFD is now trying to unpack the mod
+[00:00:56]: Could not open directory [../mods/workshop-362175979] 2 (/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together/data)
+[00:00:56]: cWorkshopMod::UnzipMod ../mods/workshop-362175979
+[00:01:04]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:06]: focus gained
+[00:01:17]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:20]: FMOD Error: Can't play event 'dontstarve/HUD/click_move', An invalid object handle was used. 
+[00:01:21]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:23]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:25]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:25]: FMOD Error: Can't play event 'dontstarve/HUD/click_move', An invalid object handle was used. 
+[00:01:26]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:26]: [Workshop] ItemQuery got this many results: 11, matching: 11
+[00:01:26]: [Workshop] ModQuery got 11 results
+[00:01:26]: [Workshop] ModQuery queued to download IDs: 3489012616 3436020204 3151929150 2078243581 1894295075 1207269058 1185229307 727774324 378160973 376333686 362175979
+[00:01:26]: [Workshop] ItemQuery finished all queries, moving to download phase
+[00:01:26]: [Workshop] ItemQuery finished downloading everything
+[00:01:30]: [Workshop] CancelDownloads for all pending downloads
+[00:01:32]: Friends are currently playing in 0 games(s)!
+[00:01:32]: You belong to 3 clan(s)!
+[00:01:32]: Downloaded server listings - chunk 4 (us-east-1): 953 filtered completed: 579
+[00:01:33]: Downloaded server listings - chunk 3 (eu-central-1): 3192 filtered completed: 2447
+[00:01:34]: Downloaded server listings - chunk 2 (ap-southeast-1): 8140 filtered completed: 9923
+[00:01:34]: Downloaded server listings - chunk 1 (ap-east-1): 538 filtered completed: 10294
+[00:01:39]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:40]: FMOD Error: Can't play event 'dontstarve/HUD/click_move', An invalid object handle was used. 
+[00:01:40]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:42]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:42]: FMOD Error: Can't play event 'dontstarve/HUD/click_move', An invalid object handle was used. 
+[00:01:42]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:43]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:43]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:44]: FMOD Error: Can't play event 'dontstarve/HUD/click_move', An invalid object handle was used. 
+[00:01:47]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:01:50]: FMOD Error: Can't play event 'dontstarve/HUD/click_move', An invalid object handle was used. 
+[00:01:51]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:00]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:02]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:02]: FMOD Error: Can't play event 'dontstarve/HUD/click_move', An invalid object handle was used. 
+[00:02:07]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:11]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:12]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:14]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:15]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:17]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:22]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:24]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:26]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:26]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:28]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:28]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:29]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:31]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:37]: focus lost
+[00:02:37]: FMOD Error: Can't play event 'dontstarve/HUD/click_mouseover', An invalid object handle was used. 
+[00:02:39]: [Workshop] CancelDownloads for all pending downloads
+[00:02:39]: Collecting garbage...
+[00:02:40]: lua_gc took 0.33 seconds
+[00:02:40]: ~ShardLuaProxy()
+[00:02:40]: ~cEventLeaderboardProxy()
+[00:02:40]: ~ItemServerLuaProxy()
+[00:02:40]: ~InventoryLuaProxy()
+[00:02:40]: ~NetworkLuaProxy()
+[00:02:40]: ~SimLuaProxy()
+[00:02:40]: [Workshop] CancelDownloads for all pending downloads
+[00:02:40]: lua_close took 0.34 seconds
+[00:02:40]: [Workshop] CancelDownloads for all pending downloads
+[00:02:40]: saved ping_cache
+[00:02:40]: [Steam] Auth ticket cancelled
+[00:02:41]: CurlRequestManager::ClientThread::Main() complete
+[00:02:41]: HttpClient2 discarded 0 callbacks.
+[00:02:41]: Shutting down

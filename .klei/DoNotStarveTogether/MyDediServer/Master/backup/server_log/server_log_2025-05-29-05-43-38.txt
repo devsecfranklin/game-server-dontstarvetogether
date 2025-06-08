@@ -1,0 +1,1321 @@
+[00:00:00]: PersistRootStorage is now /home/dst/.klei//DoNotStarveTogether/MyDediServer/Master/ 
+[00:00:00]: Starting Up
+[00:00:00]: Version: 665003
+[00:00:00]: Current time: Thu May 29 04:34:40 2025
+
+[00:00:00]: System Name: Linux
+[00:00:00]: Host Name: games
+[00:00:00]: Release(Kernel) Version: 6.1.0-26-amd64
+[00:00:00]: Kernel Build Timestamp: #1 SMP PREEMPT_DYNAMIC Debian 6.1.112-1 (2024-09-30)
+[00:00:00]: Machine Arch: x86_64
+[00:00:00]: Don't Starve Together: 665003 LINUX
+[00:00:00]: Build Date: 2984
+[00:00:00]: Mode: 64-bit
+[00:00:00]: Parsing command line
+[00:00:00]: Command Line Arguments: -console -cluster MyDediServer -monitor_parent_process 612080 -shard Master 
+[00:00:00]: [WARNING] -console has been deprecated: Use the [MISC] / console_enabled setting instead.
+[00:00:00]: Initializing distribution platform
+[00:00:00]: ....Done
+[00:00:00]: THREAD - started 'GAClient' (140474918631104)
+[00:00:00]: CurlRequestManager::ClientThread::Main()
+[00:00:00]: ProfileIndex:4.63
+[00:00:00]: Mounting file system databundles/klump.zip successful.
+[00:00:00]: Mounting file system databundles/shaders.zip successful.
+[00:00:00]: Mounting file system databundles/fonts.zip successful.
+[00:00:00]: Mounting file system databundles/anim_dynamic.zip successful.
+[00:00:00]: Mounting file system databundles/bigportraits.zip successful.
+[00:00:00]: Mounting file system databundles/images.zip successful.
+[00:00:00]: Mounting file system databundles/scripts.zip successful.
+[00:00:00]: [Steam] SteamGameServer_Init(11000, 27018)
+[00:00:00]: [Steam] SteamGameServer_Init success
+[00:00:00]: [Connect] PendingConnection::Reset(true)
+[00:00:00]: Platform: 1
+[00:00:00]: Network tick rate: U=15(2), D=0
+[00:00:00]: Network tick rate: U=15(2), D=0
+[00:00:00]: OnLoadPermissionList: /home/dst/.klei//DoNotStarveTogether/MyDediServer/blocklist.txt (Failure)
+[00:00:00]: OnLoadPermissionList: /home/dst/.klei//DoNotStarveTogether/MyDediServer/adminlist.txt (Success)
+[00:00:00]: OnLoadUserIdList: /home/dst/.klei//DoNotStarveTogether/MyDediServer/whitelist.txt (Success)
+[00:00:00]: Token retrieved from: /home/dst/.klei//DoNotStarveTogether/MyDediServer/cluster_token.txt
+[00:00:00]: Token retrieved from: /home/dst/.klei//DoNotStarveTogether/MyDediServer/cluster_token.txt
+[00:00:00]: THREAD - started 'StreamInput' (140474784413376)
+[00:00:00]: cGame::InitializeOnMainThread
+[00:00:00]: Renderer initialize: Okay
+[00:00:00]: AnimManager initialize: Okay
+[00:00:00]: Buffers initialize: Okay
+[00:00:00]: cDontStarveGame::DoGameSpecificInitialize()
+[00:00:00]: GameSpecific initialize: Okay
+[00:00:00]: cGame::StartPlaying
+[00:00:00]: AppVersion::GetArchitecture() x64
+[00:00:00]: LOADING LUA
+[00:00:00]: DoLuaFile scripts/main.lua
+[00:00:00]: DoLuaFile loading buffer scripts/main.lua
+[00:00:00]:   taskgrouplist:	default	Together	
+[00:00:00]:   taskgrouplist:	classic	Classic	
+[00:00:00]:   taskgrouplist:	cave_default	Underground	
+[00:00:00]:   taskgrouplist:	lavaarena_taskset	The Forge	
+[00:00:00]:   taskgrouplist:	quagmire_taskset	The Gorge	
+[00:00:00]: Running main.lua
+	
+[00:00:00]: loaded modindex	
+[00:00:00]: ModIndex: Beginning normal load sequence for dedicated server.
+	
+[00:00:01]: [Workshop] Item query page 0, size: 9, total size: 9
+[00:00:01]: [Workshop] Item query queued IDs: 3138571948 481765222 1185229307 3436020204 398858801 462434129 400409675 501387482 1077747217
+[00:00:01]: [Workshop] Item query sent
+[00:00:01]: [Workshop] ItemQuery got this many results: 9, matching: 9
+[00:00:01]: [Workshop] ModQuery got 9 results
+[00:00:01]: [Workshop] ModQuery already have IDs: {2.3.9,3138571948} {0.5,481765222} {96,1185229307} {2.0,3436020204} {1.8.4,398858801} {0.3.2,462434129} {0.5,400409675} {1.0,501387482} {1.0.8,1077747217}
+[00:00:01]: [Workshop] ItemQuery finished all queries, moving to download phase
+[00:00:01]: [Workshop] ItemQuery finished downloading everything
+[00:00:01]: SUCCESS: Loaded modoverrides.lua	
+[00:00:01]: modoverrides.lua enabling workshop-481765222	
+[00:00:01]: modoverrides.lua enabling workshop-3436020204	
+[00:00:01]: modoverrides.lua enabling workshop-1185229307	
+[00:00:01]: modoverrides.lua enabling workshop-1077747217	
+[00:00:01]: modoverrides.lua enabling workshop-3138571948	
+[00:00:01]: modoverrides.lua enabling workshop-501387482	
+[00:00:01]: modoverrides.lua enabling workshop-398858801	
+[00:00:01]: modoverrides.lua enabling workshop-462434129	
+[00:00:01]: modoverrides.lua enabling workshop-400409675	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-501387482	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-400409675	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1077747217	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-481765222	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-462434129	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-398858801	
+[00:00:01]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-1185229307	
+[00:00:01]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3436020204	
+[00:00:01]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3138571948	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-501387482_CLIENT	
+[00:00:01]: Loading mod: workshop-501387482 (Empty Inventory) Version:1.0	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-400409675_CLIENT	
+[00:00:01]: Loading mod: workshop-400409675 (Fire & Wall protection) Version:0.5	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-1077747217_CLIENT	
+[00:00:01]: Loading mod: workshop-1077747217 (Server Announcement) Version:1.0.8	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-481765222_CLIENT	
+[00:00:01]: Loading mod: workshop-481765222 (Ancient Altar) Version:0.5	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-462434129_CLIENT	
+[00:00:01]: Loading mod: workshop-462434129 (Restart) Version:0.3.2	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-398858801_CLIENT	
+[00:00:01]: Loading mod: workshop-398858801 (AFK Detection) Version:1.8.4	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-1185229307_CLIENT	
+[00:00:01]: Loading mod: workshop-1185229307 (Epic Healthbar) Version:96	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-3436020204_CLIENT	
+[00:00:01]: Loading mod: workshop-3436020204 (Show Me (Fixed)) Version:2.0	
+[00:00:01]: Could not load mod_config_data/modconfiguration_workshop-3138571948_CLIENT	
+[00:00:01]: Loading mod: workshop-3138571948 (Global Positions (CompleteSync)) Version:2.3.9	
+[00:00:01]: Mod: workshop-1185229307 (Epic Healthbar)	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-1185229307 (Epic Healthbar)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-1185229307 (Epic Healthbar)	Loading modmain.lua	
+[00:00:01]: Mod: workshop-3436020204 (Show Me (Fixed))	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-3436020204 (Show Me (Fixed))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-3436020204 (Show Me (Fixed))	Loading modmain.lua	
+[00:00:01]: ShowMe version:	2.0	
+[00:00:01]: show_food_units	-1	-1	-1	
+[00:00:01]: show_uses	-1	-1	-1	
+[00:00:01]: Detected language for ShowMe: 	auto		
+[00:00:01]: Mod: workshop-481765222 (Ancient Altar)	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-481765222 (Ancient Altar)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-481765222 (Ancient Altar)	Loading modmain.lua	
+[00:00:01]: Warning: function AddRecipe in modmain is deprecated, please use AddRecipe2. Recipe name:	altar_broken	
+[00:00:01]: Warning: function AddRecipe in modmain is deprecated, please use AddRecipe2. Recipe name:	thulecite_pieces	
+[00:00:01]: Mod: workshop-1077747217 (Server Announcement)	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-1077747217 (Server Announcement)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-1077747217 (Server Announcement)	Loading modmain.lua	
+[00:00:01]: Mod: workshop-501387482 (Empty Inventory)	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-501387482 (Empty Inventory)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-501387482 (Empty Inventory)	Loading modmain.lua	
+[00:00:01]: Mod: workshop-398858801 (AFK Detection)	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-398858801 (AFK Detection)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-398858801 (AFK Detection)	Loading modmain.lua	
+[00:00:01]: Mod: workshop-462434129 (Restart)	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-462434129 (Restart)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-462434129 (Restart)	Loading modmain.lua	
+[00:00:01]: Mod: workshop-400409675 (Fire & Wall protection)	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-400409675 (Fire & Wall protection)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-400409675 (Fire & Wall protection)	Loading modmain.lua	
+[00:00:01]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Loading modworldgenmain.lua	
+[00:00:01]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:01]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Loading modmain.lua	
+[00:00:01]: [global position (CompleteSync)] This is a new version without GemCore	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-501387482	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-400409675	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1077747217	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-481765222	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-462434129	
+[00:00:01]: ModIndex:GetModsToLoad inserting moddir, 	workshop-398858801	
+[00:00:01]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-1185229307	
+[00:00:01]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3436020204	
+[00:00:01]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3138571948	
+[00:00:01]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:03]: LOADING LUA SUCCESS
+[00:00:03]: Registering Server mod namespace "showmeshint"
+[00:00:03]: Registering Server mod namespace "globalpositioncompletesync"
+[00:00:03]: Registering Server mod namespace "showme"
+[00:00:03]: Registering Client mod namespace "workshop-1185229307"
+[00:00:03]: Registering Shard mod namespace "globalpositioncompletesync"
+[00:00:03]: PlayerDeaths could not load morgue	
+[00:00:03]: PlayerHistory could not load player_history	
+[00:00:03]: ServerPreferences could not load server_preferences	
+[00:00:03]: ConsoleScreenSettings could not load consolescreen	
+[00:00:03]: bloom_enabled	true	
+[00:00:03]: OnFilesLoaded()	
+[00:00:03]: OnUpdatePurchaseStateComplete	
+[00:00:03]: Klump load on boot started.	
+[00:00:03]: Klump files loaded: 	0	
+[00:00:04]: Mod: workshop-1185229307 (Epic Healthbar)	Registering prefabs	
+[00:00:04]: Mod: workshop-1185229307 (Epic Healthbar)	  Registering prefab file: prefabs/epichealth_proxy	
+[00:00:04]: Mod: workshop-1185229307 (Epic Healthbar)	    epichealth_proxy	
+[00:00:04]: Mod: workshop-1185229307 (Epic Healthbar)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-3436020204 (Show Me (Fixed))	Registering prefabs	
+[00:00:04]: Mod: workshop-3436020204 (Show Me (Fixed))	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-481765222 (Ancient Altar)	Registering prefabs	
+[00:00:04]: Mod: workshop-481765222 (Ancient Altar)	  Registering prefab file: prefabs/altar	
+[00:00:04]: Mod: workshop-481765222 (Ancient Altar)	    altar	
+[00:00:04]: Mod: workshop-481765222 (Ancient Altar)	    altar_broken	
+[00:00:04]: Mod: workshop-481765222 (Ancient Altar)	    altar_broken_placer	
+[00:00:04]: Mod: workshop-481765222 (Ancient Altar)	    altar_placer	
+[00:00:04]: Mod: workshop-481765222 (Ancient Altar)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-1077747217 (Server Announcement)	Registering prefabs	
+[00:00:04]: Mod: workshop-1077747217 (Server Announcement)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-501387482 (Empty Inventory)	Registering prefabs	
+[00:00:04]: Mod: workshop-501387482 (Empty Inventory)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-398858801 (AFK Detection)	Registering prefabs	
+[00:00:04]: Mod: workshop-398858801 (AFK Detection)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-462434129 (Restart)	Registering prefabs	
+[00:00:04]: Mod: workshop-462434129 (Restart)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-400409675 (Fire & Wall protection)	Registering prefabs	
+[00:00:04]: Mod: workshop-400409675 (Fire & Wall protection)	  Registering default mod prefab	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Registering prefabs	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/globalposition_classified	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    globalposition_classified	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/smoketrail	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    smoketrail	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    globalmapicon_noproxy	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/pings	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_generic	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_omw	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_danger	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_explore	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_gohere	
+[00:00:04]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering default mod prefab	
+[00:00:05]: 	Load FE	
+[00:00:05]: 	Load FE: done	
+[00:00:05]: THREAD - started 'FilesExistAsyncThread' (140474769520320)
+[00:00:05]: FilesExistAsyncThread started (26086 files)...
+[00:00:05]: Check for write access: TRUE
+[00:00:05]: Check for read access: TRUE
+[00:00:05]: Available disk space for save files: 19767 MB
+[00:00:05]: ModIndex: Load sequence finished successfully.	
+[00:00:05]: Reset() returning
+[00:00:05]: [200] Account Communication Success (6)
+[00:00:05]: Cached userid (null) saved to /home/dst/.klei//DoNotStarveTogether/MyDediServer/Master/save/cached_userid
+[00:00:05]: Received (KU_QFsp3bke) from TokenPurpose
+[00:00:05]: Starting Dedicated Server Game	
+[00:00:05]: Network tick rate: U=15(2), D=0
+[00:00:05]: About to start a server with the following settings:
+[00:00:05]:   Dedicated: true
+[00:00:05]:   Online: true
+[00:00:05]:   Passworded: false
+[00:00:05]:   ServerPort: 11000
+[00:00:05]:   SteamAuthPort: 8768
+[00:00:05]:   SteamMasterServerPort: 27018
+[00:00:05]:   ClanID: false
+[00:00:05]:   ClanOnly: false
+[00:00:05]:   ClanAdmin: false
+[00:00:05]:   LanOnly: false
+[00:00:05]:   FriendsOnly: false
+[00:00:05]:   EnableAutosaver: true
+[00:00:05]:   EncodeUserPath: true
+[00:00:05]:   PVP: false
+[00:00:05]:   MaxPlayers: 6
+[00:00:05]:   GameMode: survival
+[00:00:05]:   OverridenDNS: 
+[00:00:05]:   PauseWhenEmpty: true
+[00:00:05]:   IdleTimeout: 1800s
+[00:00:05]:   VoteEnabled: false
+[00:00:05]:   InternetBroadcasting: true
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-3436020204	
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-1185229307	
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-3138571948	
+[00:00:05]: Could not load mod_config_data/modconfiguration_workshop-481765222	
+[00:00:05]: Online Server Started on port: 11000
+[00:00:06]: SUCCESS: Loaded modoverrides.lua	
+[00:00:06]: Not applying level data overrides.	
+[00:00:06]: Found a worldgen override file with these contents:	
+[00:00:06]: 	K: 	override_enabled	 V: 	true	
+[00:00:06]: 	K: 	overrides	 V: 	table: 0x2dcd35b0	
+[00:00:06]: 		K: 	ancient_guardian	 V: 	NORMAL	
+[00:00:06]: 		K: 	autumn	 V: 	DEFAULT	
+[00:00:06]: 		K: 	bearger	 V: 	NORMAL	
+[00:00:06]: 		K: 	beefalo	 V: 	MORE	
+[00:00:06]: 		K: 	beequeen	 V: 	NORMAL	
+[00:00:06]: 		K: 	berries	 V: 	NORMAL	
+[00:00:06]: 		K: 	birds	 V: 	NORMAL	
+[00:00:06]: 		K: 	butterfly	 V: 	NORMAL	
+[00:00:06]: 		K: 	carrots	 V: 	ABUNDANT	
+[00:00:06]: 		K: 	cave	 V: 	NORMAL	
+[00:00:06]: 		K: 	deciduousforest	 V: 	NORMAL	
+[00:00:06]: 		K: 	deerclops	 V: 	NORMAL	
+[00:00:06]: 		K: 	desert	 V: 	NORMAL	
+[00:00:06]: 		K: 	disease	 V: 	NORMAL	
+[00:00:06]: 		K: 	dragonfly	 V: 	NORMAL	
+[00:00:06]: 		K: 	flint	 V: 	NORMAL	
+[00:00:06]: 		K: 	flowers	 V: 	NORMAL	
+[00:00:06]: 		K: 	forest	 V: 	NORMAL	
+[00:00:06]: 		K: 	gold	 V: 	NORMAL	
+[00:00:06]: 		K: 	grass	 V: 	NORMAL	
+[00:00:06]: 		K: 	grassland	 V: 	NORMAL	
+[00:00:06]: 		K: 	honey	 V: 	NORMAL	
+[00:00:06]: 		K: 	hounds	 V: 	RARE	
+[00:00:06]: 		K: 	lightning	 V: 	NORMAL	
+[00:00:06]: 		K: 	map_size	 V: 	LARGE	
+[00:00:06]: 		K: 	marsh	 V: 	NORMAL	
+[00:00:06]: 		K: 	merms	 V: 	NORMAL	
+[00:00:06]: 		K: 	moosegoose	 V: 	NORMAL	
+[00:00:06]: 		K: 	mushrooms	 V: 	NORMAL	
+[00:00:06]: 		K: 	nitre	 V: 	NORMAL	
+[00:00:06]: 		K: 	penguins	 V: 	NORMAL	
+[00:00:06]: 		K: 	pigs	 V: 	NORMAL	
+[00:00:06]: 		K: 	rabbits	 V: 	NORMAL	
+[00:00:06]: 		K: 	rain	 V: 	NORMAL	
+[00:00:06]: 		K: 	reeds	 V: 	NORMAL	
+[00:00:06]: 		K: 	regrowth	 V: 	NORMAL	
+[00:00:06]: 		K: 	resets	 V: 	NORMAL	
+[00:00:06]: 		K: 	rocks	 V: 	NORMAL	
+[00:00:06]: 		K: 	rocky	 V: 	NORMAL	
+[00:00:06]: 		K: 	saplings	 V: 	NORMAL	
+[00:00:06]: 		K: 	savanna	 V: 	NORMAL	
+[00:00:06]: 		K: 	spiders	 V: 	NEAREST	
+[00:00:06]: 		K: 	spring	 V: 	DEFAULT	
+[00:00:06]: 		K: 	start_action	 V: 	DEFAULT	
+[00:00:06]: 		K: 	summer	 V: 	DEFAULT	
+[00:00:06]: 		K: 	tallbirds	 V: 	NORMAL	
+[00:00:06]: 		K: 	tentacles	 V: 	NORMAL	
+[00:00:06]: 		K: 	trees	 V: 	NORMAL	
+[00:00:06]: 		K: 	varg	 V: 	NEVER	
+[00:00:06]: 		K: 	winter	 V: 	LONG	
+[00:00:06]:   sanity-checking worldgenoverride.lua...	
+[00:00:06]:     WARNING! Found value 'MORE' for setting 'beefalo', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found value 'DEFAULT' for setting 'autumn', but this is not a valid value. Use one of {noseason, veryshortseason, shortseason, default, longseason, verylongseason, random}.	
+[00:00:06]:     WARNING! Found value 'DEFAULT' for setting 'spring', but this is not a valid value. Use one of {noseason, veryshortseason, shortseason, default, longseason, verylongseason, random}.	
+[00:00:06]:     WARNING! Found value 'RARE' for setting 'hounds', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'bearger', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'flowers', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found override 'map_size', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'lightning', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'flint', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found override 'moosegoose', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'disease', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'DEFAULT' for setting 'summer', but this is not a valid value. Use one of {noseason, veryshortseason, shortseason, default, longseason, verylongseason, random}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'dragonfly', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'deerclops', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'tentacles', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'beequeen', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found value 'LONG' for setting 'winter', but this is not a valid value. Use one of {noseason, veryshortseason, shortseason, default, longseason, verylongseason, random}.	
+[00:00:06]:     WARNING! Found override 'varg', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'trees', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'tallbirds', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found override 'start_action', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NEAREST' for setting 'spiders', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found override 'savanna', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'desert', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'saplings', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'berries', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'rocky', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'birds', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found override 'rocks', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'gold', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'resets', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'regrowth', but this is not a valid value. Use one of {never, veryslow, slow, default, fast, veryfast}.	
+[00:00:06]:     WARNING! Found override 'mushrooms', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'marsh', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'rabbits', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found override 'rain', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'reeds', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'grass', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found override 'nitre', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'ancient_guardian', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'butterfly', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found override 'forest', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'carrots', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'penguins', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found override 'grassland', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'merms', but this is not a valid value. Use one of {never, rare, default, often, always}.	
+[00:00:06]:     WARNING! Found override 'honey', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found value 'NORMAL' for setting 'pigs', but this is not a valid value. Use one of {never, rare, uncommon, default, often, mostly, always, insane}.	
+[00:00:06]:     WARNING! Found override 'deciduousforest', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]:     WARNING! Found override 'cave', but this doesn't match any known option. Did you make a typo?	
+[00:00:06]: Loaded and applied world gen overrides from ../worldgenoverride.lua	
+[00:00:06]: Merging override file into savedata.	
+[00:00:06]: Collecting garbage...
+[00:00:06]: lua_gc took 0.21 seconds
+[00:00:06]: ~ShardLuaProxy()
+[00:00:06]: ~cEventLeaderboardProxy()
+[00:00:06]: ~ItemServerLuaProxy()
+[00:00:06]: ~InventoryLuaProxy()
+[00:00:06]: ~NetworkLuaProxy()
+[00:00:06]: ~SimLuaProxy()
+[00:00:06]: FilesExistAsyncThread aborted.
+[00:00:06]: ... FilesExistAsyncThread complete
+[00:00:06]: lua_close took 0.15 seconds
+[00:00:06]: ReleaseAll
+[00:00:06]: ReleaseAll Finished
+[00:00:06]: cGame::StartPlaying
+[00:00:06]: AppVersion::GetArchitecture() x64
+[00:00:06]: LOADING LUA
+[00:00:06]: DoLuaFile scripts/main.lua
+[00:00:06]: DoLuaFile loading buffer scripts/main.lua
+[00:00:06]:   taskgrouplist:	default	Together	
+[00:00:06]:   taskgrouplist:	classic	Classic	
+[00:00:06]:   taskgrouplist:	cave_default	Underground	
+[00:00:06]:   taskgrouplist:	lavaarena_taskset	The Forge	
+[00:00:06]:   taskgrouplist:	quagmire_taskset	The Gorge	
+[00:00:06]: Running main.lua
+	
+[00:00:06]: loaded modindex	
+[00:00:06]: ModIndex: Beginning normal load sequence for dedicated server.
+	
+[00:00:06]: SUCCESS: Loaded modoverrides.lua	
+[00:00:06]: modoverrides.lua enabling workshop-481765222	
+[00:00:06]: modoverrides.lua enabling workshop-3436020204	
+[00:00:06]: modoverrides.lua enabling workshop-1185229307	
+[00:00:06]: modoverrides.lua enabling workshop-1077747217	
+[00:00:06]: modoverrides.lua enabling workshop-3138571948	
+[00:00:06]: modoverrides.lua enabling workshop-501387482	
+[00:00:06]: modoverrides.lua enabling workshop-398858801	
+[00:00:06]: modoverrides.lua enabling workshop-462434129	
+[00:00:06]: modoverrides.lua enabling workshop-400409675	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-501387482	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-400409675	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1077747217	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-481765222	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-462434129	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-398858801	
+[00:00:06]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-1185229307	
+[00:00:06]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3138571948	
+[00:00:06]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3436020204	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-501387482	
+[00:00:06]: Loading mod: workshop-501387482 (Empty Inventory) Version:1.0	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-400409675	
+[00:00:06]: Loading mod: workshop-400409675 (Fire & Wall protection) Version:0.5	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-1077747217	
+[00:00:06]: Loading mod: workshop-1077747217 (Server Announcement) Version:1.0.8	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-481765222	
+[00:00:06]: Loading mod: workshop-481765222 (Ancient Altar) Version:0.5	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-462434129	
+[00:00:06]: Loading mod: workshop-462434129 (Restart) Version:0.3.2	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-398858801	
+[00:00:06]: Loading mod: workshop-398858801 (AFK Detection) Version:1.8.4	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-1185229307	
+[00:00:06]: Loading mod: workshop-1185229307 (Epic Healthbar) Version:96	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-3138571948	
+[00:00:06]: Loading mod: workshop-3138571948 (Global Positions (CompleteSync)) Version:2.3.9	
+[00:00:06]: Could not load mod_config_data/modconfiguration_workshop-3436020204	
+[00:00:06]: Loading mod: workshop-3436020204 (Show Me (Fixed)) Version:2.0	
+[00:00:06]: Mod: workshop-1185229307 (Epic Healthbar)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-1185229307 (Epic Healthbar)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-1185229307 (Epic Healthbar)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-3436020204 (Show Me (Fixed))	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-3436020204 (Show Me (Fixed))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-3436020204 (Show Me (Fixed))	Loading modmain.lua	
+[00:00:06]: ShowMe version:	2.0	
+[00:00:06]: show_food_units	-1	-1	-1	
+[00:00:06]: show_uses	-1	-1	-1	
+[00:00:06]: Detected language for ShowMe: 	auto		
+[00:00:06]: Mod: workshop-481765222 (Ancient Altar)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-481765222 (Ancient Altar)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-481765222 (Ancient Altar)	Loading modmain.lua	
+[00:00:06]: Warning: function AddRecipe in modmain is deprecated, please use AddRecipe2. Recipe name:	altar_broken	
+[00:00:06]: Warning: function AddRecipe in modmain is deprecated, please use AddRecipe2. Recipe name:	thulecite_pieces	
+[00:00:06]: Mod: workshop-1077747217 (Server Announcement)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-1077747217 (Server Announcement)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-1077747217 (Server Announcement)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-501387482 (Empty Inventory)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-501387482 (Empty Inventory)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-501387482 (Empty Inventory)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-398858801 (AFK Detection)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-398858801 (AFK Detection)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-398858801 (AFK Detection)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-462434129 (Restart)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-462434129 (Restart)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-462434129 (Restart)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-400409675 (Fire & Wall protection)	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-400409675 (Fire & Wall protection)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-400409675 (Fire & Wall protection)	Loading modmain.lua	
+[00:00:06]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Loading modworldgenmain.lua	
+[00:00:06]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:00:06]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Loading modmain.lua	
+[00:00:06]: [global position (CompleteSync)] This is a new version without GemCore	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-501387482	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-400409675	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1077747217	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-481765222	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-462434129	
+[00:00:06]: ModIndex:GetModsToLoad inserting moddir, 	workshop-398858801	
+[00:00:06]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-1185229307	
+[00:00:06]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3138571948	
+[00:00:06]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3436020204	
+[00:00:07]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:00:07]: LOADING LUA SUCCESS
+[00:00:07]: Registering Server mod namespace "showmeshint"
+[00:00:07]: Registering Server mod namespace "globalpositioncompletesync"
+[00:00:07]: Registering Server mod namespace "showme"
+[00:00:07]: Registering Client mod namespace "workshop-1185229307"
+[00:00:07]: Registering Shard mod namespace "globalpositioncompletesync"
+[00:00:07]: PlayerDeaths could not load morgue	
+[00:00:07]: PlayerHistory could not load player_history	
+[00:00:07]: ServerPreferences could not load server_preferences	
+[00:00:07]: ConsoleScreenSettings could not load consolescreen	
+[00:00:07]: bloom_enabled	true	
+[00:00:07]: OnFilesLoaded()	
+[00:00:07]: OnUpdatePurchaseStateComplete	
+[00:00:07]: Loading world: session/63A7BB65AB4DE346/0000000003	
+[00:00:07]: Save file is at version 5.155	
+[00:00:07]: Klump load on boot started.	
+[00:00:07]: Klump files loaded: 	0	
+[00:00:07]: 	Unload FE	
+[00:00:07]: 	Unload FE done	
+[00:00:09]: Mod: workshop-1185229307 (Epic Healthbar)	Registering prefabs	
+[00:00:09]: Mod: workshop-1185229307 (Epic Healthbar)	  Registering prefab file: prefabs/epichealth_proxy	
+[00:00:09]: Mod: workshop-1185229307 (Epic Healthbar)	    epichealth_proxy	
+[00:00:09]: Mod: workshop-1185229307 (Epic Healthbar)	  Registering default mod prefab	
+[00:00:09]: Mod: workshop-3436020204 (Show Me (Fixed))	Registering prefabs	
+[00:00:09]: Mod: workshop-3436020204 (Show Me (Fixed))	  Registering default mod prefab	
+[00:00:09]: Mod: workshop-481765222 (Ancient Altar)	Registering prefabs	
+[00:00:09]: Mod: workshop-481765222 (Ancient Altar)	  Registering prefab file: prefabs/altar	
+[00:00:09]: Mod: workshop-481765222 (Ancient Altar)	    altar	
+[00:00:09]: Mod: workshop-481765222 (Ancient Altar)	    altar_broken	
+[00:00:09]: Mod: workshop-481765222 (Ancient Altar)	    altar_broken_placer	
+[00:00:09]: Mod: workshop-481765222 (Ancient Altar)	    altar_placer	
+[00:00:09]: Mod: workshop-481765222 (Ancient Altar)	  Registering default mod prefab	
+[00:00:09]: Mod: workshop-1077747217 (Server Announcement)	Registering prefabs	
+[00:00:09]: Mod: workshop-1077747217 (Server Announcement)	  Registering default mod prefab	
+[00:00:09]: Mod: workshop-501387482 (Empty Inventory)	Registering prefabs	
+[00:00:09]: Mod: workshop-501387482 (Empty Inventory)	  Registering default mod prefab	
+[00:00:09]: Mod: workshop-398858801 (AFK Detection)	Registering prefabs	
+[00:00:09]: Mod: workshop-398858801 (AFK Detection)	  Registering default mod prefab	
+[00:00:09]: Mod: workshop-462434129 (Restart)	Registering prefabs	
+[00:00:09]: Mod: workshop-462434129 (Restart)	  Registering default mod prefab	
+[00:00:09]: Mod: workshop-400409675 (Fire & Wall protection)	Registering prefabs	
+[00:00:09]: Mod: workshop-400409675 (Fire & Wall protection)	  Registering default mod prefab	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Registering prefabs	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/globalposition_classified	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    globalposition_classified	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/smoketrail	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    smoketrail	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    globalmapicon_noproxy	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/pings	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_generic	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_omw	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_danger	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_explore	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_gohere	
+[00:00:09]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering default mod prefab	
+[00:00:09]: 	LOAD BE	
+[00:00:20]: 	LOAD BE: done	
+[00:00:20]: Begin Session: 63A7BB65AB4DE346
+[00:00:20]: saving to server_temp/server_save	
+[00:00:20]: OVERRIDE: setting	regrowth	to	NORMAL	
+[00:00:20]: OVERRIDE: setting	bearger	to	NORMAL	
+[00:00:20]: OVERRIDE: setting	deerclops	to	NORMAL	
+[00:00:20]: OVERRIDE: setting	merms	to	NORMAL	
+[00:00:20]: OVERRIDE: setting	birds	to	NORMAL	
+[00:00:20]: OVERRIDE: setting	penguins	to	NORMAL	
+[00:00:20]: OVERRIDE: setting	beequeen	to	NORMAL	
+[00:00:20]: OVERRIDE: setting	dragonfly	to	NORMAL	
+[00:00:20]: OVERRIDE: setting	butterfly	to	NORMAL	
+[00:00:20]: MiniMapComponent::AddAtlas( minimap/minimap_data1.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( minimap/minimap_data2.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-481765222/images/inventoryimages/altar.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-481765222/images/inventoryimages/altar_broken.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/campfire.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_generic.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_gohere.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_explore.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_danger.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_omw.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/beef_bell_linked.xml )
+[00:00:20]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/shadow_beef_bell_linked.xml )
+[00:00:20]: OLD[global position (CompleteSync)]The maprecorder is empty, are you starting a new game or adding this mod to old game?	
+[00:00:20]: Loading 19 new character(s)	
+[00:00:22]: Total 19 character(s) loaded	
+[00:00:22]: Loading Nav Grid	
+[00:00:22]: World generated on build 665003 with save version: 5.155, using seed: 321516905	
+[00:00:22]: setting 	summerlength	15	
+[00:00:22]: setting 	cavemoonphase	new	
+[00:00:22]: setting 	iscavefullmoon	false	
+[00:00:22]: setting 	isnightmaredawn	false	
+[00:00:22]: setting 	elapseddaysinseason	0	
+[00:00:22]: setting 	isfullmoon	false	
+[00:00:22]: setting 	moisture	0.033333335071802	
+[00:00:22]: setting 	springlength	20	
+[00:00:22]: setting 	islunarhailing	false	
+[00:00:22]: setting 	isnightmarewild	false	
+[00:00:22]: setting 	nightmaretimeinphase	0	
+[00:00:22]: setting 	precipitationrate	0	
+[00:00:22]: setting 	iswet	false	
+[00:00:22]: setting 	isnewmoon	false	
+[00:00:22]: setting 	israining	false	
+[00:00:22]: setting 	iswinter	false	
+[00:00:22]: setting 	isnightmarewarn	false	
+[00:00:22]: setting 	precipitation	none	
+[00:00:22]: setting 	iscavewaxingmoon	true	
+[00:00:22]: setting 	isacidraining	false	
+[00:00:22]: setting 	moonphase	new	
+[00:00:22]: setting 	remainingdaysinseason	20	
+[00:00:22]: setting 	temperature	30.033215977556	
+[00:00:22]: setting 	wetness	0	
+[00:00:22]: setting 	cycles	0	
+[00:00:22]: setting 	moistureceil	795.51788330078	
+[00:00:22]: setting 	isday	true	
+[00:00:22]: setting 	winterlength	15	
+[00:00:22]: setting 	season	autumn	
+[00:00:22]: setting 	iswaxingmoon	true	
+[00:00:22]: setting 	isalterawake	false	
+[00:00:22]: setting 	isnightmarecalm	false	
+[00:00:22]: setting 	isnight	false	
+[00:00:22]: setting 	isdusk	false	
+[00:00:22]: setting 	isspring	false	
+[00:00:22]: setting 	isautumn	true	
+[00:00:22]: setting 	iscaveday	true	
+[00:00:22]: setting 	lunarhaillevel	0	
+[00:00:22]: setting 	pop	4.1901427700776e-05	
+[00:00:22]: setting 	snowlevel	0	
+[00:00:22]: setting 	issnowcovered	false	
+[00:00:22]: setting 	autumnlength	20	
+[00:00:22]: setting 	phase	day	
+[00:00:22]: setting 	nightmaretime	0	
+[00:00:22]: setting 	issnowing	false	
+[00:00:22]: setting 	iscavedusk	false	
+[00:00:22]: setting 	nightmarephase	none	
+[00:00:22]: setting 	timeinphase	0.000555674235026	
+[00:00:22]: setting 	seasonprogress	0.5	
+[00:00:22]: setting 	iscavenight	false	
+[00:00:22]: setting 	iscavenewmoon	false	
+[00:00:22]: setting 	issummer	false	
+[00:00:22]: setting 	cavephase	day	
+[00:00:22]: setting 	time	0.000277837117513	
+[00:00:22]: Connected shards:	
+[00:00:22]: OVERRIDE: setting	autumn	to	DEFAULT	
+[00:00:22]: OVERRIDE: setting	spring	to	DEFAULT	
+[00:00:22]: OVERRIDE: setting	hounds	to	RARE	
+[00:00:22]: OVERRIDE: setting	winter	to	LONG	
+[00:00:22]: OVERRIDE: setting	lightning	to	NORMAL	
+[00:00:22]: OVERRIDE: setting	summer	to	DEFAULT	
+[00:00:33]: Reconstructing topology	
+[00:00:33]: 	...Sorting points	
+[00:00:33]: 	...Sorting edges	
+[00:00:33]: 	...Connecting nodes	
+[00:00:33]: 	...Validating connections	
+[00:00:33]: 	...Housekeeping	
+[00:00:33]: 	...Done!	
+[00:00:33]: in worldprefab postinit	
+[00:00:33]: [global position (CompleteSync)]The world is newly created	
+[00:00:33]: [global position (CompleteSync)]The maprecorder is empty, are you starting a new game or adding this mod to old game?	
+[00:00:33]: 1 uploads added to server. From server_temp
+[00:00:33]: About to start a shard with these settings:
+[00:00:33]:   ShardName: [SHDMASTER]
+[00:00:33]:   ShardID: 1
+[00:00:33]:   ShardRole: MASTER
+[00:00:33]:   MasterHost: (null)
+[00:00:33]:   MasterBind: 137.184.177.152
+[00:00:33]:   MasterPort: 10889
+[00:00:33]: [Shard] Starting master server
+[00:00:33]: [Shard] Shard server started on port: 10889
+[00:00:33]: Telling Client our new session identifier: 63A7BB65AB4DE346
+[00:00:33]: Check for write access: TRUE
+[00:00:33]: Check for read access: TRUE
+[00:00:33]: Available disk space for save files: 19767 MB
+[00:00:33]: ModIndex: Load sequence finished successfully.	
+[00:00:33]: Reset() returning
+[00:00:34]: Validating portal[6] <-> 66450907[6] (inactive)	
+[00:00:34]: Validating portal[10] <-> 66450907[10] (inactive)	
+[00:00:34]: Validating portal[2] <-> 66450907[2] (inactive)	
+[00:00:35]: Validating portal[3] <-> 66450907[3] (inactive)	
+[00:00:35]: Validating portal[8] <-> 66450907[8] (inactive)	
+[00:00:35]: Validating portal[9] <-> 66450907[9] (inactive)	
+[00:00:35]: Validating portal[7] <-> 66450907[7] (inactive)	
+[00:00:35]: Validating portal[4] <-> 66450907[4] (inactive)	
+[00:00:35]: Validating portal[1] <-> 66450907[1] (inactive)	
+[00:00:35]: Validating portal[5] <-> 66450907[5] (inactive)	
+[00:00:35]: Server registered via geo DNS in us-east-1
+[00:00:35]: Sim paused
+[00:00:35]: [Shard] Secondary shard Caves(66450907) connected: [LAN] 137.184.177.152
+[00:00:36]: [Shard] Secondary Caves(66450907) ready!
+[00:00:36]: World 66450907 is now connected	
+[00:00:36]: Validating portal[6] <-> 66450907[6] (disabled)	
+[00:00:36]: Validating portal[10] <-> 66450907[10] (disabled)	
+[00:00:36]: Validating portal[2] <-> 66450907[2] (disabled)	
+[00:00:36]: Validating portal[3] <-> 66450907[3] (disabled)	
+[00:00:36]: Validating portal[8] <-> 66450907[8] (disabled)	
+[00:00:36]: Validating portal[9] <-> 66450907[9] (disabled)	
+[00:00:36]: Validating portal[7] <-> 66450907[7] (disabled)	
+[00:00:36]: Validating portal[4] <-> 66450907[4] (disabled)	
+[00:00:36]: Validating portal[1] <-> 66450907[1] (disabled)	
+[00:00:36]: Validating portal[5] <-> 66450907[5] (disabled)	
+[00:00:59]: New incoming connection 184.96.155.149|42999 <4651887272363088694>
+[00:00:59]: Client connected from 184.96.155.149|42999 <4651887272363088694>
+[00:00:59]: ValidateGameSessionToken GUID<4651887272363088694>
+[00:01:00]: Client authenticated: (KU_QFsp3bke) FrankTheTank
+[00:01:00]: [Steam] Authenticated host '76561198017165291'
+[00:01:00]: There is no active event to validate against.
+[00:01:00]: [Shard] Read save location file for (KU_QFsp3bke)
+[00:01:28]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPGSMT8
+[00:03:29]: Spawn request: willow from FrankTheTank
+[00:03:29]: Skin request: () () () () ()
+[00:03:29]: Skill Selection request: 32768
+[00:03:29]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:03:29]: User ID	KU_QFsp3bke	assigned ownership to entity	117539 - willow	
+[00:03:29]: Spawning player at: [Fixed] (22.00, 0.00, 82.00)	
+[00:03:29]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000004
+[00:03:29]: Sim unpaused
+[00:03:30]: [global position (CompleteSync)]Player joined	
+[00:03:30]: [global position (CompleteSync)] learning from buffer	
+[00:03:30]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:03:30]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:03:30]: [global position (CompleteSync)] failed BLANK	
+[00:03:43]: Server Autopaused	
+[00:03:44]: Server Unpaused	
+[00:03:58]: Server Autopaused	
+[00:04:00]: Server Unpaused	
+[00:04:00]: Server Autopaused	
+[00:04:02]: Server Unpaused	
+[00:04:04]: Server Autopaused	
+[00:04:12]: Server Unpaused	
+[00:08:45]: Server Autopaused	
+[00:08:49]: Server Unpaused	
+[00:09:21]: New incoming connection 184.96.155.149|50558 <1833940523232598887>
+[00:09:21]: Client connected from 184.96.155.149|50558 <1833940523232598887>
+[00:09:21]: ValidateGameSessionToken GUID<1833940523232598887>
+[00:09:21]: Client authenticated: (KU_QFsp4GB2) slyburger
+[00:09:21]: [Steam] SendUserConnectAndAuthenticate for '76561199794213424'
+[00:09:21]: [Steam] Authenticated client '76561199794213424'
+[00:09:22]: There is no active event to validate against.
+[00:09:22]: [Shard] Read save location file for (KU_QFsp4GB2)
+[00:09:40]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPH20M2
+[00:10:14]: Spawn request: woodie from slyburger
+[00:10:14]: Skin request: () (body_flannel_grey_silver) () () ()
+[00:10:14]: Skill Selection request: 16515072
+[00:10:14]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:10:14]: User ID	KU_QFsp4GB2	assigned ownership to entity	119282 - woodie	
+[00:10:14]: Spawning player at: [Fixed] (22.00, 0.00, 82.00)	
+[00:10:14]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000004
+[00:10:14]: [global position (CompleteSync)]Player joined	
+[00:10:14]: [global position (CompleteSync)] saving to buffer	
+[00:10:14]: [global position (CompleteSync)] success to saving to buffer	
+[00:10:14]: [global position (CompleteSync)] old_data is nil	
+[00:10:14]: [global position (CompleteSync)] IncreaseCounter	
+[00:10:14]: [global position (CompleteSync)] new _restoredworldnum	1	
+[00:10:14]: [global position (CompleteSync)] totalsharded	2	
+[00:10:14]: [global position (CompleteSync)] learning from buffer	
+[00:10:14]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:10:14]: [global position (CompleteSync)] _restoredworldnumdirty current value	1	
+[00:10:14]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:10:15]: [global position (CompleteSync)] succeed	
+[00:10:47]: [global position (CompleteSync)]Player despawned	
+[00:10:47]: [global position (CompleteSync)] saving to buffer	
+[00:10:47]: [global position (CompleteSync)] success to saving to buffer	
+[00:10:47]: [Steam] SendUserDisconnect for '76561199794213424'
+[00:10:47]: [Shard] (KU_QFsp4GB2) disconnected from [SHDMASTER](1)
+[00:10:48]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000004
+[00:10:48]: New incoming connection 98.148.73.173|60120 <7906664296356450292>
+[00:10:48]: Client connected from 98.148.73.173|60120 <7906664296356450292>
+[00:10:48]: ValidateGameSessionToken GUID<7906664296356450292>
+[00:10:49]: Client authenticated: (KU_ULXneAGg) Dynaax
+[00:10:49]: [Steam] SendUserConnectAndAuthenticate for '76561198044428300'
+[00:10:49]: [Steam] Authenticated client '76561198044428300'
+[00:10:49]: There is no active event to validate against.
+[00:10:49]: [Shard] Read save location file for (KU_ULXneAGg)
+[00:10:54]: [global position (CompleteSync)]Player despawned	
+[00:10:54]: [global position (CompleteSync)] saving to buffer	
+[00:10:54]: [global position (CompleteSync)] success to saving to buffer	
+[00:10:54]: [Steam] SendUserDisconnect for '76561198017165291'
+[00:10:54]: [Shard] (KU_QFsp3bke) disconnected from [SHDMASTER](1)
+[00:10:54]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000004
+[00:10:54]: Sim paused
+[00:11:20]: Resuming user: session/63A7BB65AB4DE346/A7JPB1OQ191A
+[00:11:29]: [Steam] SendUserDisconnect for '76561198044428300'
+[00:11:29]: [Shard] (KU_ULXneAGg) disconnected from [SHDMASTER](1)
+[00:12:55]: New incoming connection 184.96.155.149|60361 <3924160442138682366>
+[00:12:55]: Client connected from 184.96.155.149|60361 <3924160442138682366>
+[00:12:55]: ValidateGameSessionToken GUID<3924160442138682366>
+[00:12:56]: Client authenticated: (KU_QFsp4GB2) slyburger
+[00:12:56]: [Steam] SendUserConnectAndAuthenticate for '76561199794213424'
+[00:12:56]: [Steam] Authenticated client '76561199794213424'
+[00:12:57]: There is no active event to validate against.
+[00:12:57]: [Shard] Read save location file for (KU_QFsp4GB2)
+[00:13:14]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000004
+[00:13:14]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:13:14]: User ID	KU_QFsp4GB2	assigned ownership to entity	119578 - woodie	
+[00:13:14]: Spawning player at: [Load] (3.83, 0.00, 49.73)	
+[00:13:14]: Sim unpaused
+[00:13:14]: [global position (CompleteSync)]Player joined	
+[00:13:14]: [global position (CompleteSync)] learning from buffer	
+[00:13:14]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:13:14]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:13:15]: [global position (CompleteSync)] succeed	
+[00:13:30]: New incoming connection 184.96.155.149|46486 <5920038416650269460>
+[00:13:30]: Client connected from 184.96.155.149|46486 <5920038416650269460>
+[00:13:30]: ValidateGameSessionToken GUID<5920038416650269460>
+[00:13:30]: Client authenticated: (KU_QFsp3bke) FrankTheTank
+[00:13:30]: [Steam] Authenticated host '76561198017165291'
+[00:13:31]: There is no active event to validate against.
+[00:13:31]: [Shard] Read save location file for (KU_QFsp3bke)
+[00:13:58]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000004
+[00:13:58]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:13:58]: User ID	KU_QFsp3bke	assigned ownership to entity	119683 - willow	
+[00:13:58]: Spawning player at: [Load] (-24.82, 0.00, 39.48)	
+[00:13:58]: [global position (CompleteSync)]Player joined	
+[00:13:58]: [global position (CompleteSync)] saving to buffer	
+[00:13:58]: [global position (CompleteSync)] success to saving to buffer	
+[00:13:58]: [global position (CompleteSync)] learning from buffer	
+[00:13:58]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:13:59]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:13:59]: [global position (CompleteSync)] succeed	
+[00:14:06]: Available disk space for save files: 19767 MB
+[00:14:06]: [global position (CompleteSync)] saving to buffer	
+[00:14:06]: [global position (CompleteSync)] success to saving to buffer	
+[00:14:06]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000004
+[00:14:06]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000004
+[00:14:07]: Serializing world: session/63A7BB65AB4DE346/0000000004
+[00:14:34]: [(KU_QFsp3bke) FrankTheTank] ReceiveRemoteExecute(list()) @(4.25, 31.67)
+[00:14:34]: Start whitelist	
+[00:14:34]: End whitelist	
+[00:14:48]: [(KU_QFsp3bke) FrankTheTank] ReceiveRemoteExecute(addlist(1)) @(6.50, 21.47)
+[00:14:48]: Player 	slyburger	 using 	woodie	 with id 	KU_QFsp4GB2	 got added to the whitelist.	
+[00:14:55]: [(KU_QFsp3bke) FrankTheTank] ReceiveRemoteExecute(addlist92)) @(7.04, 20.93)
+[00:14:55]: attempt to call a nil value
+[00:15:00]: [(KU_QFsp3bke) FrankTheTank] ReceiveRemoteExecute(addlist(2)) @(7.04, 20.93)
+[00:15:00]: Player 	FrankTheTank	 using 	willow	 with id 	KU_QFsp3bke	 got added to the whitelist.	
+[00:22:07]: Available disk space for save files: 19761 MB
+[00:22:07]: [global position (CompleteSync)] saving to buffer	
+[00:22:07]: [global position (CompleteSync)] success to saving to buffer	
+[00:22:07]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000005
+[00:22:07]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000005
+[00:22:07]: Serializing world: session/63A7BB65AB4DE346/0000000005
+[00:22:43]: Validating portal[8] <-> 66450907[8] (active)	
+[00:23:08]: Activating portal[8] to 66450907	
+[00:23:08]: [global position (CompleteSync)]Player despawned and migrate	
+[00:23:08]: [global position (CompleteSync)] saving to buffer	
+[00:23:08]: [global position (CompleteSync)] success to saving to buffer	
+[00:23:09]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000006
+[00:23:09]: [Shard] Migration request: (KU_QFsp4GB2) to Caves(66450907)
+[00:23:09]: [Shard] Begin migration #1 for (KU_QFsp4GB2)
+[00:23:09]: [Shard] #1 [SHDMASTER](1) -> Caves(66450907)
+[00:23:09]: [Shard] #1 <- session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000006
+[00:23:09]: [Shard] Writing save location file for (KU_QFsp4GB2)
+[00:23:09]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[00:23:09]: [Steam] SendUserDisconnect for '76561199794213424'
+[00:23:09]: [Shard] (KU_QFsp4GB2) disconnected from [SHDMASTER](1)
+[00:23:12]: [Shard] Completed migration #1 for player (KU_QFsp4GB2)
+[00:24:41]: [global position (CompleteSync)] Shard want to IncreaseCounter, recieve a RPC	
+[00:24:41]: [global position (CompleteSync)] IncreaseCounter	
+[00:24:41]: [global position (CompleteSync)] new _restoredworldnum	2	
+[00:24:41]: [global position (CompleteSync)] totalsharded	2	
+[00:24:41]: [global position (CompleteSync)] All shards have been restored	
+[00:24:41]: [global position (CompleteSync)] _restoredworldnumdirty current value	2	
+[00:24:42]: [Shard] Begin migration #2 for (KU_QFsp4GB2)
+[00:24:42]: [Shard] #2 Caves(66450907) -> [SHDMASTER](1)
+[00:24:42]: [Shard] #2 -> session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000006
+[00:24:42]: [Shard] Received migration #2 data for (KU_QFsp4GB2)
+[00:24:42]: [Shard] Writing save location file for (KU_QFsp4GB2)
+[00:24:42]: [Shard] (KU_QFsp4GB2) disconnected from Caves(66450907)
+[00:24:44]: New incoming connection 184.96.155.149|51881 <6275046027948119930>
+[00:24:44]: Client connected from 184.96.155.149|51881 <6275046027948119930>
+[00:24:44]: ValidateGameSessionToken GUID<6275046027948119930>
+[00:24:44]: Client authenticated: (KU_QFsp4GB2) slyburger
+[00:24:44]: [Steam] SendUserConnectAndAuthenticate for '76561199794213424'
+[00:24:45]: [Steam] Authenticated client '76561199794213424'
+[00:24:45]: [Shard] Completed incoming migration #2 for (KU_QFsp4GB2)
+[00:24:45]: [Shard] Completed migration #2 for player (KU_QFsp4GB2)
+[00:24:54]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000006
+[00:24:54]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:24:54]: User ID	KU_QFsp4GB2	assigned ownership to entity	122448 - woodie	
+[00:24:54]: Player will spawn close to portal #8	
+[00:24:54]: Spawning player at: [Load] (67.18, 0.00, 112.39)	
+[00:24:54]: [global position (CompleteSync)]Player joined	
+[00:24:54]: [global position (CompleteSync)] saving to buffer	
+[00:24:54]: [global position (CompleteSync)] success to saving to buffer	
+[00:24:54]: [global position (CompleteSync)] learning from buffer	
+[00:24:54]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:24:55]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:24:55]: [global position (CompleteSync)] succeed	
+[00:30:05]: [200] Account Communication Success (6)
+[00:30:05]: Received (KU_QFsp3bke) from TokenPurpose
+[00:30:07]: Available disk space for save files: 19754 MB
+[00:30:08]: [global position (CompleteSync)] saving to buffer	
+[00:30:08]: [global position (CompleteSync)] success to saving to buffer	
+[00:30:08]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000006
+[00:30:08]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000006
+[00:30:08]: Serializing world: session/63A7BB65AB4DE346/0000000006
+[00:33:13]: [global position (CompleteSync)]Player despawned	
+[00:33:13]: [global position (CompleteSync)] saving to buffer	
+[00:33:13]: [global position (CompleteSync)] success to saving to buffer	
+[00:33:13]: [Steam] SendUserDisconnect for '76561199794213424'
+[00:33:13]: [Shard] (KU_QFsp4GB2) disconnected from [SHDMASTER](1)
+[00:33:14]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000007
+[00:34:45]: New incoming connection 184.96.155.149|62054 <6289608695827711931>
+[00:34:45]: Client connected from 184.96.155.149|62054 <6289608695827711931>
+[00:34:45]: ValidateGameSessionToken GUID<6289608695827711931>
+[00:34:46]: Client authenticated: (KU_QFsp4GB2) slyburger
+[00:34:46]: [Steam] SendUserConnectAndAuthenticate for '76561199794213424'
+[00:34:46]: [Steam] Authenticated client '76561199794213424'
+[00:34:47]: There is no active event to validate against.
+[00:34:47]: [Shard] Read save location file for (KU_QFsp4GB2)
+[00:35:04]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000007
+[00:35:04]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:35:04]: User ID	KU_QFsp4GB2	assigned ownership to entity	125302 - woodie	
+[00:35:04]: Spawning player at: [Load] (17.27, 0.00, 89.16)	
+[00:35:04]: [global position (CompleteSync)]Player joined	
+[00:35:04]: [global position (CompleteSync)] saving to buffer	
+[00:35:04]: [global position (CompleteSync)] success to saving to buffer	
+[00:35:04]: [global position (CompleteSync)] learning from buffer	
+[00:35:04]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:35:05]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:35:05]: [global position (CompleteSync)] succeed	
+[00:38:08]: Available disk space for save files: 19747 MB
+[00:38:08]: [global position (CompleteSync)] saving to buffer	
+[00:38:08]: [global position (CompleteSync)] success to saving to buffer	
+[00:38:08]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000007
+[00:38:08]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000007
+[00:38:09]: Serializing world: session/63A7BB65AB4DE346/0000000007
+[00:42:03]: New incoming connection 112.165.74.172|59613 <4171529051035651273>
+[00:42:03]: Client connected from 112.165.74.172|59613 <4171529051035651273>
+[00:42:03]: ValidateGameSessionToken GUID<4171529051035651273>
+[00:42:03]: [Steam] SendUserDisconnect for '76561199361379165'
+[00:42:04]: Missing Network Client Object, Kicking user
+[00:42:04]: CloseConnectionWithReason: ID_DST_GAME_SESSION_AUTH_FAILED
+[00:44:00]: Could not find anim [death] in bank [ghost]
+[00:44:00]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000008
+[00:45:06]: KU_QFsp3bke	running text command:	rollback	true	
+[00:45:11]: Received world rollback request: count=1	
+[00:45:11]: Truncating to snapshot #7...
+[00:45:11]:  - session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000008
+[00:45:11]:    1 file(s) removed
+[00:45:12]: Collecting garbage...
+[00:45:12]: lua_gc took 0.61 seconds
+[00:45:12]: ~ShardLuaProxy()
+[00:45:12]: ~cEventLeaderboardProxy()
+[00:45:12]: ~ItemServerLuaProxy()
+[00:45:12]: ~InventoryLuaProxy()
+[00:45:12]: ~NetworkLuaProxy()
+[00:45:12]: ~SimLuaProxy()
+[00:45:13]: lua_close took 0.96 seconds
+[00:45:13]: ReleaseAll
+[00:45:13]: ReleaseAll Finished
+[00:45:13]: cGame::StartPlaying
+[00:45:13]: AppVersion::GetArchitecture() x64
+[00:45:13]: LOADING LUA
+[00:45:13]: DoLuaFile scripts/main.lua
+[00:45:13]: DoLuaFile loading buffer scripts/main.lua
+[00:45:14]:   taskgrouplist:	default	Together	
+[00:45:14]:   taskgrouplist:	classic	Classic	
+[00:45:14]:   taskgrouplist:	cave_default	Underground	
+[00:45:14]:   taskgrouplist:	lavaarena_taskset	The Forge	
+[00:45:14]:   taskgrouplist:	quagmire_taskset	The Gorge	
+[00:45:14]: Running main.lua
+	
+[00:45:14]: loaded modindex	
+[00:45:14]: ModIndex: Beginning normal load sequence for dedicated server.
+	
+[00:45:14]: SUCCESS: Loaded modoverrides.lua	
+[00:45:14]: modoverrides.lua enabling workshop-481765222	
+[00:45:14]: modoverrides.lua enabling workshop-3436020204	
+[00:45:14]: modoverrides.lua enabling workshop-1185229307	
+[00:45:14]: modoverrides.lua enabling workshop-1077747217	
+[00:45:14]: modoverrides.lua enabling workshop-3138571948	
+[00:45:14]: modoverrides.lua enabling workshop-501387482	
+[00:45:14]: modoverrides.lua enabling workshop-398858801	
+[00:45:14]: modoverrides.lua enabling workshop-462434129	
+[00:45:14]: modoverrides.lua enabling workshop-400409675	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-501387482	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-400409675	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1077747217	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-481765222	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-462434129	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-398858801	
+[00:45:14]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-1185229307	
+[00:45:14]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3138571948	
+[00:45:14]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3436020204	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-501387482	
+[00:45:14]: Loading mod: workshop-501387482 (Empty Inventory) Version:1.0	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-400409675	
+[00:45:14]: Loading mod: workshop-400409675 (Fire & Wall protection) Version:0.5	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-1077747217	
+[00:45:14]: Loading mod: workshop-1077747217 (Server Announcement) Version:1.0.8	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-481765222	
+[00:45:14]: Loading mod: workshop-481765222 (Ancient Altar) Version:0.5	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-462434129	
+[00:45:14]: Loading mod: workshop-462434129 (Restart) Version:0.3.2	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-398858801	
+[00:45:14]: Loading mod: workshop-398858801 (AFK Detection) Version:1.8.4	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-1185229307	
+[00:45:14]: Loading mod: workshop-1185229307 (Epic Healthbar) Version:96	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-3138571948	
+[00:45:14]: Loading mod: workshop-3138571948 (Global Positions (CompleteSync)) Version:2.3.9	
+[00:45:14]: Could not load mod_config_data/modconfiguration_workshop-3436020204	
+[00:45:14]: Loading mod: workshop-3436020204 (Show Me (Fixed)) Version:2.0	
+[00:45:14]: Mod: workshop-1185229307 (Epic Healthbar)	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-1185229307 (Epic Healthbar)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-1185229307 (Epic Healthbar)	Loading modmain.lua	
+[00:45:14]: Mod: workshop-3436020204 (Show Me (Fixed))	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-3436020204 (Show Me (Fixed))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-3436020204 (Show Me (Fixed))	Loading modmain.lua	
+[00:45:14]: ShowMe version:	2.0	
+[00:45:14]: show_food_units	-1	-1	-1	
+[00:45:14]: show_uses	-1	-1	-1	
+[00:45:14]: Detected language for ShowMe: 	auto		
+[00:45:14]: Mod: workshop-481765222 (Ancient Altar)	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-481765222 (Ancient Altar)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-481765222 (Ancient Altar)	Loading modmain.lua	
+[00:45:14]: Warning: function AddRecipe in modmain is deprecated, please use AddRecipe2. Recipe name:	altar_broken	
+[00:45:14]: Warning: function AddRecipe in modmain is deprecated, please use AddRecipe2. Recipe name:	thulecite_pieces	
+[00:45:14]: Mod: workshop-1077747217 (Server Announcement)	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-1077747217 (Server Announcement)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-1077747217 (Server Announcement)	Loading modmain.lua	
+[00:45:14]: Mod: workshop-501387482 (Empty Inventory)	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-501387482 (Empty Inventory)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-501387482 (Empty Inventory)	Loading modmain.lua	
+[00:45:14]: Mod: workshop-398858801 (AFK Detection)	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-398858801 (AFK Detection)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-398858801 (AFK Detection)	Loading modmain.lua	
+[00:45:14]: Mod: workshop-462434129 (Restart)	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-462434129 (Restart)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-462434129 (Restart)	Loading modmain.lua	
+[00:45:14]: Mod: workshop-400409675 (Fire & Wall protection)	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-400409675 (Fire & Wall protection)	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-400409675 (Fire & Wall protection)	Loading modmain.lua	
+[00:45:14]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Loading modworldgenmain.lua	
+[00:45:14]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Mod had no modworldgenmain.lua. Skipping.	
+[00:45:14]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Loading modmain.lua	
+[00:45:14]: [global position (CompleteSync)] This is a new version without GemCore	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-501387482	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-400409675	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-1077747217	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-481765222	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-462434129	
+[00:45:14]: ModIndex:GetModsToLoad inserting moddir, 	workshop-398858801	
+[00:45:14]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-1185229307	
+[00:45:14]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3138571948	
+[00:45:14]: ModIndex:GetModsToLoad inserting forcedmoddir, 	workshop-3436020204	
+[00:45:14]: Event data unavailable: lavaarena_event_server/lavaarena_achievement_quest_defs
+[00:45:14]: LOADING LUA SUCCESS
+[00:45:14]: Registering Server mod namespace "showmeshint"
+[00:45:14]: Registering Server mod namespace "globalpositioncompletesync"
+[00:45:14]: Registering Server mod namespace "showme"
+[00:45:14]: Registering Client mod namespace "workshop-1185229307"
+[00:45:14]: Registering Shard mod namespace "globalpositioncompletesync"
+[00:45:14]: PlayerDeaths could not load morgue	
+[00:45:14]: PlayerHistory could not load player_history	
+[00:45:14]: ServerPreferences could not load server_preferences	
+[00:45:14]: ConsoleScreenSettings could not load consolescreen	
+[00:45:14]: bloom_enabled	true	
+[00:45:14]: OnFilesLoaded()	
+[00:45:14]: OnUpdatePurchaseStateComplete	
+[00:45:14]: Loading world: session/63A7BB65AB4DE346/0000000007	
+[00:45:14]: Save file is at version 5.155	
+[00:45:14]: Klump load on boot started.	
+[00:45:14]: Klump files loaded: 	0	
+[00:45:15]: 	Unload characters	
+[00:45:15]: 	BE assets already loaded	
+[00:45:16]: Mod: workshop-1185229307 (Epic Healthbar)	Registering prefabs	
+[00:45:16]: Mod: workshop-1185229307 (Epic Healthbar)	  Registering prefab file: prefabs/epichealth_proxy	
+[00:45:16]: Mod: workshop-1185229307 (Epic Healthbar)	    epichealth_proxy	
+[00:45:16]: Mod: workshop-1185229307 (Epic Healthbar)	  Registering default mod prefab	
+[00:45:16]: Mod: workshop-3436020204 (Show Me (Fixed))	Registering prefabs	
+[00:45:16]: Mod: workshop-3436020204 (Show Me (Fixed))	  Registering default mod prefab	
+[00:45:16]: Mod: workshop-481765222 (Ancient Altar)	Registering prefabs	
+[00:45:16]: Mod: workshop-481765222 (Ancient Altar)	  Registering prefab file: prefabs/altar	
+[00:45:16]: Mod: workshop-481765222 (Ancient Altar)	    altar	
+[00:45:16]: Mod: workshop-481765222 (Ancient Altar)	    altar_broken	
+[00:45:16]: Mod: workshop-481765222 (Ancient Altar)	    altar_broken_placer	
+[00:45:16]: Mod: workshop-481765222 (Ancient Altar)	    altar_placer	
+[00:45:16]: Mod: workshop-481765222 (Ancient Altar)	  Registering default mod prefab	
+[00:45:16]: Mod: workshop-1077747217 (Server Announcement)	Registering prefabs	
+[00:45:16]: Mod: workshop-1077747217 (Server Announcement)	  Registering default mod prefab	
+[00:45:16]: Mod: workshop-501387482 (Empty Inventory)	Registering prefabs	
+[00:45:16]: Mod: workshop-501387482 (Empty Inventory)	  Registering default mod prefab	
+[00:45:16]: Mod: workshop-398858801 (AFK Detection)	Registering prefabs	
+[00:45:16]: Mod: workshop-398858801 (AFK Detection)	  Registering default mod prefab	
+[00:45:16]: Mod: workshop-462434129 (Restart)	Registering prefabs	
+[00:45:16]: Mod: workshop-462434129 (Restart)	  Registering default mod prefab	
+[00:45:16]: Mod: workshop-400409675 (Fire & Wall protection)	Registering prefabs	
+[00:45:16]: Mod: workshop-400409675 (Fire & Wall protection)	  Registering default mod prefab	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	Registering prefabs	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/globalposition_classified	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    globalposition_classified	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/smoketrail	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    smoketrail	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/globalmapicon_noproxy	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    globalmapicon_noproxy	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering prefab file: prefabs/pings	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_generic	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_omw	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_danger	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_explore	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	    ping_gohere	
+[00:45:16]: Mod: workshop-3138571948 (Global Positions (CompleteSync))	  Registering default mod prefab	
+[00:45:16]: Begin Session: 63A7BB65AB4DE346
+[00:45:16]: Stomping previously assigned session identifier, two loads issued.
+[00:45:16]: saving to server_temp/server_save	
+[00:45:16]: OVERRIDE: setting	regrowth	to	NORMAL	
+[00:45:16]: OVERRIDE: setting	bearger	to	NORMAL	
+[00:45:16]: OVERRIDE: setting	deerclops	to	NORMAL	
+[00:45:16]: OVERRIDE: setting	merms	to	NORMAL	
+[00:45:16]: OVERRIDE: setting	birds	to	NORMAL	
+[00:45:16]: OVERRIDE: setting	penguins	to	NORMAL	
+[00:45:16]: OVERRIDE: setting	beequeen	to	NORMAL	
+[00:45:16]: OVERRIDE: setting	dragonfly	to	NORMAL	
+[00:45:16]: OVERRIDE: setting	butterfly	to	NORMAL	
+[00:45:16]: MiniMapComponent::AddAtlas( minimap/minimap_data1.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( minimap/minimap_data2.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-481765222/images/inventoryimages/altar.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-481765222/images/inventoryimages/altar_broken.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/campfire.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_generic.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_gohere.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_explore.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_danger.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/ping_omw.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/beef_bell_linked.xml )
+[00:45:16]: MiniMapComponent::AddAtlas( ../mods/workshop-3138571948/minimap/shadow_beef_bell_linked.xml )
+[00:45:16]: OLD[global position (CompleteSync)]The maprecorder is empty, are you starting a new game or adding this mod to old game?	
+[00:45:16]: Loading 19 new character(s)	
+[00:45:17]: Total 19 character(s) loaded	
+[00:45:17]: Loading Nav Grid	
+[00:45:17]: World generated on build 665003 with save version: 5.155, using seed: 321516905	
+[00:45:17]: setting 	summerlength	0	
+[00:45:17]: setting 	cavemoonphase	half	
+[00:45:17]: setting 	iscavefullmoon	false	
+[00:45:17]: setting 	isnightmaredawn	false	
+[00:45:17]: setting 	elapseddaysinseason	4	
+[00:45:17]: setting 	isfullmoon	false	
+[00:45:17]: setting 	moisture	541.36041259766	
+[00:45:17]: setting 	springlength	0	
+[00:45:17]: setting 	islunarhailing	false	
+[00:45:17]: setting 	isnightmarewild	false	
+[00:45:17]: setting 	nightmaretimeinphase	0	
+[00:45:17]: setting 	precipitationrate	0	
+[00:45:17]: setting 	iswet	false	
+[00:45:17]: setting 	isnewmoon	false	
+[00:45:17]: setting 	israining	false	
+[00:45:17]: setting 	iswinter	false	
+[00:45:17]: setting 	isnightmarewarn	false	
+[00:45:17]: setting 	precipitation	none	
+[00:45:17]: setting 	iscavewaxingmoon	true	
+[00:45:17]: setting 	isacidraining	false	
+[00:45:17]: setting 	moonphase	half	
+[00:45:17]: setting 	remainingdaysinseason	6	
+[00:45:17]: setting 	temperature	20.171116282062	
+[00:45:17]: setting 	wetness	0	
+[00:45:17]: setting 	cycles	4	
+[00:45:17]: setting 	moistureceil	795.51788330078	
+[00:45:17]: setting 	isday	true	
+[00:45:17]: setting 	winterlength	0	
+[00:45:17]: setting 	season	autumn	
+[00:45:17]: setting 	iswaxingmoon	true	
+[00:45:17]: setting 	isalterawake	false	
+[00:45:17]: setting 	isnightmarecalm	false	
+[00:45:17]: setting 	isnight	false	
+[00:45:17]: setting 	isdusk	false	
+[00:45:17]: setting 	isspring	false	
+[00:45:17]: setting 	isautumn	true	
+[00:45:17]: setting 	iscaveday	true	
+[00:45:17]: setting 	lunarhaillevel	0	
+[00:45:17]: setting 	pop	0.68051319016416	
+[00:45:17]: setting 	snowlevel	0	
+[00:45:17]: setting 	issnowcovered	false	
+[00:45:17]: setting 	autumnlength	0	
+[00:45:17]: setting 	phase	day	
+[00:45:17]: setting 	nightmaretime	0	
+[00:45:17]: setting 	issnowing	false	
+[00:45:17]: setting 	iscavedusk	false	
+[00:45:17]: setting 	nightmarephase	none	
+[00:45:17]: setting 	timeinphase	0.0042713165283204	
+[00:45:17]: setting 	seasonprogress	0.7	
+[00:45:17]: setting 	iscavenight	false	
+[00:45:17]: setting 	iscavenewmoon	false	
+[00:45:17]: setting 	issummer	false	
+[00:45:17]: setting 	cavephase	day	
+[00:45:17]: setting 	time	0.0021356582641602	
+[00:45:17]: Connected shards:	
+[00:45:17]: OVERRIDE: setting	autumn	to	DEFAULT	
+[00:45:17]: OVERRIDE: setting	spring	to	DEFAULT	
+[00:45:17]: OVERRIDE: setting	hounds	to	RARE	
+[00:45:17]: OVERRIDE: setting	winter	to	LONG	
+[00:45:17]: OVERRIDE: setting	lightning	to	NORMAL	
+[00:45:17]: OVERRIDE: setting	summer	to	DEFAULT	
+[00:45:28]: Reconstructing topology	
+[00:45:28]: 	...Sorting points	
+[00:45:28]: 	...Sorting edges	
+[00:45:28]: 	...Connecting nodes	
+[00:45:29]: 	...Validating connections	
+[00:45:29]: 	...Housekeeping	
+[00:45:29]: 	...Done!	
+[00:45:29]: in worldprefab postinit	
+[00:45:29]: [global position (CompleteSync)]The world is not newly created	
+[00:45:29]: [global position (CompleteSync)]The maprecorder is not empty.	
+[00:45:29]: Restoring user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000007	
+[00:45:29]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:45:29]: Restoring user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000007	
+[00:45:29]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:45:29]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000008
+[00:45:29]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000008
+[00:45:29]: 1 uploads added to server. From server_temp
+[00:45:29]: World 66450907 is now connected	
+[00:45:29]: Telling Client our new session identifier: 63A7BB65AB4DE346
+[00:45:29]: Check for write access: TRUE
+[00:45:29]: Check for read access: TRUE
+[00:45:29]: Available disk space for save files: 19741 MB
+[00:45:29]: ModIndex: Load sequence finished successfully.	
+[00:45:29]: Reset() returning
+[00:45:29]: [Shard] Secondary shard 'Caves(66450907)' restarting...
+[00:45:29]: World 66450907 is now disconnected	
+[00:45:30]: [global position (CompleteSync)] _restoredworldnumdirty current value	0	
+[00:45:30]: Validating portal[4] <-> 66450907[4] (inactive)	
+[00:45:30]: Validating portal[10] <-> 66450907[10] (inactive)	
+[00:45:30]: Validating portal[7] <-> 66450907[7] (inactive)	
+[00:45:30]: Validating portal[8] <-> 66450907[8] (inactive)	
+[00:45:30]: Validating portal[1] <-> 66450907[1] (inactive)	
+[00:45:30]: Validating portal[2] <-> 66450907[2] (inactive)	
+[00:45:30]: Validating portal[6] <-> 66450907[6] (inactive)	
+[00:45:30]: Validating portal[9] <-> 66450907[9] (inactive)	
+[00:45:30]: Validating portal[5] <-> 66450907[5] (inactive)	
+[00:45:30]: Validating portal[3] <-> 66450907[3] (inactive)	
+[00:45:31]: Sim paused
+[00:45:38]: Restarting player migration on master server
+[00:45:38]: [Shard] Read save location file for (KU_QFsp4GB2)
+[00:45:38]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000008
+[00:45:38]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:45:38]: User ID	KU_QFsp4GB2	assigned ownership to entity	118664 - woodie	
+[00:45:38]: Spawning player at: [Load] (-62.89, 0.00, 80.58)	
+[00:45:38]: Sim unpaused
+[00:45:38]: [global position (CompleteSync)]Player joined	
+[00:45:38]: [global position (CompleteSync)] learning from buffer	
+[00:45:38]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:45:38]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:45:39]: [global position (CompleteSync)] succeed	
+[00:45:45]: [Shard] Secondary Caves(66450907) ready!
+[00:45:45]: World 66450907 is now connected	
+[00:45:45]: Validating portal[4] <-> 66450907[4] (disabled)	
+[00:45:45]: Validating portal[10] <-> 66450907[10] (disabled)	
+[00:45:45]: Validating portal[7] <-> 66450907[7] (disabled)	
+[00:45:45]: Validating portal[8] <-> 66450907[8] (active)	
+[00:45:45]: Validating portal[1] <-> 66450907[1] (disabled)	
+[00:45:45]: Validating portal[2] <-> 66450907[2] (disabled)	
+[00:45:45]: Validating portal[6] <-> 66450907[6] (disabled)	
+[00:45:45]: Validating portal[9] <-> 66450907[9] (disabled)	
+[00:45:45]: Validating portal[5] <-> 66450907[5] (disabled)	
+[00:45:45]: Validating portal[3] <-> 66450907[3] (disabled)	
+[00:45:49]: Restarting player migration on master server
+[00:45:49]: [Shard] Read save location file for (KU_QFsp3bke)
+[00:45:49]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000008
+[00:45:49]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:45:49]: User ID	KU_QFsp3bke	assigned ownership to entity	118908 - willow	
+[00:45:49]: Spawning player at: [Load] (30.40, 0.00, 57.77)	
+[00:45:49]: [global position (CompleteSync)]Player joined	
+[00:45:49]: [global position (CompleteSync)] saving to buffer	
+[00:45:49]: [global position (CompleteSync)] success to saving to buffer	
+[00:45:49]: [global position (CompleteSync)] learning from buffer	
+[00:45:49]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:45:50]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:45:50]: [global position (CompleteSync)] succeed	
+[00:53:37]: Available disk space for save files: 19741 MB
+[00:53:38]: [global position (CompleteSync)] saving to buffer	
+[00:53:38]: [global position (CompleteSync)] success to saving to buffer	
+[00:53:38]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000008
+[00:53:38]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000008
+[00:53:38]: Serializing world: session/63A7BB65AB4DE346/0000000008
+[00:54:32]: Activating portal[8] to 66450907	
+[00:54:32]: [global position (CompleteSync)]Player despawned and migrate	
+[00:54:32]: [global position (CompleteSync)] saving to buffer	
+[00:54:32]: [global position (CompleteSync)] success to saving to buffer	
+[00:54:33]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000009
+[00:54:33]: [Shard] Migration request: (KU_QFsp3bke) to Caves(66450907)
+[00:54:33]: [Shard] Begin migration #3 for (KU_QFsp3bke)
+[00:54:33]: [Shard] #3 [SHDMASTER](1) -> Caves(66450907)
+[00:54:33]: [Shard] #3 <- session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000009
+[00:54:33]: [Shard] Writing save location file for (KU_QFsp3bke)
+[00:54:33]: CloseConnectionWithReason: ID_DST_SHARD_SILENT_DISCONNECT
+[00:54:33]: [Steam] SendUserDisconnect for '76561198017165291'
+[00:54:33]: [Shard] (KU_QFsp3bke) disconnected from [SHDMASTER](1)
+[00:54:37]: [Shard] Completed migration #3 for player (KU_QFsp3bke)
+[00:54:37]: CURL ERROR: (dst.metrics.klei.com) [16]
+[00:57:50]: [Shard] Begin migration #4 for (KU_QFsp3bke)
+[00:57:50]: [Shard] #4 Caves(66450907) -> [SHDMASTER](1)
+[00:57:50]: [Shard] #4 -> session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000009
+[00:57:50]: [Shard] Received migration #4 data for (KU_QFsp3bke)
+[00:57:50]: [Shard] Writing save location file for (KU_QFsp3bke)
+[00:57:50]: [Shard] (KU_QFsp3bke) disconnected from Caves(66450907)
+[00:57:53]: New incoming connection 184.96.155.149|48250 <3702636414585827259>
+[00:57:53]: Client connected from 184.96.155.149|48250 <3702636414585827259>
+[00:57:53]: ValidateGameSessionToken GUID<3702636414585827259>
+[00:57:53]: Client authenticated: (KU_QFsp3bke) FrankTheTank
+[00:57:53]: [Steam] Authenticated host '76561198017165291'
+[00:57:53]: [Shard] Completed incoming migration #4 for (KU_QFsp3bke)
+[00:57:53]: [Shard] Completed migration #4 for player (KU_QFsp3bke)
+[00:58:14]: Resuming user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000009
+[00:58:14]: [global position (CompleteSync)]In my AddPlayerPostInit	
+[00:58:14]: User ID	KU_QFsp3bke	assigned ownership to entity	121283 - willow	
+[00:58:14]: Player will spawn close to portal #8	
+[00:58:14]: Spawning player at: [Load] (69.31, 0.00, 110.42)	
+[00:58:14]: [global position (CompleteSync)]Player joined	
+[00:58:14]: [global position (CompleteSync)] saving to buffer	
+[00:58:14]: [global position (CompleteSync)] success to saving to buffer	
+[00:58:14]: [global position (CompleteSync)] learning from buffer	
+[00:58:14]: [global position (CompleteSync)]Client is not ready, waiting	
+[00:58:15]: [global position (CompleteSync)] before RPC, the player.client_is_ready is nil	
+[00:58:15]: [global position (CompleteSync)] succeed	
+[01:00:05]: [200] Account Communication Success (6)
+[01:00:05]: Received (KU_QFsp3bke) from TokenPurpose
+[01:01:38]: Available disk space for save files: 19736 MB
+[01:01:38]: [global position (CompleteSync)] saving to buffer	
+[01:01:38]: [global position (CompleteSync)] success to saving to buffer	
+[01:01:38]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000009
+[01:01:38]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000009
+[01:01:39]: Serializing world: session/63A7BB65AB4DE346/0000000009
+[01:05:11]: Validating portal[2] <-> 66450907[2] (active)	
+[01:08:18]: [global position (CompleteSync)]Player despawned	
+[01:08:18]: [global position (CompleteSync)] saving to buffer	
+[01:08:18]: [global position (CompleteSync)] success to saving to buffer	
+[01:08:18]: [Steam] SendUserDisconnect for '76561198017165291'
+[01:08:18]: [Shard] (KU_QFsp3bke) disconnected from [SHDMASTER](1)
+[01:08:18]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000010
+[01:08:19]: Server Autopaused	
+[01:08:25]: Server Unpaused	
+[01:08:26]: [global position (CompleteSync)]Player despawned	
+[01:08:26]: [global position (CompleteSync)] saving to buffer	
+[01:08:26]: [global position (CompleteSync)] success to saving to buffer	
+[01:08:26]: [Steam] SendUserDisconnect for '76561199794213424'
+[01:08:26]: [Shard] (KU_QFsp4GB2) disconnected from [SHDMASTER](1)
+[01:08:27]: Serializing user: session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000010
+[01:08:27]: Sim paused
+[01:08:53]: Available disk space for save files: 19733 MB
+[01:08:53]: Serializing world: session/63A7BB65AB4DE346/0000000010
+[01:08:53]: Truncating to snapshot #10...
+[01:08:53]:  - session/63A7BB65AB4DE346/0000000004
+[01:08:53]:  - session/63A7BB65AB4DE346/0000000003
+[01:08:53]:  - session/63A7BB65AB4DE346/0000000002
+[01:08:53]:  - session/63A7BB65AB4DE346/A7J8VMPGSMT8/0000000004
+[01:08:53]:  - session/63A7BB65AB4DE346/A7J8VMPH20M2/0000000004
+[01:08:53]:    5 file(s) removed
+[01:08:53]: Removing server from lobby
+[01:08:53]: [Shard] Stopping shard mode
+[01:08:53]: [Steam] SendUserDisconnect for ''
+[01:08:54]: Collecting garbage...
+[01:08:54]: lua_gc took 0.61 seconds
+[01:08:55]: ~ShardLuaProxy()
+[01:08:55]: ~cEventLeaderboardProxy()
+[01:08:55]: ~ItemServerLuaProxy()
+[01:08:55]: ~InventoryLuaProxy()
+[01:08:55]: ~NetworkLuaProxy()
+[01:08:55]: ~SimLuaProxy()
+[01:08:55]: Cancelling LuaQueryCallback handle [93]
+[01:08:55]: Cancelling LuaQueryCallback handle [94]
+[01:08:55]: lua_close took 1.06 seconds
+[01:08:56]: CurlRequestManager::ClientThread::Main() complete
+[01:08:56]: HttpClient2 discarded 0 callbacks.
+[01:08:56]: Shutting down
