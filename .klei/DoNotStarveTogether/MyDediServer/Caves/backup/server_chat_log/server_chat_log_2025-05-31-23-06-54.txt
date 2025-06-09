@@ -1,0 +1,13 @@
+[04:31:52]: [Join Announcement] slyburger
+[04:32:00]: [Announcement] Be friendly and have fun, slyburger!
+[04:34:48]: [Leave Announcement] slyburger
+[23:58:35]: [Join Announcement] FrankTheTank
+[23:58:53]: [Announcement] Be friendly and have fun, FrankTheTank!
+[00:00:11]: [Leave Announcement] FrankTheTank
+[00:15:47]: [Join Announcement] slyburger
+[00:15:54]: [Join Announcement] FrankTheTank
+[00:18:06]: [Say] (KU_QFsp3bke) FrankTheTank: i found some berries
+[00:19:28]: [Say] (KU_QFsp3bke) FrankTheTank: what
+[00:20:27]: [Say] (KU_QFsp3bke) FrankTheTank: what does Bernie do?
+[00:20:39]: [Say] (KU_QFsp4GB2) slyburger: attacks nightmare monsters
+[00:20:55]: [Say] (KU_QFsp4GB2) slyburger: if you drop him whn they come
