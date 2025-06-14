@@ -978,17 +978,3 @@
 [02:37:25]: Truncating to snapshot #14...
 [02:37:25]:  - session/D493207594376580/0000000008
 [02:37:25]:    1 file(s) removed
-[02:37:25]: [Shard] Stopping shard mode
-[02:37:25]: [Steam] SendUserDisconnect for ''
-[02:37:25]: Collecting garbage...
-[02:37:26]: lua_gc took 0.48 seconds
-[02:37:26]: ~ShardLuaProxy()
-[02:37:26]: ~cEventLeaderboardProxy()
-[02:37:26]: ~ItemServerLuaProxy()
-[02:37:26]: ~InventoryLuaProxy()
-[02:37:26]: ~NetworkLuaProxy()
-[02:37:26]: ~SimLuaProxy()
-[02:37:26]: lua_close took 0.45 seconds
-[02:37:26]: CurlRequestManager::ClientThread::Main() complete
-[02:37:26]: HttpClient2 discarded 0 callbacks.
-[02:37:26]: Shutting down

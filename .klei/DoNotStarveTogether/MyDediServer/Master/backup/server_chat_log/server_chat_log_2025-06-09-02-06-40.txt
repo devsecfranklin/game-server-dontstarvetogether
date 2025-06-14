@@ -1,0 +1,65 @@
+[00:02:31]: [Join Announcement] slyburger
+[00:02:40]: [Announcement] Be friendly and have fun, slyburger!
+[00:05:25]: [Join Announcement] FrankTheTank
+[00:05:43]: [Announcement] Be friendly and have fun, FrankTheTank!
+[00:09:32]: [Vote Announcement] regenerate passed
+[00:10:44]: [Announcement] Be friendly and have fun, slyburger!
+[00:11:21]: [Announcement] Be friendly and have fun, FrankTheTank!
+[00:12:03]: [Say] (KU_QFsp3bke) FrankTheTank: where are u
+[00:12:16]: [Say] (KU_QFsp4GB2) slyburger: check map
+[00:12:42]: [Say] (KU_QFsp3bke) FrankTheTank: this is fun
+[00:13:55]: [Say] (KU_QFsp3bke) FrankTheTank: dogs here
+[00:14:16]: [Say] (KU_QFsp4GB2) slyburger: only in desert
+[00:17:53]: [Leave Announcement] FrankTheTank
+[00:17:59]: [Announcement] slyburger lit Evergreen on fire!
+[00:18:06]: [Announcement] slyburger lit Birchnut Tree on fire!
+[00:18:12]: [Announcement] slyburger lit Evergreen on fire!
+[00:20:23]: [Announcement] slyburger lit Evergreen on fire!
+[00:20:25]: [Announcement] slyburger lit Evergreen on fire!
+[00:20:28]: [Join Announcement] FrankTheTank
+[00:20:50]: [Announcement] [games]: thanks for playing with us!
+[00:25:56]: [Announcement] slyburger lit Evergreen on fire!
+[00:26:32]: [Announcement] slyburger lit Evergreen on fire!
+[00:29:31]: [Say] (KU_QFsp4GB2) slyburger: coem to me and make science machine
+[00:29:41]: [Say] (KU_QFsp3bke) FrankTheTank: you keep moving
+[00:29:42]: [Announcement] slyburger lit Evergreen on fire!
+[00:30:06]: [Say] (KU_QFsp4GB2) slyburger: no im in same gen area
+[00:30:15]: [Say] (KU_QFsp4GB2) slyburger: you keep goinmg away
+[00:30:38]: [Announcement] slyburger lit Evergreen on fire!
+[00:30:51]: [Announcement] [games]: gameplay videos at youtube.com/@SlyB0rg-legit
+[00:31:14]: [Say] (KU_QFsp3bke) FrankTheTank: need grass
+[00:33:21]: [Say] (KU_QFsp4GB2) slyburger: nvermind this is too close to moose goose
+[00:35:21]: [Say] (KU_QFsp3bke) FrankTheTank: on the other side of the bees
+[00:35:56]: [Say] (KU_QFsp4GB2) slyburger: not for base. thats too dangerous area still
+[00:36:47]: [Say] (KU_QFsp3bke) FrankTheTank: ok let's pick
+[00:36:51]: [Say] (KU_QFsp3bke) FrankTheTank: we have a lot to do
+[00:40:52]: [Announcement] [games]: Watch us play at twitch.tv/s1y_b0rg
+[00:41:18]: [Say] (KU_QFsp3bke) FrankTheTank: beefalo
+[00:42:00]: [Announcement] FrankTheTank lit Log on fire!
+[00:42:02]: [Announcement] slyburger lit Evergreen on fire!
+[00:50:36]: [Announcement] slyburger lit Birchnut Tree on fire!
+[00:50:52]: [Announcement] [games]: thanks for playing with us!
+[01:00:54]: [Announcement] [games]: gameplay videos at youtube.com/@SlyB0rg-legit
+[01:10:54]: [Announcement] [games]: Watch us play at twitch.tv/s1y_b0rg
+[01:13:03]: [Say] (KU_QFsp3bke) FrankTheTank: i got light bulbs
+[01:14:12]: [Announcement] FrankTheTank lit Evergreen on fire!
+[01:20:55]: [Announcement] [games]: thanks for playing with us!
+[01:21:29]: [Leave Announcement] FrankTheTank
+[01:24:20]: [Join Announcement] FrankTheTank
+[01:27:20]: [Skin Announcement] slyburger body_polo_orange_salmon
+[01:27:32]: [Death Announcement] FrankTheTank was killed by Terrorbeak. He became a spooky ghost!
+[01:27:56]: [Leave Announcement] slyburger
+[01:28:05]: [Leave Announcement] FrankTheTank
+[01:28:42]: [Join Announcement] FrankTheTank
+[01:29:26]: [Vote Announcement] rollback passed
+[01:30:01]: [Vote Announcement] rollback passed
+[01:30:29]: [Leave Announcement] FrankTheTank
+[01:33:41]: [Join Announcement] slyburger
+[01:33:50]: [Announcement] Be friendly and have fun, slyburger!
+[01:34:57]: [Join Announcement] FrankTheTank
+[01:35:55]: [Announcement] Be friendly and have fun, FrankTheTank!
+[01:36:59]: [Death Announcement] FrankTheTank was killed by Terrorbeak. He became a spooky ghost!
+[01:37:22]: [Leave Announcement] FrankTheTank
+[01:38:09]: [Leave Announcement] slyburger
+[01:39:48]: [Join Announcement] slyburger
+[01:41:59]: [Leave Announcement] slyburger

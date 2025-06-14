@@ -19,3 +19,10 @@ dontstarvetogether_dedicated_server/
 
 build/
 token.txt
+
+.klei/DoNotStarveTogether/MyDediServer/Caves/backup/server_chat_log/
+.klei/DoNotStarveTogether/MyDediServer/Master/backup/server_log/
+.klei/DoNotStarveTogether/MyDediServer/Master/save/
+.klei/DoNotStarveTogether/MyDediServer/Caves/server_chat_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Caves/server_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Caves/save/

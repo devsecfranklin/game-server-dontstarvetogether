@@ -18,13 +18,13 @@ KLEI     1 return {
     max_players=6,
     name="wonderland",
     online_mode=true,
-    password="slyborg",
+    password="",
     playstyle="survival",
     privacy_type=0,
     pvp=false,
     server_language="en" 
   },
-  session_id="8E47DA8145EB7175",
+  session_id="C73AEEA6947FF241",
   version=5,
   world={
     options={
@@ -76,6 +76,7 @@ KLEI     1 return {
         no_wormholes_to_disconnected_tiles=true,
         penguins="NORMAL",
         pigs="NORMAL",
+        portalresurection="always",
         rabbits="NORMAL",
         rain="NORMAL",
         reeds="NORMAL",

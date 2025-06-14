@@ -14,13 +14,13 @@ KLEI     1 return {
     max_players=6,
     name="wonderland",
     online_mode=true,
-    password="slyborg",
+    password="",
     playstyle="survival",
     privacy_type=0,
     pvp=false,
     server_language="en" 
   },
-  session_id="E3AF0EA145C78811",
+  session_id="D493207594376580",
   version=5,
   world={
     options={
