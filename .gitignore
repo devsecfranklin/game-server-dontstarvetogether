@@ -37,6 +37,10 @@ server_chat_log/
 .idea
 
 .klei/DoNotStarveTogether/MyDediServer/*/save/
+.klei/DoNotStarveTogether/MyDediServer/Caves/server_chat_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Caves/server_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Master/server_chat_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Master/server_log.txt
 
 # Palo auth codes
 authcodes
