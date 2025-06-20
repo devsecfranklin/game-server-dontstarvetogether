@@ -8,7 +8,7 @@ KLEI     1 return {
     max_players=6,
     name="wonderland",
     online_mode=true,
-    password="",
+    password="slyborg",
     playstyle="survival",
     privacy_type=0,
     pvp=false,
