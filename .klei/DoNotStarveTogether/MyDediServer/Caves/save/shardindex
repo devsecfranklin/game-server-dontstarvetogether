@@ -2,19 +2,19 @@ KLEI     1 return {
   enabled_mods={  },
   server={
     clan={ admin=false, id="", only=false },
-    description="This server is duper super!",
+    description="asdfasdfsadfsadfsadfasdfasdf",
     encode_user_path=true,
     game_mode="survival",
     max_players=6,
     name="wonderland",
     online_mode=true,
-    password="slyborg",
+    password="",
     playstyle="survival",
     privacy_type=0,
     pvp=false,
     server_language="en" 
   },
-  session_id="3F3AE408381D4052",
+  session_id="48F32FF75D69CFA0",
   version=5,
   world={
     options={
