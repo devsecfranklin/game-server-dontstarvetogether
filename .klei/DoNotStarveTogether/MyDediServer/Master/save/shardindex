@@ -1,5 +1,13 @@
 KLEI     1 return {
-  enabled_mods={  },
+  enabled_mods={
+    ["workshop-1185229307"]={ configuration_options={  }, enabled=true },
+    ["workshop-2923790645"]={ configuration_options={  }, enabled=true },
+    ["workshop-3138571948"]={ configuration_options={  }, enabled=true },
+    ["workshop-3436020204"]={ configuration_options={  }, enabled=true },
+    ["workshop-375859599"]={ configuration_options={  }, enabled=true },
+    ["workshop-398858801"]={ configuration_options={  }, enabled=true },
+    ["workshop-481765222"]={ configuration_options={  }, enabled=true } 
+  },
   server={
     clan={ admin=false, id="", only=false },
     description="asdfasdfsadfsadfsadfasdfasdf",
@@ -14,7 +22,7 @@ KLEI     1 return {
     pvp=false,
     server_language="en" 
   },
-  session_id="368C1FBB5F18FB13",
+  session_id="D8CA36E866F1D41B",
   version=5,
   world={
     options={
