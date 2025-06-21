@@ -20,3 +20,4 @@ sudo git clone https://github.com/mathielo/dst-dedicated-server.git /opt/dst-ded
 sudo chown -R dst:games /opt/dst-dedicated-server
 
 mkdir -p ~/.klei/DoNotStarveTogether
+steamcmd +login anonymous +app_update 343050 validate +quit
