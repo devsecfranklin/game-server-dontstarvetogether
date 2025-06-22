@@ -31,6 +31,7 @@ server_chat_log/
 .terraform.d
 *.tfstate
 *.tfstate.*
+.vim/
 .viminfo
 .vscode
 .idea

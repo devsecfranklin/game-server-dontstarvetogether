@@ -21,3 +21,6 @@ sudo chown -R dst:games /opt/dst-dedicated-server
 
 mkdir -p ~/.klei/DoNotStarveTogether
 steamcmd +login anonymous +app_update 343050 validate +quit
+
+# Caves has a soft link to the same file
+cp ${HOME}/docs/modoverrides.lua  ${HOME}/docs/dedicated_server_mods_setup.lua ${HOME}/.klei/DoNotStarveTogether/MyDediServer/Master

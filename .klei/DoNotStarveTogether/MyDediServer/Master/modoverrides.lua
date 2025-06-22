@@ -6,4 +6,9 @@ return {
     ["workshop-1185229307"]={ configuration_options={ }, enabled=true },
     ["workshop-3436020204"]={ configuration_options={ }, enabled=true },
     ["workshop-398858801"]={ configuration_options={ }, enabled=true }
+    ["workshop-3425275001"]={ configuration_options={ }, enabled=true },
+    ["workshop-3489027659"]={ configuration_options={ }, enabled=true },
+    ["workshop-378160973"]={ configuration_options={ }, enabled=true },
+    ["workshop-66586835"]={ configuration_options={ }, enabled=true },
+    ["workshop-714712361"]={ configuration_options={ }, enabled=true },
 }
