@@ -5,7 +5,7 @@ return {
     ["workshop-375859599"]={ configuration_options={ }, enabled=true },
     ["workshop-1185229307"]={ configuration_options={ }, enabled=true },
     ["workshop-3436020204"]={ configuration_options={ }, enabled=true },
-    ["workshop-398858801"]={ configuration_options={ }, enabled=true }
+    ["workshop-398858801"]={ configuration_options={ }, enabled=true },
     ["workshop-3425275001"]={ configuration_options={ }, enabled=true },
     ["workshop-3489027659"]={ configuration_options={ }, enabled=true },
     ["workshop-378160973"]={ configuration_options={ }, enabled=true },
@@ -27,5 +27,5 @@ return {
 		SAY_DEATH_TEXT = "%pns u dead lol" , -- Death Say Text
 		SAY_RESURRECTION_TEXT = "%pns returns from beyond the grave!" , -- Resurrection Say Text
     }, enabled=true },
-    ["workshop-714712361"]={ configuration_options={ }, enabled=true },
+    ["workshop-714712361"]={ configuration_options={ }, enabled=true }
 }
