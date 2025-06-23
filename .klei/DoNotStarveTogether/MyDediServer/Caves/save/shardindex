@@ -1,11 +1,25 @@
 KLEI     1 return {
-  enabled_mods={  },
+  enabled_mods={
+    ["workshop-1185229307"]={ configuration_options={  }, enabled=true },
+    ["workshop-2547661042"]={ configuration_options={  }, enabled=true },
+    ["workshop-2923790645"]={ configuration_options={  }, enabled=true },
+    ["workshop-2930301969"]={ configuration_options={  }, enabled=true },
+    ["workshop-3425275001"]={ configuration_options={  }, enabled=true },
+    ["workshop-3436020204"]={ configuration_options={  }, enabled=true },
+    ["workshop-3489027659"]={ configuration_options={  }, enabled=true },
+    ["workshop-375859599"]={ configuration_options={  }, enabled=true },
+    ["workshop-378160973"]={ configuration_options={  }, enabled=true },
+    ["workshop-398858801"]={ configuration_options={  }, enabled=true },
+    ["workshop-481765222"]={ configuration_options={  }, enabled=true },
+    ["workshop-66586835"]={ configuration_options={  }, enabled=true },
+    ["workshop-714712361"]={ configuration_options={  }, enabled=true } 
+  },
   server={
     clan={ admin=false, id="", only=false },
-    description="This server is duper super!",
+    description="what we do is secret",
     encode_user_path=true,
     game_mode="survival",
-    max_players=6,
+    max_players=10,
     name="wonderland",
     online_mode=true,
     password="",
@@ -14,7 +28,7 @@ KLEI     1 return {
     pvp=false,
     server_language="en" 
   },
-  session_id="3F3AE408381D4052",
+  session_id="76ADDA81D9AB4AEE",
   version=5,
   world={
     options={

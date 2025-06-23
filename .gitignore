@@ -7,17 +7,22 @@
 # don't check storage creds into GH
 .boto
 .cache
+.cloud-locale-test.skip
 *.code-workspace
 #  may contain gcloud files
 .config
 .gitconfig
+.lesshst
 .local
 # .netrc contains secrets for service tokens
 .netrc
 *.plan
 .sentinel
+server_log/
+server_chat_log/
 # .ssh dir may contain private keys
 .ssh
+.steam
 .terrascan
 # Terraform dot files
 .terraform.lock.hcl
@@ -26,9 +31,19 @@
 .terraform.d
 *.tfstate
 *.tfstate.*
+.vim/
+.viminfo
 .vscode
 .idea
 .idea
+
+.klei/DoNotStarveTogether/MyDediServer/*/save/
+.klei/DoNotStarveTogether/MyDediServer/Caves/server_chat_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Caves/server_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Master/server_chat_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Master/server_log.txt
+.klei/DoNotStarveTogether/MyDediServer/Caves/save
+.klei/DoNotStarveTogether/MyDediServer/Master/save
 
 # Palo auth codes
 authcodes
