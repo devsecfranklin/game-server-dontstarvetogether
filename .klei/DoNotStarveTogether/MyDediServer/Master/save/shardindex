@@ -1,8 +1,9 @@
 KLEI     1 return {
   enabled_mods={
     ["workshop-1185229307"]={ configuration_options={  }, enabled=true },
+    ["workshop-2547661042"]={ configuration_options={  }, enabled=true },
     ["workshop-2923790645"]={ configuration_options={  }, enabled=true },
-    ["workshop-3138571948"]={ configuration_options={  }, enabled=true },
+    ["workshop-2930301969"]={ configuration_options={  }, enabled=true },
     ["workshop-3425275001"]={ configuration_options={  }, enabled=true },
     ["workshop-3436020204"]={ configuration_options={  }, enabled=true },
     ["workshop-3489027659"]={ configuration_options={  }, enabled=true },
@@ -10,23 +11,7 @@ KLEI     1 return {
     ["workshop-378160973"]={ configuration_options={  }, enabled=true },
     ["workshop-398858801"]={ configuration_options={  }, enabled=true },
     ["workshop-481765222"]={ configuration_options={  }, enabled=true },
-    ["workshop-66586835"]={
-      configuration_options={
-        ANNOUNCE_CD=20,
-        ANNOUNCE_FIRSTJION_TEXT="everybody act cool, %pds is here",
-        ANNOUNCE_OPEN=true,
-        ANNOUNCE_ORDER=true,
-        ANNOUNCE_TEXT={ "we are streaming live at https://twitch.tv/s1y_b0rg", "thanks for playing!" },
-        SAY_DEATH_TEXT="%pns u dead lol",
-        SAY_DELAY=1,
-        SAY_EVERYJION_TEXT="welcome back %pns, nerd. time to die.",
-        SAY_FIRSTJION_TEXT="welcome %pns. we are streaming live at https://twitch.tv/s1y_b0rg",
-        SAY_OPEN=true,
-        SAY_RESURRECTION_TEXT="%pns returns from beyond the grave!",
-        SAY_SHOWTIME=3 
-      },
-      enabled=true 
-    },
+    ["workshop-66586835"]={ configuration_options={  }, enabled=true },
     ["workshop-714712361"]={ configuration_options={  }, enabled=true } 
   },
   server={

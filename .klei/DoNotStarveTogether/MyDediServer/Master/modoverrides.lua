@@ -1,31 +1,84 @@
+--
+-- This is your modoverrides.lua file for Don't Starve Together dedicated servers.
+-- Copy this file into your Cluster_X/Master/ and Cluster_X/Caves/ directories.
+--
+-- For custom mod configurations, it is highly recommended to set them up in-game
+-- by hosting a local server, and then copying the 'modoverrides.lua' file
+-- from your local Klei save folder (Documents/Klei/DoNotStarveTogether/...)
+--
+-- Remove the '--' to uncomment and enable a mod.
+-- Ensure the last entry does NOT have a trailing comma.
+--
+
 return {
-    ["workshop-3138571948"]={ configuration_options={ }, enabled=true },
-    ["workshop-2923790645"]={ configuration_options={ }, enabled=true },
-    ["workshop-481765222"]={ configuration_options={ }, enabled=true },
-    ["workshop-375859599"]={ configuration_options={ }, enabled=true },
-    ["workshop-1185229307"]={ configuration_options={ }, enabled=true },
-    ["workshop-3436020204"]={ configuration_options={ }, enabled=true },
-    ["workshop-398858801"]={ configuration_options={ }, enabled=true },
-    ["workshop-3425275001"]={ configuration_options={ }, enabled=true },
-    ["workshop-3489027659"]={ configuration_options={ }, enabled=true },
-    ["workshop-378160973"]={ configuration_options={ }, enabled=true },
-    ["workshop-66586835"]={ configuration_options={ 
-        ANNOUNCE_OPEN = true , -- Announce
-	SAY_OPEN = true , -- Say
-	ANNOUNCE_CD = 20 , -- Announce Interval (min)
-	ANNOUNCE_ORDER = true , -- Announce Order
-	SAY_SHOWTIME = 3 , -- Say Show Time(sec)
-	SAY_DELAY = 1 , -- Say Delay (sec)
-	ANNOUNCE_TEXT = {
-		-- Random players:%pds days %pns name, the number of players:%nws world %ncs cave.
-		"we are streaming live at https://twitch.tv/s1y_b0rg",
-		"thanks for playing!",
-	} , -- Announce Message
-		ANNOUNCE_FIRSTJION_TEXT = "everybody act cool, %pds is here" , -- First Join Announce Text
-		SAY_FIRSTJION_TEXT = "welcome %pns. we are streaming live at https://twitch.tv/s1y_b0rg" , -- First Join Say Text
-		SAY_EVERYJION_TEXT = "welcome back %pns, nerd. time to die." , -- Every Join Say Text
-		SAY_DEATH_TEXT = "%pns u dead lol" , -- Death Say Text
-		SAY_RESURRECTION_TEXT = "%pns returns from beyond the grave!" , -- Resurrection Say Text
-    }, enabled=true },
-    ["workshop-714712361"]={ configuration_options={ }, enabled=true }
+    -- Epic Healthbar
+    ["workshop-1185229307"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Global Player Icons
+    ["workshop-2923790645"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Global Positions (CompleteSync) - Recommended. Only use one Global Positions mod.
+    -- ["workshop-3138571948"]={
+    --    configuration_options={ },
+    --     enabled=true
+    -- },
+    -- Don't Starve Together - Item Info (consider if Show Me (Fixed) is enough)
+    ["workshop-3425275001"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Show Me (Fixed)
+    ["workshop-3436020204"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Warly's Portable Crock Pot
+    ["workshop-3489027659"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Health Info (Note: Show Me (Fixed) often includes health info)
+    ["workshop-375859599"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- AFK Detection
+    ["workshop-398858801"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Ancient Altar
+    ["workshop-481765222"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Combined Status
+    ["workshop-66586835"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Minimap HUD
+    ["workshop-714712361"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Extra Equip Slots
+    ["workshop-2930301969"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- Better Hunger Icon
+    ["workshop-2547661042"]={
+        configuration_options={ },
+        enabled=true
+    },
+    -- OLD Global Positions - **DISABLED** to avoid conflict with Global Positions (CompleteSync)
+    ["workshop-378160973"]={
+        configuration_options={ },
+        enabled=true
+    }
 }

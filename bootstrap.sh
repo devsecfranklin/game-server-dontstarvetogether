@@ -54,8 +54,8 @@ function main() {
   # Caves has a soft link to the same file
   cp ${HOME}/docs/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Master"
   cp ${HOME}/docs/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
-  cp ${HOME}/docs/worldgenoverride.lua "${dontstarve_dir}/$cluster_name/Master"
-  cp ${HOME}/docs/worldgenoverride.lua-caves "${dontstarve_dir}/${cluster_name}/Caves"
+  cp ${HOME}/docs/worldgenoverrides.lua "${dontstarve_dir}/$cluster_name/Master"
+  cp ${HOME}/docs/worldgenoverrides.lua-caves "${dontstarve_dir}/${cluster_name}/Caves"
 }
 
 main "$@"

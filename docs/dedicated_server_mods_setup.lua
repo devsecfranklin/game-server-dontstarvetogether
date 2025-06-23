@@ -1,7 +1,7 @@
 ServerModSetup("1185229307") -- Epic Healthbar
 ServerModSetup("2923790645") -- Global Player Icons
-ServerModSetup("3138571948") -- Global Positions (CompleteSync) - Recommended over older Global Positions
--- ServerModSetup("378160973") -- Older Global Positions (commented out due to CompleteSync)
+-- ServerModSetup("3138571948") -- Global Positions (CompleteSync) - Recommended over older Global Positions
+ServerModSetup("378160973") -- Older Global Positions (commented out due to CompleteSync)
 -- ServerModSetup("3425275001") -- Don't Starve Together - Item Info (consider if Show Me (Fixed) is enough)
 ServerModSetup("3436020204") -- Show Me (Fixed)
 ServerModSetup("3489027659") -- Warly's Portable Crock Pot

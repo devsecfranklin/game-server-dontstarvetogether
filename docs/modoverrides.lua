@@ -22,10 +22,10 @@ return {
         enabled=true
     },
     -- Global Positions (CompleteSync) - Recommended. Only use one Global Positions mod.
-    ["workshop-3138571948"]={
-        configuration_options={ },
-        enabled=true
-    },
+    -- ["workshop-3138571948"]={
+    --    configuration_options={ },
+    --     enabled=true
+    -- },
     -- Don't Starve Together - Item Info (consider if Show Me (Fixed) is enough)
     ["workshop-3425275001"]={
         configuration_options={ },
@@ -77,8 +77,8 @@ return {
         enabled=true
     },
     -- OLD Global Positions - **DISABLED** to avoid conflict with Global Positions (CompleteSync)
-    -- ["workshop-378160973"]={
-    --    configuration_options={ },
-    --    enabled=true
-    -- }
+    ["workshop-378160973"]={
+        configuration_options={ },
+        enabled=true
+    }
 }
