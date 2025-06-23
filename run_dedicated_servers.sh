@@ -1,4 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#
+# SPDX-FileCopyrightText: ©2021-2025 franklin <franklin@bitsmasher.net>
+#
+# SPDX-License-Identifier: MIT
+
+#set -euo pipefail
+
+# The special shell variable IFS determines how Bash
+# recognizes word boundaries while splitting a sequence of character strings.
+
+#IFS=$'\n\t'
 
 cluster_name="MyDediServer"
 dontstarve_dir="$HOME/.klei/DoNotStarveTogether"
@@ -25,8 +36,8 @@ check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
 steamcmd +login anonymous +app_update 343050 validate +quit
 
 # Caves has a soft link to the same file
-cp ${HOME}/docs/modoverrides.lua ${HOME}/.klei/DoNotStarveTogether/MyDediServer
-cp ${HOME}/docs/dedicated_server_mods_setup.lua ${HOME}/.klei/DoNotStarveTogether/MyDediServer
+cp ${HOME}/docs/modoverrides.lua ${dontstarvedir}/${clustername}
+cp ${HOME}/docs/dedicated_server_mods_setup.lua ${dontstarvedir}/${clustername}
 cp ${HOME}/docs/worldgenoverride.lua 
 
 pushd "/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server/bin64"
