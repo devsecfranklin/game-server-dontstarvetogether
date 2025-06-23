@@ -1,1 +1,1 @@
-../Master/modsettings.lua
+../Master/modoverrides.lua

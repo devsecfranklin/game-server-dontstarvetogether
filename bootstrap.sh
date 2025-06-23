@@ -25,3 +25,4 @@ steamcmd +login anonymous +app_update 343050 validate +quit
 # Caves has a soft link to the same file
 cp ${HOME}/docs/modoverrides.lua ${HOME}/.klei/DoNotStarveTogether/MyDediServer
 cp ${HOME}/docs/dedicated_server_mods_setup.lua ${HOME}/.klei/DoNotStarveTogether/MyDediServer
+cp ${HOME}/docs/worldgenoverride.lua ${HOME}/.klei/DoNotStarveTogether/MyDediServer/Master/

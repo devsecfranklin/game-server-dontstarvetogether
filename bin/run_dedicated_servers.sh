@@ -22,6 +22,12 @@ check_for_file "$dontstarve_dir/$cluster_name/Master/server.ini"
 check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
 
 # steamcmd +force_install_dir "$install_dir" +login anonymous +app_update 343050 validate +quit
+steamcmd +login anonymous +app_update 343050 validate +quit
+
+# Caves has a soft link to the same file
+cp ${HOME}/docs/modoverrides.lua ${HOME}/.klei/DoNotStarveTogether/MyDediServer
+cp ${HOME}/docs/dedicated_server_mods_setup.lua ${HOME}/.klei/DoNotStarveTogether/MyDediServer
+cp ${HOME}/docs/worldgenoverride.lua 
 
 pushd "/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server/bin64"
 run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)
