@@ -13,4 +13,5 @@ jobs:
       - name: wow-lint
         uses: davidcraig/action-wow-lint@v1.0.1
         with:
-            path-to-files: '.'
+            path-to-files: '.klei/DoNotStarveTogether/MyDediServer/dedicated_server_mods_setup.lua
+'
