@@ -40,6 +40,7 @@ cp ${HOME}/docs/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Master"
 cp ${HOME}/docs/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
 cp ${HOME}/docs/worldgenoverrides.lua "${dontstarve_dir}/$cluster_name/Master"
 cp ${HOME}/docs/worldgenoverrides.lua-caves "${dontstarve_dir}/${cluster_name}/Caves"
+echo "${CLUSTER_TOKEN}" > "${downstarvedir}"
 
 pushd "/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server/bin64"
 run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)
