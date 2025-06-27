@@ -1,8 +1,19 @@
 1185229307, epic health bar
 2923790645, global player icons
-3138571948, global positions (map sync)
-
 2847438128, na
 803744804, ham bat
-
+378160973, Older Global Positions (commented out due to CompleteSync)
+3436020204, Show Me (Fixed)
+3489027659, Warly's Portable Crock Pot
+398858801, AFK Detection
+481765222, Ancient Altar
+66586835, Combined Status
+714712361, Minimap HUD
+2930301969, Extra Equip Slots
+2547661042, Better Hunger Icon
 374550005, 999 stack size
+
+# Could not load mod_config_data/modconfiguration_workshop-1185229307
+# Caves:  Could not load mod_config_data/modconfiguration_workshop-481765222
+# Caves: Could not load mod_config_data/modconfiguration_workshop-3436020204
+
