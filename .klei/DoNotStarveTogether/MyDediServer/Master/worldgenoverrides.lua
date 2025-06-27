@@ -22,10 +22,11 @@ KLEI     1 return {
 
         -- Season lengths (in number of days)
         season_start = "AUTUMN", -- AUTUMN, WINTER, SPRING, SUMMER
-        autumn = "VERY_LONG",         -- SHORT, DEFAULT, LONG, VERY_LONG
-        winter = "SHORT",      -- SHORT, DEFAULT, LONG, VERY_LONG
-        spring = "LONG",      -- SHORT, DEFAULT, LONG, VERY_LONG
-        summer = "SHORT",      -- SHORT, DEFAULT, LONG, VERY_LONG
+        autumn = "LONG",         -- SHORT, DEFAULT, LONG, VERY_LONG
+        winter = "DEFAULT",      -- SHORT, DEFAULT, LONG, VERY_LONG
+        spring = "DEFAULT",      -- SHORT, DEFAULT, LONG, VERY_LONG
+        summer = "DEFAULT",      -- SHORT, DEFAULT, LONG, VERY_LONG
+	day = "DEFAULT", -- "default", "longday", "longdusk", "longnight", "noday", "nodusk", "nonight", "onlyday", "onlydusk", "onlynight"
 
         -- World size
         world_size = "HUGE",   -- SMALL, MEDIUM, LARGE, HUGE, LUSH, WINTER, DESERT, Default Plus
@@ -56,7 +57,7 @@ KLEI     1 return {
         biome = "DEFAULT",       -- DEFAULT, MORE_ROCKS, MORE_FOREST, MORE_GRASS, MORE_MARSH, MORE_SAVANNA, NO_MARSH, NO_SAVANNA, NO_GRASS, NO_FOREST, NO_ROCKS
 
         -- Resource abundance (overall)
-        resources = "VERY_MORE",   -- NONE, LESS, DEFAULT, MORE, VERY_MORE
+        resources = "MORE",   -- NONE, LESS, DEFAULT, MORE, VERY_MORE
 
         -- Creature settings
         mobs = "DEFAULT",        -- NONE, LESS, DEFAULT, MORE, VERY_MORE

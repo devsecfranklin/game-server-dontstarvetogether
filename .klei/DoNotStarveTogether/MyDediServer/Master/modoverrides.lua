@@ -21,16 +21,6 @@ return {
         configuration_options={ },
         enabled=true
     },
-    -- Global Positions (CompleteSync) - Recommended. Only use one Global Positions mod.
-    -- ["workshop-3138571948"]={
-    --    configuration_options={ },
-    --     enabled=true
-    -- },
-    -- Don't Starve Together - Item Info (consider if Show Me (Fixed) is enough)
-    ["workshop-3425275001"]={
-        configuration_options={ },
-        enabled=true
-    },
     -- Show Me (Fixed)
     ["workshop-3436020204"]={
         configuration_options={ },
@@ -38,11 +28,6 @@ return {
     },
     -- Warly's Portable Crock Pot
     ["workshop-3489027659"]={
-        configuration_options={ },
-        enabled=true
-    },
-    -- Health Info (Note: Show Me (Fixed) often includes health info)
-    ["workshop-375859599"]={
         configuration_options={ },
         enabled=true
     },
@@ -76,7 +61,7 @@ return {
         configuration_options={ },
         enabled=true
     },
-    -- OLD Global Positions - **DISABLED** to avoid conflict with Global Positions (CompleteSync)
+    -- OLD Global Positions 
     ["workshop-378160973"]={
         configuration_options={ },
         enabled=true

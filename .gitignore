@@ -8,9 +8,11 @@
 .boto
 .cache
 .cloud-locale-test.skip
+cluster_token.txt
 *.code-workspace
 #  may contain gcloud files
 .config
+.envr)c
 .gitconfig
 .lesshst
 .local
