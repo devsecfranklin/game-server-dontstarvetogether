@@ -1,5 +1,7 @@
 # Don't Starve Together - Dedicated Server
 
+* To play on the Dont Starve Together server, start the game on Steam, then look for the server named &quot;wonderland&quot;
+* Streaming live to twitch.tv/s1y_b0rg 
 * Clone this repo onto your game server.
 * Create a dedicated user for the game, such as `dst`.
   * make the repo clone the home directory of the new dst user.
