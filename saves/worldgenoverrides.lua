@@ -26,7 +26,7 @@ KLEI     1 return {
         winter = "DEFAULT",      -- SHORT, DEFAULT, LONG, VERY_LONG
         spring = "DEFAULT",      -- SHORT, DEFAULT, LONG, VERY_LONG
         summer = "DEFAULT",      -- SHORT, DEFAULT, LONG, VERY_LONG
-	day = "DEFAULT", -- "default", "longday", "longdusk", "longnight", "noday", "nodusk", "nonight", "onlyday", "onlydusk", "onlynight"
+	day = "default", -- "default", "longday", "longdusk", "longnight", "noday", "nodusk", "nonight", "onlyday", "onlydusk", "onlynight"
 
         -- World size
         world_size = "HUGE",   -- SMALL, MEDIUM, LARGE, HUGE, LUSH, WINTER, DESERT, Default Plus
