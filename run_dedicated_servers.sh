@@ -60,7 +60,8 @@ log_info "Installing our custom server files"
 cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Master"
 cp ${HOME}/saves/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
 cp ${HOME}/saves/worldgenoverrides.lua "${dontstarve_dir}/$cluster_name/Master"
-cp ${HOME}/saves/worldgenoverrides.lua-caves "${dontstarve_dir}/${cluster_name}/Caves"
+cp ${HOME}/saves/worldgenoverrides.lua-caves "${dontstarve_dir}/${cluster_name}/Caves/worldgenoverrides.lua"
+
 log_info "Copying cluster token"
 echo "${CLUSTER_TOKEN}" > "${dontstarve_dir}/${cluster_name}/cluster_token.txt" # gaurd this secret
 check_for_file "$dontstarve_dir/$cluster_name/cluster_token.txt"

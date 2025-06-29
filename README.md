@@ -8,7 +8,7 @@
 
 ## Install `direnv`
 
-* We will use `direbv` to pick up the secret token from an environment variable.
+* We will use `direnv` to pick up the secret token from an environment variable.
   * [install direnv](https://direnv.net/docs/installation.html)
 
 ```sh
