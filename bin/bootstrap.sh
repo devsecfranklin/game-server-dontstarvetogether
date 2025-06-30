@@ -12,7 +12,7 @@
 #IFS=$'\n\t'
 
 cluster_name="MyDediServer"
-dontstarve_dir="$HOME/.klei/DoNotStarveTogether"
+dontstarve_dir="/home/dst/.klei/DoNotStarveTogether"
 
 function packages() {
   echo -e "\n${LPURP}# --- install packages -------------------------------------------\n${NC}"
@@ -26,10 +26,10 @@ EOF
   sudo apt-get update
   sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
     libgl1-mesa-dri:amd64 \
-  libgl1-mesa-dri:i386 \
-  libgl1-mesa-glx:amd64 \
-  libgl1-mesa-glx:i386 \
-  steam-launcher
+    libgl1-mesa-dri:i386 \
+    libgl1-mesa-glx:amd64 \
+    libgl1-mesa-glx:i386 \
+    steam-launcher
 }
 
 function dst_user() {
@@ -49,13 +49,7 @@ function main() {
   if [ ! -d "${dontstarve_dir}" ]; then mkdir -p "${dontstarve_dir}"; fi
   echo -e "\n${LPURP}# --- updating dedi server application -------------------------------------------\n${NC}"
   steamcmd +login anonymous +app_update 343050 validate +quit
-
-  echo -e "\n${LPURP}# --- copy in config files -------------------------------------------\n${NC}"
-  # Caves has a soft link to the same file
-  cp ${HOME}/docs/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Master"
-  cp ${HOME}/docs/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
-  cp ${HOME}/docs/worldgenoverrides.lua "${dontstarve_dir}/$cluster_name/Master"
-  cp ${HOME}/docs/worldgenoverrides.lua-caves "${dontstarve_dir}/${cluster_name}/Caves"
+  # let the run_server script copy files into place and complete the configuration
 }
 
 main "$@"
