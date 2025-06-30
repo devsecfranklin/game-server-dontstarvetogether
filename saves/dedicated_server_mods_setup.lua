@@ -1,3 +1,7 @@
+-- SPDX-FileCopyrightText: ©2025 franklin <franklin@bitsmasher.net>
+--
+-- SPDX-License-Identifier: MIT
+
 ServerModSetup("1185229307") -- Epic Healthbar
 ServerModSetup("2923790645") -- Global Player Icons
 -- ServerModSetup("3138571948") -- Global Positions (CompleteSync) - Recommended over older Global Positions

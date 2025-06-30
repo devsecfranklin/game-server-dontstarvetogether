@@ -16,17 +16,24 @@ curl -sfL https://direnv.net/install.sh | bash
 eval "$(direnv hook bash)"
 ```
 
+Now create a file called `.envrc` in this top level folder.
+It should have one line in it like so:
+
+```sh
+export CLUSTER_TOKEN="pef-g^KU_QrGp3bke^uerRdBrRFyKING2q9zypelrosOjFYc1g="
+```
+
 ## Edit config files
 
-* Edit the [files in the `saves` directory](https://github.com/devsecfranklin/game-server-dontstarvetogether/tree/main/saves) 
+* Edit the [files in the top level `./saves` directory](https://github.com/devsecfranklin/game-server-dontstarvetogether/tree/main/saves) 
   * These will be copied into place by the scripts later.
 
 ## Run Scripts
 
-These two scripts set up the envirronment and start the game server.
+These two scripts set up the environment and start the game server.
 
 ```sh
-./bootstrap.sh
-./run_dedicated_server.sh
+./bin/bootstrap.sh
+./bin/run_dedicated_server.sh
 ```
 

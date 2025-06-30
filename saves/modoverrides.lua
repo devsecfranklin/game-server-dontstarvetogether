@@ -1,14 +1,6 @@
+-- SPDX-FileCopyrightText: ©2025 franklin <franklin@bitsmasher.net>
 --
--- This is your modoverrides.lua file for Don't Starve Together dedicated servers.
--- Copy this file into your Cluster_X/Master/ and Cluster_X/Caves/ directories.
---
--- For custom mod configurations, it is highly recommended to set them up in-game
--- by hosting a local server, and then copying the 'modoverrides.lua' file
--- from your local Klei save folder (Documents/Klei/DoNotStarveTogether/...)
---
--- Remove the '--' to uncomment and enable a mod.
--- Ensure the last entry does NOT have a trailing comma.
---
+-- SPDX-License-Identifier: MIT
 
 return {
     -- Epic Healthbar
@@ -26,21 +18,6 @@ return {
         configuration_options={ },
         enabled=true
     },
-    -- Warly's Portable Crock Pot
-    ["workshop-3489027659"]={
-        configuration_options={ },
-        enabled=true
-    },
-    -- AFK Detection
-    ["workshop-398858801"]={
-        configuration_options={ },
-        enabled=true
-    },
-    -- Ancient Altar
-    ["workshop-481765222"]={
-        configuration_options={ },
-        enabled=true
-    },
     -- Combined Status
     ["workshop-66586835"]={
         configuration_options={ },
@@ -51,19 +28,29 @@ return {
         configuration_options={ },
         enabled=true
     },
-    -- Extra Equip Slots
-    ["workshop-2930301969"]={
-        configuration_options={ },
+    -- Server Announcement 
+    ["workshop-1077747217"]={
+        configuration_options={ 
+          ANNOUNCEMENT_INTERVAL=0.5,
+	  ANNOUNCEMENT_SWITCH=true,
+	  ANNOUNCEMENT_TEXTS={
+            "WINTER IS COMING",
+	    "you will not survive."
+	  },
+	  ANNOUNCEMENT_TEXT_RANDOM=true,
+	  ANNOUNCEMENT_FIRST_TIME_JOIN="Hello there. Be nice. Have fun.",
+	  SPEAK_DURATION_SHOWN=5;
+	  SPEAK_EVERY_TIME_JOIN="Be nice, Have fun.",
+	  SPEAK_FIRST_TIME_JOIN="Prepare to die.",
+	  SPEAK_ON_DEATH="No we cant roll back. LOL",
+	  SPEAK_ON_RESSURECT="Oh great, its you again.",
+	  SPEAK_SWITCH=true
+	},
         enabled=true
     },
-    -- Better Hunger Icon
-    ["workshop-2547661042"]={
-        configuration_options={ },
-        enabled=true
-    },
-    -- OLD Global Positions 
-    ["workshop-378160973"]={
-        configuration_options={ },
-        enabled=true
+    -- Global Positions (CompleteSync) - Recommended. Only use one Global Positions mod.
+    ["workshop-3138571948"]={
+       configuration_options={ },
+       enabled=true
     }
 }

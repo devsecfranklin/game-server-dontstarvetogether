@@ -1,6 +1,10 @@
+-- SPDX-FileCopyrightText: ©2025 franklin <franklin@bitsmasher.net>
+--
+-- SPDX-License-Identifier: MIT
+
 KLEI     1 return {
 	--
-    -- This is an example worldgenoverrides.lua file for Don't Starve Together.
+        -- This is an example worldgenoverrides.lua file for Don't Starve Together.
 -- Copy this file into your Cluster_X/Master/ and/or Cluster_X/Caves/ directories
 -- to customize world generation settings.
 --
@@ -18,7 +22,7 @@ KLEI     1 return {
         -- Base preset. Options include:
         -- "DEFAULT", "LIGHTSOUT", "NO_SWEAT", "NO_REGEN", "RICH", "COMPLICATED", "WINTERFEAST", "HALLOWED_NIGHTS"
         -- If you set specific values below, they will override the preset's defaults.
-        preset = "WINTERFEAST",
+        preset = "DEFAULT",
 
         -- Season lengths (in number of days)
         season_start = "AUTUMN", -- AUTUMN, WINTER, SPRING, SUMMER
@@ -42,7 +46,7 @@ KLEI     1 return {
         acidrain = "NONE",    -- NONE, LESS, DEFAULT, MORE, VERY_MORE
 
         -- Disease (e.g., for berry bushes, birchnuts)
-        disease = "DEFAULT",     -- NONE, SLOW, DEFAULT, FAST, VERY_FAST
+        disease = "SLOW",     -- NONE, SLOW, DEFAULT, FAST, VERY_FAST
 
         -- Branching (how biomes connect)
         branching = "DEFAULT",   -- NEWEVERYTHING, DEFAULT, NO_BRANCHING
@@ -60,9 +64,9 @@ KLEI     1 return {
         resources = "MORE",   -- NONE, LESS, DEFAULT, MORE, VERY_MORE
 
         -- Creature settings
-        mobs = "DEFAULT",        -- NONE, LESS, DEFAULT, MORE, VERY_MORE
+        mobs = "LESS",        -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         giants = "DEFAULT",      -- NONE, LESS, DEFAULT, MORE, VERY_MORE
-        hound_attacks = "NONE",-- NONE, LESS, DEFAULT, MORE, VERY_MORE
+        hound_attacks = "LESS", -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         bees = "DEFAULT",        -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         spiders = "DEFAULT",     -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         penguins = "DEFAULT",    -- NONE, LESS, DEFAULT, MORE, VERY_MORE
@@ -70,16 +74,16 @@ KLEI     1 return {
 
         -- Specific feature settings
         berrybushes = "MORE", -- NONE, LESS, DEFAULT, MORE, VERY_MORE
-        grass = "DEFAULT",       -- NONE, LESS, DEFAULT, MORE, VERY_MORE
+        grass = "MORE",       -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         trees = "MORE",       -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         reeds = "MORE",       -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         rock = "MORE",        -- NONE, LESS, DEFAULT, MORE, VERY_MORE
-        flint = "DEFAULT",       -- NONE, LESS, DEFAULT, MORE, VERY_MORE
-        saplings = "DEFAULT",    -- NONE, LESS, DEFAULT, MORE, VERY_MORE
+        flint = "MORE",       -- NONE, LESS, DEFAULT, MORE, VERY_MORE
+        saplings = "MORE",    -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         flowers = "DEFAULT",     -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         ponds = "DEFAULT",       -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         boulders = "DEFAULT",    -- NONE, LESS, DEFAULT, MORE, VERY_MORE
-        carrots = "DEFAULT",     -- NONE, LESS, DEFAULT, MORE, VERY_MORE
+        carrots = "MORE",     -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         mushtrees = "DEFAULT",   -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         cacti = "DEFAULT",       -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         lunar_plants = "DEFAULT",-- NONE, LESS, DEFAULT, MORE, VERY_MORE
