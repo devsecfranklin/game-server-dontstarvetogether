@@ -17,7 +17,7 @@ LPURP='\033[1;35m'
 NC='\033[0m' # No Color
 
 # --- Some config Variables ----------------------------------------
-DST_SERVER_BASE_DIR="/home/franklin/workspace/game-server-dontstarvetogether/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server"
+DST_SERVER_DIR="/home/franklin/workspace/game-server-dontstarvetogether/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server"
 cluster_name="MyDediServer"
 dontstarve_dir="${HOME}/.klei/DoNotStarveTogether"
 
@@ -50,7 +50,7 @@ function check_for_file() {
 function game_update() {
   log_header "Updating game server files from Steam"
   # steamcmd +force_install_dir "$install_dir" +login anonymous +app_update 343050 validate +quit
-  steamcmd +login anonymous +app_update 343050 validate +quit
+  steamcmd +login "$STEAM_USER" "$STEAM_PASS" +app_update 343050 validate +quit
 }
 
 function set_password(){
