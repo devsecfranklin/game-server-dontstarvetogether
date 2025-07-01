@@ -30,6 +30,13 @@ export CLUSTER_TOKEN="pef-g^KU_QrGp3bke^uerRdBrRFyKING2q9zypelrosOjFYc1g="
 * There is [a new script](saves/gen_mod_override.sh) to generate the `saves/modoverrides.lua` file. 
   * It just got tedious recreating it by hand every time we wanted to test a new server side mod.
 
+## Crontab Entry
+
+You can cause the gamse server to update itself at a time when you should probably be sleeping.
+Use the `crontab -e` command to add this line to your dst service user crontab:
+
+`0 4 * * * /usr/games/steamcmd +login anonymous +app_update 343050 validate +quit`
+
 ## Run Scripts
 
 These two scripts set up the environment and start the game server.

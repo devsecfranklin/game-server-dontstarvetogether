@@ -16,6 +16,7 @@ cluster_token.txt
 .gitconfig
 .lesshst
 .local
+mbox
 # .netrc contains secrets for service tokens
 .netrc
 *.plan
