@@ -12,7 +12,7 @@ cluster_token.txt
 *.code-workspace
 #  may contain gcloud files
 .config
-.envr)c
+.envrc
 .gitconfig
 .lesshst
 .local

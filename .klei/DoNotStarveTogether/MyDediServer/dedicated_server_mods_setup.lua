@@ -2,20 +2,28 @@
 --
 -- SPDX-License-Identifier: MIT
 
-ServerModSetup("1185229307") -- Epic Healthbar
-ServerModSetup("2923790645") -- Global Player Icons
-ServerModSetup("3138571948") -- Global Positions (CompleteSync) - Recommended over older Global Positions
--- ServerModSetup("378160973") -- Older Global Positions (commented out due to CompleteSync)
--- ServerModSetup("3425275001") -- Don't Starve Together - Item Info (consider if Show Me (Fixed) is enough)
-ServerModSetup("3436020204") -- Show Me (Fixed)
--- ServerModSetup("3489027659") -- Warly's Portable Crock Pot
---ServerModSetup("375859599") -- Health Info (might be redundant with Show Me (Fixed))
--- ServerModSetup("375859599") -- DUPLICATE Health Info
--- ServerModSetup("398858801") -- AFK Detection
---ServerModSetup("481765222") -- Ancient Altar
--- ServerModSetup("481765222") -- DUPLICATE Ancient Altar
-ServerModSetup("66586835") -- Combined Status
-ServerModSetup("714712361") -- Minimap HUD
--- ServerModSetup("2930301969") -- Extra Equip Slots
-ServerModSetup("2547661042") -- Better Hunger Icon
-ServerModSetup("1077747217")
+--ServerModSetup("1185229307") -- Epic Healthbar
+--ServerModSetup("632082897") -- Global Player Icons
+--ServerModSetup("3138571948") -- Global Positions (CompleteSync) - Recommended over older Global Positions
+--ServerModSetup("378160973") -- Older Global Positions (commented out due to CompleteSync)
+--ServerModSetup("66586835") -- Combined Status
+--ServerModSetup("714712361") -- Minimap HUD
+--ServerModSetup("1077747217")
+
+ServerModSetup("345692228") --Minimap HUD
+ServerModSetup("409184357") --Zoro
+ServerModSetup("376333686") --Always On Status
+ServerModSetup("373991022") --Global Player Icons
+ServerModSetup("375859599") --Health Info
+ServerModSetup("374550642") --Increased Stack size
+ServerModSetup("378160973") --Global Positions
+ServerModSetup("347079953") --Display Food Values
+ServerModSetup("382177939") --DST Storm Cellar
+ServerModSetup("450498063") --Illyasviel Von Einzbern(Illya)
+ServerModSetup("375850593") --Extra Equip Slots
+ServerModSetup("362175979") --Wormhole Marks [DST]
+ServerModSetup("367546858") --EZInput
+ServerModSetup("439115156") --[DST] Musha [5.8 F]
+ServerModSetup("364491382") --Faroz Character [DST]
+ServerModSetup("451559807") --cave mod
+ServerModSetup("351325790") --Geometric Placement

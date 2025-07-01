@@ -3,54 +3,72 @@
 -- SPDX-License-Identifier: MIT
 
 return {
-    -- Epic Healthbar
-    ["workshop-1185229307"]={
+    ["workshop-345692228"]={
         configuration_options={ },
         enabled=true
     },
-    -- Global Player Icons
-    ["workshop-2923790645"]={
+    ["workshop-409184357"]={
         configuration_options={ },
         enabled=true
     },
-    -- Show Me (Fixed)
-    ["workshop-3436020204"]={
+    ["workshop-376333686"]={
         configuration_options={ },
         enabled=true
     },
-    -- Combined Status
-    ["workshop-66586835"]={
+    ["workshop-373991022"]={
         configuration_options={ },
         enabled=true
     },
-    -- Minimap HUD
-    ["workshop-714712361"]={
+    ["workshop-375859599"]={
         configuration_options={ },
         enabled=true
     },
-    -- Server Announcement 
-    ["workshop-1077747217"]={
-        configuration_options={ 
-          ANNOUNCEMENT_INTERVAL=0.5,
-	  ANNOUNCEMENT_SWITCH=true,
-	  ANNOUNCEMENT_TEXTS={
-            "WINTER IS COMING",
-	    "you will not survive."
-	  },
-	  ANNOUNCEMENT_TEXT_RANDOM=true,
-	  ANNOUNCEMENT_FIRST_TIME_JOIN="Hello there. Be nice. Have fun.",
-	  SPEAK_DURATION_SHOWN=5;
-	  SPEAK_EVERY_TIME_JOIN="Be nice, Have fun.",
-	  SPEAK_FIRST_TIME_JOIN="Prepare to die.",
-	  SPEAK_ON_DEATH="No we cant roll back. LOL",
-	  SPEAK_ON_RESSURECT="Oh great, its you again.",
-	  SPEAK_SWITCH=true
-	},
+    ["workshop-374550642"]={
+        configuration_options={ },
         enabled=true
     },
-    -- Global Positions (CompleteSync) - Recommended. Only use one Global Positions mod.
-    ["workshop-3138571948"]={
-       configuration_options={ },
-       enabled=true
+    ["workshop-378160973"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-347079953"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-382177939"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-450498063"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-375850593"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-362175979"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-367546858"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-439115156"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-364491382"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-451559807"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-351325790"]={
+        configuration_options={ },
+        enabled=true
     }
 }
