@@ -15,6 +15,8 @@ cat << EOF > $OUTFILE
 return {
 EOF
 
+# check the list for dupes!
+
 for i in ${MODS[@]}; do
   echo "found mod: $i"
   #j=$(echo "|${i//[$'\t\r\n ']}|")
