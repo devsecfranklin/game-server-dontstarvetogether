@@ -27,6 +27,8 @@ export CLUSTER_TOKEN="pef-g^KU_QrGp3bke^uerRdBrRFyKING2q9zypelrosOjFYc1g="
 
 * Edit the [files in the top level `./saves` directory](https://github.com/devsecfranklin/game-server-dontstarvetogether/tree/main/saves) 
   * These will be copied into place by the scripts later.
+* There is [a new script](saves/gen_mod_override.sh) to generate the `saves/modoverrides.lua` file. 
+  * It just got tedious recreating it by hand every time we wanted to test a new server side mod.
 
 ## Run Scripts
 
