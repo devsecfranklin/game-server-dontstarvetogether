@@ -21,8 +21,8 @@ mbox
 .netrc
 *.plan
 .sentinel
-server_log/
-server_chat_log/
+server_log*
+server_chat_log*
 # .ssh dir may contain private keys
 .ssh
 .steam
