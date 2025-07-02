@@ -20,6 +20,7 @@ mbox
 # .netrc contains secrets for service tokens
 .netrc
 *.plan
+.selected_editor
 .sentinel
 server_log*
 server_chat_log*

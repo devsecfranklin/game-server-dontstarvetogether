@@ -64,6 +64,7 @@ function main() {
   log_header "Installing our custom server files"
   cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Master"
   cp ${HOME}/saves/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
+  cp ${HOME}/saves/modoverrides.lua ${HOME}/saves/dedicated_server_mods_setup.lua "${DST_SERVER_DIR}/mods"
   cp ${HOME}/saves/worldgenoverrides.lua "${dontstarve_dir}/$cluster_name/Master"
   cp ${HOME}/saves/worldgenoverrides.lua-caves "${dontstarve_dir}/${cluster_name}/Caves/worldgenoverrides.lua"
   log_header "Copying cluster token into server files"
@@ -77,17 +78,18 @@ function main() {
   log_warn "If any players cannot see the server in the list, update the game files from steam"
   #game_update 
   pushd "/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server/bin64"
-log_info "Start servers"
-run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)
-run_shared+=(-cluster "$cluster_name")
-"${run_shared[@]}" -shard Caves  | sed 's/^/Caves:  /' &
-"${run_shared[@]}" -shard Master | sed 's/^/Master: /'
+  log_info "Start servers"
 
-#screen -dmS "DST Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer"
-#screen -dmS "DST_caves Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer -conf_dir DST_Cave"
-#/usr/bin/screen -S "DST" bash -c 'LD_LIBRARY_PATH=~/dst_lib ./dontstarve_dedicated_server_nullrenderer -console'
+  run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)
+  run_shared+=(-cluster "$cluster_name")
+  "${run_shared[@]}" -shard Caves  | sed 's/^/Caves:  /' &
+  "${run_shared[@]}" -shard Master | sed 's/^/Master: /'
 
-log_success "Ready to play!"
+  #screen -dmS "DST Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer"
+  #screen -dmS "DST_caves Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer -conf_dir DST_Cave"
+  #/usr/bin/screen -S "DST" bash -c 'LD_LIBRARY_PATH=~/dst_lib ./dontstarve_dedicated_server_nullrenderer -console'
+
+  log_success "Ready to play!"
 }
 
 main "$@"
