@@ -3,54 +3,50 @@
 -- SPDX-License-Identifier: MIT
 
 return {
-    -- Epic Healthbar
-    ["workshop-1185229307"]={
+    ["workshop-3138571948"]={
         configuration_options={ },
         enabled=true
     },
-    -- Global Player Icons
-    ["workshop-2923790645"]={
-        configuration_options={ },
-        enabled=true
-    },
-    -- Show Me (Fixed)
     ["workshop-3436020204"]={
         configuration_options={ },
         enabled=true
     },
-    -- Combined Status
-    ["workshop-66586835"]={
+    ["workshop-373991022"]={
         configuration_options={ },
         enabled=true
     },
-    -- Minimap HUD
-    ["workshop-714712361"]={
+    ["workshop-375859599"]={
         configuration_options={ },
         enabled=true
     },
-    -- Server Announcement 
-    ["workshop-1077747217"]={
-        configuration_options={ 
-          ANNOUNCEMENT_INTERVAL=0.5,
-	  ANNOUNCEMENT_SWITCH=true,
-	  ANNOUNCEMENT_TEXTS={
-            "WINTER IS COMING",
-	    "you will not survive."
-	  },
-	  ANNOUNCEMENT_TEXT_RANDOM=true,
-	  ANNOUNCEMENT_FIRST_TIME_JOIN="Hello there. Be nice. Have fun.",
-	  SPEAK_DURATION_SHOWN=5;
-	  SPEAK_EVERY_TIME_JOIN="Be nice, Have fun.",
-	  SPEAK_FIRST_TIME_JOIN="Prepare to die.",
-	  SPEAK_ON_DEATH="No we cant roll back. LOL",
-	  SPEAK_ON_RESSURECT="Oh great, its you again.",
-	  SPEAK_SWITCH=true
-	},
+    ["workshop-382177939"]={
+        configuration_options={ },
         enabled=true
     },
-    -- Global Positions (CompleteSync) - Recommended. Only use one Global Positions mod.
-    ["workshop-3138571948"]={
-       configuration_options={ },
-       enabled=true
-    }
+    ["workshop-2594707725"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-665868350"]={
+        configuration_options={ },
+        enabled=true
+    },
+        ["workshop-1077747217"]={ configuration_options={
+        ANNOUNCE_OPEN = true , -- Announce
+	SAY_OPEN = true , -- Say
+	ANNOUNCE_CD = 20 , -- Announce Interval (min)
+	ANNOUNCE_ORDER = true , -- Announce Order
+	SAY_SHOWTIME = 3 , -- Say Show Time(sec)
+	SAY_DELAY = 1 , -- Say Delay (sec)
+	ANNOUNCE_TEXT = {
+		-- Random players:%pds days %pns name, the number of players:%nws world %ncs cave.
+		"we are streaming live at https://twitch.tv/s1y_b0rg",
+		"thanks for playing!",
+	} , -- Announce Message
+		ANNOUNCE_FIRSTJION_TEXT = "everybody act cool, %pds is here" , -- First Join Announce Text
+		SAY_FIRSTJION_TEXT = "welcome %pns. we are streaming live at https://twitch.tv/s1y_b0rg" , -- First Join Say Text
+		SAY_EVERYJION_TEXT = "welcome back %pns, nerd. time to die." , -- Every Join Say Text
+		SAY_DEATH_TEXT = "%pns u dead lol" , -- Death Say Text
+		SAY_RESURRECTION_TEXT = "%pns returns from beyond the grave!" , -- Resurrection Say Text
+    }, enabled=true },
 }

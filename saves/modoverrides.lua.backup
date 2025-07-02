@@ -1,17 +1,21 @@
+-- SPDX-FileCopyrightText: ©2025 franklin <franklin@bitsmasher.net>
+--
+-- SPDX-License-Identifier: MIT
+
 return {
-    ["workshop-3138571948"]={ configuration_options={ }, enabled=true },
-    ["workshop-2547661042"]={ configuration_options={ }, enabled=true },
-    ["workshop-2930301969"]={ configuration_options={ }, enabled=true },
-    ["workshop-2923790645"]={ configuration_options={ }, enabled=true },
-    ["workshop-481765222"]={ configuration_options={ }, enabled=true },
-    ["workshop-375859599"]={ configuration_options={ }, enabled=true },
-    ["workshop-1185229307"]={ configuration_options={ }, enabled=true },
-    ["workshop-3436020204"]={ configuration_options={ }, enabled=true },
-    ["workshop-398858801"]={ configuration_options={ }, enabled=true },
-    ["workshop-3425275001"]={ configuration_options={ }, enabled=true },
-    ["workshop-3489027659"]={ configuration_options={ }, enabled=true },
-    ["workshop-378160973"]={ configuration_options={ }, enabled=true },
-    ["workshop-66586835"]={ configuration_options={ 
+    ["workshop-632082897"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-3138571948"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-714712361"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-1077747217"]={configuration_options={
         ANNOUNCE_OPEN = true , -- Announce
 	SAY_OPEN = true , -- Say
 	ANNOUNCE_CD = 20 , -- Announce Interval (min)
@@ -29,5 +33,40 @@ return {
 		SAY_DEATH_TEXT = "%pns u dead lol" , -- Death Say Text
 		SAY_RESURRECTION_TEXT = "%pns returns from beyond the grave!" , -- Resurrection Say Text
     }, enabled=true },
-    ["workshop-714712361"]={ configuration_options={ }, enabled=true }
+    ["workshop-375859599"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-347079953"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-382177939"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-450498063"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-375850593"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-362175979"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-439115156"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-364491382"]={
+        configuration_options={ },
+        enabled=true
+    },
+    ["workshop-351325790"]={
+        configuration_options={ },
+        enabled=true
+    }
 }

@@ -17,7 +17,7 @@ LPURP='\033[1;35m'
 NC='\033[0m' # No Color
 
 # --- Some config Variables ----------------------------------------
-DST_SERVER_BASE_DIR="/home/franklin/workspace/game-server-dontstarvetogether/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server"
+DST_SERVER_DIR="/home/franklin/workspace/game-server-dontstarvetogether/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server"
 cluster_name="MyDediServer"
 dontstarve_dir="${HOME}/.klei/DoNotStarveTogether"
 
@@ -50,7 +50,7 @@ function check_for_file() {
 function game_update() {
   log_header "Updating game server files from Steam"
   # steamcmd +force_install_dir "$install_dir" +login anonymous +app_update 343050 validate +quit
-  steamcmd +login anonymous +app_update 343050 validate +quit
+  steamcmd +login "$STEAM_USER" "$STEAM_PASS" +app_update 343050 validate +quit
 }
 
 function set_password(){
@@ -82,6 +82,10 @@ run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)
 run_shared+=(-cluster "$cluster_name")
 "${run_shared[@]}" -shard Caves  | sed 's/^/Caves:  /' &
 "${run_shared[@]}" -shard Master | sed 's/^/Master: /'
+
+#screen -dmS "DST Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer"
+#screen -dmS "DST_caves Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer -conf_dir DST_Cave"
+#/usr/bin/screen -S "DST" bash -c 'LD_LIBRARY_PATH=~/dst_lib ./dontstarve_dedicated_server_nullrenderer -console'
 
 log_success "Ready to play!"
 }
