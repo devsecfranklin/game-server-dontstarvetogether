@@ -37,6 +37,7 @@ server_chat_log*
 .vim/
 .viminfo
 .vscode
+.wget-hsts
 .idea
 .idea
 
