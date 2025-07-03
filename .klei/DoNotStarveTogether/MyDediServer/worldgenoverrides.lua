@@ -62,7 +62,7 @@ KLEI     1 return {
         -- MISCELLANEOUS
         regrowth_multiplier = "default", -- "none", "veryslow", "slow", "default", "fast", "veryfast"
         day = "default",        -- "default", "longday", "longdusk", "longnight", "noday", "nodusk", "nonight"
-        start_location = "default", -- "default", "forest", "cave", "plus"
+        start_location = "cave", -- "default", "forest", "cave", "plus"
         task_set = "default",   -- "default", "classic", "cave_default"
 
         -- Example of a mod-specific override (if the mod uses worldgenoverrides)

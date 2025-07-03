@@ -2,22 +2,22 @@
 --
 -- SPDX-License-Identifier: MIT
 
+-- client onyl https://steamcommunity.com/sharedfiles/filedetails/?id=351325790 geometric placement
+-- client only https://steamcommunity.com/sharedfiles/filedetails/?id=376333686 
+-- client only https://steamcommunity.com/sharedfiles/filedetails/?id=727774324 combined status
+-- client only https://steamcommunity.com/sharedfiles/filedetails/?id=727774324 craft pot
+
+-- -----------------------------  KEEP ----------------------------------------------------
 ServerModSetup("3138571948") -- Global Positions (CompleteSync) - Recommended over older Global Positions
-ServerModSetup("3436020204") -- Show Me (Fixed)
---ServerModSetup("1185229307") -- Epic Healthbar
---ServerModSetup("378160973") -- Older Global Positions (commented out due to CompleteSync)
---ServerModSetup("66586835") -- Combined Status
---ServerModSetup("714712361") -- Minimap HUD
---ServerModSetup("1077747217")
---ServerModSetup("409184357") --Zoro
---ServerModSetup("376333686") --Always On Status
-ServerModSetup("373991022") --Global Player Icons
-ServerModSetup("375859599") --Health Info
---ServerModSetup("374550642") --Increased Stack size
---ServerModSetup("347079953") --Display Food Values
-ServerModSetup("382177939") --DST Storm Cellar
---ServerModSetup("375850593") --Extra Equip Slots
---ServerModSetup("362175979") --Wormhole Marks [DST]
---ServerModSetup("351325790") --Geometric Placement
-ServerModSetup("2594707725")
-ServerModSetup("665868350")
+ServerModSetup("373991022") -- Global Player Icons https://steamcommunity.com/sharedfiles/filedetails/?id=632082897
+-- ServerModSetup("398858801") -- AFK detection https://steamcommunity.com/sharedfiles/filedetails/?id=398858801
+-- client only ServerModSetup("3436020204") -- Show Me (Fixed)
+
+
+-- ----------------------------- TEST -----------------------------------------------
+-- ServerModSetup("375859599") -- Health Info which one is this?
+-- cool but not ready yet ServerModSetup("2594707725") -- https://github.com/gyroplast/mod-dont-starve-chat-announcements
+ServerModSetup("3361016346") -- finder (pink chest) https://steamcommunity.com/sharedfiles/filedetails/?id=3361016346
+-- ServerModSetup("382177939") -- DST Storm Cellar
+-- ServerModSetup("1077747217") -- Server Announcement https://steamcommunity.com/sharedfiles/filedetails/?id=1077747217
+-- client only --ServerModSetup("714712361") -- Minimap HUD https://steamcommunity.com/sharedfiles/filedetails/?id=345692228
