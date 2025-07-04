@@ -24,8 +24,6 @@ KLEI     1 return {
         mushrooms = "default",
         rocks = "default",
         trees = "default",
-        reeds = "default",
-        -- ... many more resources ...
 
         -- ANIMAL SPAWN RATES
         beefalo = "default",   -- "never", "rare", "default", "often", "always"
@@ -36,7 +34,6 @@ KLEI     1 return {
         hounds = "default",
         tentacles = "default",
         lureplants = "default",
-        -- ... many more animals/creatures ...
 
         -- SEASON LENGTHS AND FREQUENCY
         season_start = "default", -- "default", "spring", "summer", "autumn", "winter"
@@ -57,14 +54,13 @@ KLEI     1 return {
         boons = "default",      -- "none", "rare", "default", "often"
         touchstone = "default", -- "none", "rare", "default", "often", "always"
         portal_moon = "default", -- For the Lunar Island portal
-        -- ... many more world features ...
 
         -- MISCELLANEOUS
         regrowth_multiplier = "default", -- "none", "veryslow", "slow", "default", "fast", "veryfast"
         day = "default",        -- "default", "longday", "longdusk", "longnight", "noday", "nodusk", "nonight"
         start_location = "default", -- "default", "forest", "cave", "plus"
         task_set = "default",   -- "default", "classic", "cave_default"
-
+        health_penalty = "none",
         -- Example of a mod-specific override (if the mod uses worldgenoverrides)
         -- "MOD_ADVANCEDWORLDGEN_ENABLED" = true,
         -- "MOD_ADVANCEDWORLDGEN_SETTING_CAVES_ON_SURFACE" = "default",

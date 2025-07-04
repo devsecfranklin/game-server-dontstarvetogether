@@ -66,6 +66,7 @@ function main() {
   cp ${HOME}/saves/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
   cp ${HOME}/saves/modoverrides.lua ${HOME}/saves/dedicated_server_mods_setup.lua "${DST_SERVER_DIR}/mods"
   cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/$cluster_name/Master"
+  cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/${cluster_name}/" # is this necessary?
   cp ${HOME}/saves/worldgenoverride.lua-caves "${dontstarve_dir}/${cluster_name}/Caves/worldgenoverride.lua"
   log_header "Copying cluster token into server files"
   echo "${CLUSTER_TOKEN}" >"${dontstarve_dir}/${cluster_name}/cluster_token.txt"
