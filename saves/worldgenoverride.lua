@@ -39,6 +39,8 @@ KLEI     1 return {
         lightning = "LESS",   -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         earthquakes = "LESS", -- NONE, LESS, DEFAULT, MORE, VERY_MORE
         acidrain = "NONE",    -- NONE, LESS, DEFAULT, MORE, VERY_MORE
+	meteorshowers = "default", -- "none", "little", "default", "more", "lots"
+        frograin = "LESS",
 
         -- Disease (e.g., for berry bushes, birchnuts)
         disease = "DEFAULT",     -- NONE, SLOW, DEFAULT, FAST, VERY_FAST
