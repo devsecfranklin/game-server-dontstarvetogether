@@ -9,7 +9,7 @@
 ServerModSetup("3138571948") -- Global Positions (CompleteSync) - Recommended over older Global Positions
 ServerModSetup("373991022") -- Global Player Icons https://steamcommunity.com/sharedfiles/filedetails/?id=632082897
 ServerModSetup("375859599") -- health indicators https://steamcommunity.com/sharedfiles/filedetails/?id=375859599
-ServerModSetup("3361016346") -- finder (pink chest) https://steamcommunity.com/sharedfiles/filedetails/?id=3361016346
+--ServerModSetup("3361016346") -- finder (pink chest) https://steamcommunity.com/sharedfiles/filedetails/?id=3361016346
 
 -- ----------------------------- TEST -----------------------------------------------
 -- ServerModSetup("398858801") -- AFK detection https://steamcommunity.com/sharedfiles/filedetails/?id=398858801
