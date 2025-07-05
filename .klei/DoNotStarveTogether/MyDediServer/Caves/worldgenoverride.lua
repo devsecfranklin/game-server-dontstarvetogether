@@ -3,7 +3,6 @@ KLEI     1 return {
         worldgen_preset = "DST_CAVE",
         settings_preset = "DST_CAVE",
         overrides = {
-		health_penalty = "none", -- none, always, someother things too
         },
 }
 
