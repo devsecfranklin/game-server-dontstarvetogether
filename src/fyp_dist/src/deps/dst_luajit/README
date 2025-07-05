@@ -1,0 +1,22 @@
+FYP uses a fork based off of LuaJIT 2.1.0-beta2.
+Changes include making undefined behavior consistent with Lua 5.1.4.
+Includes simple code re-writing to handle edge cases.
+
+This should have been a submodule or something. To view changes diff against original.
+
+README for LuaJIT 2.1.0-beta2
+-----------------------------
+
+LuaJIT is a Just-In-Time (JIT) compiler for the Lua programming language.
+
+Project Homepage: http://luajit.org/
+
+LuaJIT is Copyright (C) 2005-2016 Mike Pall.
+LuaJIT is free software, released under the MIT license.
+See full Copyright Notice in the COPYRIGHT file or in luajit.h.
+
+Documentation for LuaJIT is available in HTML format.
+Please point your favorite browser to:
+
+ doc/luajit.html
+
