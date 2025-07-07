@@ -14,6 +14,8 @@ IFS=$'\n\t'       # Preserve newlines and tabs in word splitting.
 FYP_OPTIONS="-DFYP_CCACHE=ON"
 CMAKE_OPTIONS="-DCMAKE_EXPORT_COMPILE_COMMANDS=True -DCMAKE_BUILD_TYPE=RelWithDebInfo"
 COMBINED_OPTIONS="$FYP_OPTIONS $CMAKE_OPTIONS -GNinja"
+DEBIAN_PKG=(cmake ninja-build)
+BUILD_DIR="${PWD}/bulid_linux"
 
 # --- Terminal Colors ---
 LRED='\033[1;31m'
@@ -39,30 +41,28 @@ log_error() {
 
 function make_that_dir() {
 	if [ ! -d "${1}" ]; then
+    echo -e "\n${LPURP}# --- create folder -------------------------------------------\n${NC}"
+    echo "mkdir $1"
 		mkdir "${1}" || log_error "fail to create directory: $1"
 	else
 		log_info "The folder already exist: $1"
 	fi
+}
 
-	# echo "[$0] Recreating build directories"
-	# rm -rf build_linux
-	# rm -rf build_windows
-	# mkdir build_linux
-	# mkdir build_windows
+function install_deb_pkg() {
+  echo -e "\n${LPURP}# --- install packages -------------------------------------------\n${NC}"
+  sudo DEBIAN_FRONTEND=noninteractive apt-get install -y "${DEBIAN_PKG[@]}"
 }
 
 function main() {
-	toolchain_windows="../toolchain/windows.cmake"
-	make_that_dir "${toolchain_windows}"
-	toolchain_linux="../toolchain/linux.cmake"
-	make_that_dir "${toolchain_linux}"
-	echo "[$0] Running cmake with these options:"
-	echo "${COMBINED_OPTIONS}"
-	echo "[$0] -- End of options"
+  make_that_dir "${BUILD_DIR}"
+  install_deb_pkg
 
-	echo "[$0] For Linux build using toolchain ${toolchain_linux}"
+  echo -e "\n${LPURP}# --- Running cmake -------------------------------------------\n${NC}"
+	echo "Options: ${COMBINED_OPTIONS}"
+	echo -e "\n${LPURP}# --- Building for Linux -------------------------------------------\n${NC}"
 	cd build_linux
-	cmake .. "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="${toolchain_linux}"
+	cmake . "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="../toolchain/linux.cmake"
 	ninja
 	cd -
 

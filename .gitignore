@@ -6,6 +6,7 @@
 .bash_history
 # don't check storage creds into GH
 .boto
+build_linux
 .cache
 .cloud-locale-test.skip
 cluster_token.txt
