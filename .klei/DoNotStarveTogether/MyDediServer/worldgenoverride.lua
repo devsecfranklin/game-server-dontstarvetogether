@@ -1,3 +1,7 @@
+-- SPDX-FileCopyrightText: ©2025 franklin <franklin@bitsmasher.net>
+--
+-- SPDX-License-Identifier: MIT
+
 KLEI     1 return {
 	--
     -- This is an example worldgenoverrides.lua file for Don't Starve Together.
@@ -100,5 +104,6 @@ KLEI     1 return {
         --         ['BERRYBUSHES'] = "NONE",
         --     },
         -- },
+
     }
 }
