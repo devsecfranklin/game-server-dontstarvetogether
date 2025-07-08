@@ -8,7 +8,6 @@ jobs:
     steps:
       - name: Build Ubuntu Latest
         run:  |
-          pwd
-          ls -la
-          src/fyp_dist/build.sh
+          ls -la ..
+          cd .. && src/fyp_dist/build.sh
 
