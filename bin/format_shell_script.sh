@@ -83,8 +83,8 @@ for filename in bin/*.sh; do
 done
 
 echo "" # Add a newline for better spacing
-echo "--- Formatting scripts in 'test/' directory ---"
-for filename in test/*.sh; do
+echo "--- Formatting scripts in 'src/fyp_dist' directory ---"
+for filename in src/fyp_dist/*.sh; do
   format_script "${filename}"
 done
 

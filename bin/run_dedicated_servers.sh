@@ -53,7 +53,7 @@ function game_update() {
   steamcmd +login "$STEAM_USER" "$STEAM_PASS" +app_update 343050 validate +quit
 }
 
-function set_password(){
+function set_password() {
   # make it so people need a password to get into server
   log_info "sed the server password"
   sed -i "s/cluster_password =/cluster_password = ${CLUSTER_TOKEN}/g" "${dontstarve_dir}/${cluster_name}/cluster.ini"
@@ -76,13 +76,13 @@ function main() {
   check_for_file "$dontstarve_dir/$cluster_name/Master/server.ini"
   check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
   log_warn "If any players cannot see the server in the list, update the game files from steam"
-  #game_update 
+  #game_update
   pushd "/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server/bin64"
   log_info "Start servers"
 
   run_shared=(./dontstarve_dedicated_server_nullrenderer_x64)
   run_shared+=(-cluster "$cluster_name")
-  "${run_shared[@]}" -shard Caves  | sed 's/^/Caves:  /' &
+  "${run_shared[@]}" -shard Caves | sed 's/^/Caves:  /' &
   "${run_shared[@]}" -shard Master | sed 's/^/Master: /'
 
   #screen -dmS "DST Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer"
