@@ -17,7 +17,6 @@ FYP_OPTIONS="-DFYP_CCACHE=ON"
 CMAKE_OPTIONS="-DCMAKE_EXPORT_COMPILE_COMMANDS=True -DCMAKE_BUILD_TYPE=RelWithDebInfo"
 COMBINED_OPTIONS="$FYP_OPTIONS $CMAKE_OPTIONS"
 DEBIAN_PKG=(cmake ninja-build generate-ninja)
-#DOCUMENTATION=false
 KERNEL=$(uname -r)       # the kernel version
 MACHINE_TYPE=$(uname -m) # the machine type
 MY_DATE=$(date '+%Y-%m-%d-%H')
@@ -25,7 +24,6 @@ MY_OS=$(uname | tr '[:upper:]' '[:lower:]') # usually "linux"
 MY_UNAME=$(uname)
 OS_RELEASE="$(cat /etc/os-release | grep "^ID=" | cut -d"=" -f2)"
 PRIV_CMD="sudo"
-RAW_OUTPUT="/tmp/bootstrap_lab_${MY_DATE}.log"
 
 DIR="${PWD}"
 BUILD_DIR="${DIR}/build_linux"
@@ -199,7 +197,7 @@ function main() {
   log_header "Running cmake"
   log_info  "Options chosen for this build:    ${COMBINED_OPTIONS}"
   log_header "Building for Linux"
-  cmake . "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" -GNinja
+  /usr/bin/cmake "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" -GNinja
   ninja
 
   #log_info "[$0] For Windows build using toolchain $toolchain_windows"
