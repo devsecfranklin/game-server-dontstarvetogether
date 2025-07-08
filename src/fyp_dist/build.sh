@@ -7,7 +7,7 @@
 # v0.1 07/04/2025 build script - ya ya pancho
 # v0.2 07/06/25 tweak-a-rooni franklin
 
-set -euo pipefail # Exit on error, exit on unset variables, fail if any command in a pipe fails.
+#set -euo pipefail # Exit on error, exit on unset variables, fail if any command in a pipe fails.
 IFS=$'\n\t'       # Preserve newlines and tabs in word splitting.
 
 # --- Some config Variables ----------------------------------------
@@ -191,17 +191,18 @@ function main() {
   check_python_version
   detect_os
   detect_hardware
-  cp toolchain/linux.cmake "${PWD}/build_linux"	
+
+  # cp "${PWD}/toolchain/linux.cmake" "${PWD}/build_linux"	
   make_that_dir "${BUILD_DIR}"
   install_deb_pkg
 
   log_header "Running cmake"
-  echo "Options chosen for this build:\n    ${COMBINED_OPTIONS}"
+  log_info  "Options chosen for this build:    ${COMBINED_OPTIONS}"
   log_header "Building for Linux"
   /mnt/clusterfs/build/bin/cmake . "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" -GNinja
   ninja
 
-  #echo "[$0] For Windows build using toolchain $toolchain_windows"
+  #log_info "[$0] For Windows build using toolchain $toolchain_windows"
   #cd build_windows;cmake .. $COMBINED_OPTIONS  -DCMAKE_TOOLCHAIN_FILE=$toolchain_windows; ninja
 }
 
