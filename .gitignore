@@ -32,6 +32,7 @@ cluster_token.txt
 mbox
 # .netrc contains secrets for service tokens
 .netrc
+.ninja_deps
 .ninja_log
 *.plan
 .selected_editor
