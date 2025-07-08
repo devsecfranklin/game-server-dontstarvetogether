@@ -191,7 +191,6 @@ function main() {
   check_python_version
   detect_os
   detect_hardware
-
   cp toolchain/linux.cmake "${PWD}/build_linux"	
   make_that_dir "${BUILD_DIR}"
   install_deb_pkg
