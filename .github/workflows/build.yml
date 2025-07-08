@@ -1,0 +1,12 @@
+name: build testing
+on:
+  pull_request:
+jobs:
+  linux:
+    name: build testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Ubuntu Latest
+        run:  |
+          ${GITHUB_WORKSPACE}/build.sh
+
