@@ -197,7 +197,8 @@ function main() {
   log_header "Running cmake"
   log_info  "Options chosen for this build:    ${COMBINED_OPTIONS}"
   log_header "Building for Linux"
-  /usr/bin/cmake "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" -GNinja
+  /usr/bin/cmake "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" -GNinja "${BUILD_DIR}"
+  /usr/bin/cmake -G Ninja .
   ninja
 
   #log_info "[$0] For Windows build using toolchain $toolchain_windows"
