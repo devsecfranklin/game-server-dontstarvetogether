@@ -154,7 +154,7 @@ function detect_os() {
     ;;
   openbsd)
     echo -e "${LBLUE}Detected OpenBSD${NC}\n"
-    PRIV_CMD="doas" # there is no sudo
+    #PRIV_CMD="doas" # there is no sudo
     #install_openbsd
     ;;
   darwin)
