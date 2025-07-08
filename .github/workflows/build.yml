@@ -22,11 +22,10 @@ jobs:
         echo "Running on Ubuntu version: ${{ matrix.ubuntu_version }}"
         # Add any setup commands specific to your build environment if needed.
         # For example, installing dependencies:
-        # sudo apt update
-        # sudo apt install -y build-essential
+        sudo apt update
+        sudo apt install -y build-essential direnv cmake 
 
     - name: Run Build Script
       run: |
         #chmod +x ./build.sh # Make sure your script is executable
-        apt-get update && apt-get install direnv -y
-        bash build.sh
+        ./src/fyp_dist/build.sh
