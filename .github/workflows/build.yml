@@ -1,13 +1,34 @@
-name: build testing
+name: Build Script Test
+
 on:
   pull_request:
-jobs:
-  linux:
-    name: build testing
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build Ubuntu Latest
-        run:  |
-          ls -la ..
-          cd .. && src/fyp_dist/build.sh
+    branches:
+      - main
 
+jobs:
+  build-test:
+    runs-on: ubuntu-latest # This is the default runner, but we'll override it in the matrix
+
+    strategy:
+      matrix:
+        ubuntu_version: [ 'ubuntu-24.04', 'ubuntu-22.04', 'ubuntu-20.04' ] # Latest LTS and previous two LTS versions
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up environment for ${{ matrix.ubuntu_version }}
+      run: |
+        echo "Running on Ubuntu version: ${{ matrix.ubuntu_version }}"
+        # Add any setup commands specific to your build environment if needed.
+        # For example, installing dependencies:
+        # sudo apt update
+        # sudo apt install -y build-essential
+
+    - name: Run Build Script
+      run: |
+        chmod +x ./build.sh # Make sure your script is executable
+        ./build.sh
+        #env:
+        # Define any environment variables your build script might need
+        #MY_ENV_VAR: "some_value"
