@@ -8,6 +8,7 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+deps
 
 # This is a minimal list, OK to add things per repo
 # mac specific
@@ -31,6 +32,7 @@ cluster_token.txt
 mbox
 # .netrc contains secrets for service tokens
 .netrc
+.ninja_log
 *.plan
 .selected_editor
 .sentinel

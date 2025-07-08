@@ -15,7 +15,7 @@ CONTAINER=false
 GO_VERSION="$(go version | awk '{print $3}')"
 FYP_OPTIONS="-DFYP_CCACHE=ON"
 CMAKE_OPTIONS="-DCMAKE_EXPORT_COMPILE_COMMANDS=True -DCMAKE_BUILD_TYPE=RelWithDebInfo"
-COMBINED_OPTIONS="-GNinja $FYP_OPTIONS $CMAKE_OPTIONS"
+COMBINED_OPTIONS="$FYP_OPTIONS $CMAKE_OPTIONS"
 DEBIAN_PKG=(cmake ninja-build generate-ninja)
 #DOCUMENTATION=false
 KERNEL=$(uname -r)       # the kernel version
@@ -182,16 +182,15 @@ function make_that_dir() {
 }
 
 function install_deb_pkg() {
-  check_python_version
-  detect_os
-  detect_hardware
-
   log_header "install packages"
-  log_warn "$(cmake --version)" || log_error "Unable to find cmake"
+  log_warn "$(/mnt/clusterfs/build/bin/cmake --version)" || log_error "Unable to find cmake"
   sudo DEBIAN_FRONTEND=noninteractive apt-get install -y "${DEBIAN_PKG[@]}"
 }
 
 function main() {
+  check_python_version
+  detect_os
+  detect_hardware
 
   cp toolchain/linux.cmake "${PWD}/build_linux"	
   make_that_dir "${BUILD_DIR}"
@@ -200,10 +199,8 @@ function main() {
   log_header "Running cmake"
   echo "Options chosen for this build:\n    ${COMBINED_OPTIONS}"
   log_header "Building for Linux"
-  pushd "${PWD}/build_linux"
-  cmake "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="./linux.cmake" -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" ..
+  /mnt/clusterfs/build/bin/cmake . "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" -GNinja
   ninja
-  popd
 
   #echo "[$0] For Windows build using toolchain $toolchain_windows"
   #cd build_windows;cmake .. $COMBINED_OPTIONS  -DCMAKE_TOOLCHAIN_FILE=$toolchain_windows; ninja
