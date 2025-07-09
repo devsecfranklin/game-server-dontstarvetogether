@@ -1,3 +1,15 @@
+#cmake
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+deps
+
 # This is a minimal list, OK to add things per repo
 # mac specific
 .DS_Store
@@ -6,6 +18,7 @@
 .bash_history
 # don't check storage creds into GH
 .boto
+build_linux
 .cache
 .cloud-locale-test.skip
 cluster_token.txt
@@ -19,6 +32,8 @@ cluster_token.txt
 mbox
 # .netrc contains secrets for service tokens
 .netrc
+.ninja_deps
+.ninja_log
 *.plan
 .selected_editor
 .sentinel
@@ -41,7 +56,6 @@ server_chat_log*
 .wget-hsts
 .idea
 .idea
-
 .klei/DoNotStarveTogether/MyDediServer/*/save/
 .klei/DoNotStarveTogether/MyDediServer/Caves/server_chat_log.txt
 .klei/DoNotStarveTogether/MyDediServer/Caves/server_log.txt

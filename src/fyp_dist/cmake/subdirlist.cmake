@@ -8,5 +8,3 @@ macro(subdirlist result curdir)
   endforeach()
   set(${result} ${dirlist})
 endmacro()
-
-
