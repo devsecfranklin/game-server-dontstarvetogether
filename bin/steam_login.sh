@@ -19,7 +19,6 @@ echo "RUnning steam command: /usr/games/steamcmd $STEAM_COMMAND"
 
 exit 0
 
-
 # source: https://github.com/zynl/DST_Server/blob/master/update_dst.sh
 
 echo "Killing DST session(s) ..."
@@ -30,4 +29,3 @@ cd ~/steamcmd/ && ./steamcmd.sh +@ShutdownOnFailedCommand 1 +@NoPromptForPasswor
 echo "Update completed, will now start the server..."
 ~/DST_Server/start_dst.sh
 echo "Server successfully started!"
-

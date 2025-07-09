@@ -4,7 +4,7 @@ include(cmake/subdirlist.cmake)
 
 project(Fyp)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 20) # I thought this would fix the "format" issue? 
 set(CMAKE_EXE_LINKER_FLAGS "-static-libstdc++ -static")
 set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
 
