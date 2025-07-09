@@ -29,7 +29,7 @@ EOF
     libgl1-mesa-dri:i386 \
     libgl1-mesa-glx:amd64 \
     libgl1-mesa-glx:i386 \
-    steam-launcher
+    steam-launcher bzip2
 }
 
 function dst_user() {
