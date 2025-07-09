@@ -1,9 +1,0 @@
-FROM alpine:3.22
-
-RUN apk add --no-cache lua5.3 lua-filesystem lua-lyaml lua-http
-
-COPY fetch-latest-releases.lua /usr/local/bin
-
-VOLUME 
-
-ENTRYPOINT [ "/usr/local/bin/fetch-latest-releases.lua" ]

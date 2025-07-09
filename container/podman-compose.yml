@@ -1,0 +1,10 @@
+services:
+  dst:
+    image: dontstarve
+    build:
+      context: ..
+      dockerfile: container/Containerfile
+    container_name: dst
+    volumes:
+      - .:/home/franklin/workspace/game-server-dontstarvetogether
+
