@@ -8,7 +8,7 @@
 # v0.2 07/06/25 tweak-a-rooni franklin
 
 #set -euo pipefail # Exit on error, exit on unset variables, fail if any command in a pipe fails.
-IFS=$'\n\t'       # Preserve newlines and tabs in word splitting.
+IFS=$'\n\t' # Preserve newlines and tabs in word splitting.
 
 # --- Some config Variables ----------------------------------------
 CONTAINER=false
@@ -40,19 +40,19 @@ NC='\033[0m' # No Color
 
 # --- Helper Functions for Logging ---
 log_header() {
-	printf "\n${LPURP}# --- %s ${NC}\n" "$1"
+  printf "\n${LPURP}# --- %s ${NC}\n" "$1"
 }
 log_info() { printf "${LBLUE}==>${NC} \e[1m%s\e[0m\n" "$1"; } # Using printf for Bold
 log_warn() { printf >&2 "${CYAN}WARN:${NC} %s\n" "$1"; }
 log_success() { printf "${LGREEN}==>${NC} \e[1m%s\e[0m\n" "$1"; } # Using printf for Bold
 log_error() {
-	printf "${LRED}ERROR: %s${NC}\n" "$1" >&2
-	exit 1
+  printf "${LRED}ERROR: %s${NC}\n" "$1" >&2
+  exit 1
 }
 
 check_container() {
   log_header "Check Container Status"
-  
+
   if [ -f /.dockerenv ]; then
     log_info "Containerized build environment..."
     CONTAINER=true
@@ -171,13 +171,13 @@ function detect_os() {
 }
 
 function make_that_dir() {
-	if [ ! -d "${1}" ]; then
+  if [ ! -d "${1}" ]; then
     log_header "create folder"
     echo "mkdir $1"
-		mkdir "${1}" || log_error "fail to create directory: $1"
-	else
-		log_info "The folder already exist: $1"
-	fi
+    mkdir "${1}" || log_error "fail to create directory: $1"
+  else
+    log_info "The folder already exist: $1"
+  fi
 }
 
 function install_deb_pkg() {
@@ -186,22 +186,44 @@ function install_deb_pkg() {
   sudo DEBIAN_FRONTEND=noninteractive apt-get install -y "${DEBIAN_PKG[@]}"
 }
 
+function install_compiler() {
+  GCC_VER="13.4.0"
+  log_header "Install new GCC compiler version: ${GCC_VER}"
+
+  if [ ! -f "/tmp" ]; then
+    wget -O /tmp/gcc-${GCC_VER}.tar.gz https://gcc.gnu.org/pub/gcc/releases/gcc-${GCC_VER}/gcc-${GCC_VER}.tar.gz
+    tar -xzf /tmp/gcc-${GCC_VER}.tar.gz -C /tmp
+  fi
+
+  pushd /tmp/gcc-${GCC_VER} || log_error "Unable to unpack new compiler"
+  make distclean
+  /tmp/gcc-${GCC_VER}/contrib/download_prerequisites
+  ./configure --disable-multilib --enable-languages=c,c++ --program-suffix=-13
+  make -j3
+
+  sudo make install
+  sudo update-alternatives --install /usr/bin/cpp cpp /usr/local/bin/cpp-13 50
+  sudo update-alternatives --install /usr/bin/gcc gcc /usr/local/bin/gcc-13 50
+  popd || log_error "unable to do the thing"
+}
+
 function main() {
   check_python_version
   detect_os
   detect_hardware
 
-  # cp "${PWD}/toolchain/linux.cmake" "${PWD}/build_linux"	
+  # cp "${PWD}/toolchain/linux.cmake" "${PWD}/build_linux"
   make_that_dir "${BUILD_DIR}"
   install_deb_pkg
+  install_compiler
 
   log_header "Running cmake"
-  log_info  "Options chosen for this build:    ${COMBINED_OPTIONS}"
+  log_info "Options chosen for this build:    ${COMBINED_OPTIONS}"
   log_header "Building for Linux"
   "${CMAKE_BIN} ${COMBINED_OPTIONS}" \
-	  -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" \
-	  -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" \
-	  -GNinja "${BUILD_DIR}"
+    -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" \
+    -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" \
+    -GNinja "${BUILD_DIR}"
   ${CMAKE_BIN} -G Ninja .
   ninja
 
