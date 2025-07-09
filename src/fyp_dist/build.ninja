@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/
+cmake_ninja_workdir = /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -57,7 +57,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -92,7 +92,7 @@ build src/deps/build_luajit: phony src/deps/CMakeFiles/build_luajit lib/fyp_luaj
 # Utility command for edit_cache
 
 build src/deps/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -104,7 +104,7 @@ build src/deps/edit_cache: phony src/deps/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/deps/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -122,7 +122,7 @@ build src/deps/CMakeFiles/funchook_src | ${cmake_ninja_workdir}src/deps/CMakeFil
 # Custom command for src/deps/CMakeFiles/funchook_src-complete
 
 build src/deps/CMakeFiles/funchook_src-complete src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-done | ${cmake_ninja_workdir}src/deps/CMakeFiles/funchook_src-complete ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-done: CUSTOM_COMMAND src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-install src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-mkdir src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-download src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-update src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-patch src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-configure src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-install
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -E make_directory /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/CMakeFiles && /usr/bin/cmake -E touch /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/CMakeFiles/funchook_src-complete && /usr/bin/cmake -E touch /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-done
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -E make_directory /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/CMakeFiles && /usr/bin/cmake -E touch /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/CMakeFiles/funchook_src-complete && /usr/bin/cmake -E touch /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-done
   DESC = Completed 'funchook_src'
   restat = 1
 
@@ -131,7 +131,7 @@ build src/deps/CMakeFiles/funchook_src-complete src/deps/funchook_src-prefix/src
 # Custom command for src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-build
 
 build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-build src/deps/funchook_src-prefix/src/funchook_src-build/libdistorm.a lib/libfunchook.a | ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-build ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-build/libdistorm.a ${cmake_ninja_workdir}lib/libfunchook.a: CUSTOM_COMMAND src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-configure
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-build && /usr/bin/cmake --build . && /usr/bin/cmake -E touch /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-build
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-build && /usr/bin/cmake --build . && /usr/bin/cmake -E touch /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-build
   DESC = Performing build step for 'funchook_src'
   restat = 1
 
@@ -140,7 +140,7 @@ build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-build src
 # Custom command for src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-configure
 
 build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-configure | ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-configure: CUSTOM_COMMAND src/deps/funchook_src-prefix/tmp/funchook_src-cfgcmd.txt src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-patch
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-build && /usr/bin/cmake -DCMAKE_INSTALL_PREFIX=/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist -DCMAKE_INSTALL_LIBDIR=/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/lib -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true -DCMAKE_TOOLCHAIN_FILE=/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/toolchain/linux.cmake -DFUNCHOOK_DISASM=distorm -DFUNCHOOK_INSTALL=true -DFUNCHOOK_BUILD_TESTS=false -DFUNCHOOK_BUILD_STATIC=true -GNinja /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src && /usr/bin/cmake -E touch /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-configure
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-build && /usr/bin/cmake -DCMAKE_INSTALL_PREFIX=/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -DCMAKE_INSTALL_LIBDIR=/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/lib -DCMAKE_POSITION_INDEPENDENT_CODE:BOOL=true -DCMAKE_TOOLCHAIN_FILE=/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/toolchain/linux.cmake -DFUNCHOOK_DISASM=distorm -DFUNCHOOK_INSTALL=true -DFUNCHOOK_BUILD_TESTS=false -DFUNCHOOK_BUILD_STATIC=true -GNinja /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src && /usr/bin/cmake -E touch /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-configure
   DESC = Performing configure step for 'funchook_src'
   restat = 1
 
@@ -149,7 +149,7 @@ build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-configure
 # Custom command for src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-download
 
 build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-download | ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-download: CUSTOM_COMMAND src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-gitinfo.txt src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-mkdir
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src && /usr/bin/cmake -P /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/tmp/funchook_src-gitclone.cmake && /usr/bin/cmake -E touch /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-download
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src && /usr/bin/cmake -P /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/tmp/funchook_src-gitclone.cmake && /usr/bin/cmake -E touch /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-download
   DESC = Performing download step (git clone) for 'funchook_src'
   restat = 1
 
@@ -158,7 +158,7 @@ build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-download 
 # Custom command for src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-install
 
 build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-install | ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-install: CUSTOM_COMMAND src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-build
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-build && /usr/bin/cmake --install . && /usr/bin/cmake -E touch /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-install
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-build && /usr/bin/cmake --install . && /usr/bin/cmake -E touch /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-install
   DESC = Performing install step for 'funchook_src'
   restat = 1
 
@@ -167,7 +167,7 @@ build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-install |
 # Custom command for src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-mkdir
 
 build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-mkdir | ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-mkdir: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -Dcfgdir= -P /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake && /usr/bin/cmake -E touch /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-mkdir
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -Dcfgdir= -P /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake && /usr/bin/cmake -E touch /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-mkdir
   DESC = Creating directories for 'funchook_src'
   restat = 1
 
@@ -176,7 +176,7 @@ build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-mkdir | $
 # Custom command for src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-patch
 
 build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-patch | ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-patch: CUSTOM_COMMAND src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-update
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -E echo_append && /usr/bin/cmake -E touch /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-patch
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -E echo_append && /usr/bin/cmake -E touch /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-patch
   DESC = No patch step for 'funchook_src'
   restat = 1
 
@@ -185,7 +185,7 @@ build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-patch | $
 # Custom command for src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-update
 
 build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-update | ${cmake_ninja_workdir}src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-update: CUSTOM_COMMAND src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-download
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src && /usr/bin/cmake -P /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/tmp/funchook_src-gitupdate.cmake
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/src/funchook_src && /usr/bin/cmake -P /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/funchook_src-prefix/tmp/funchook_src-gitupdate.cmake
   DESC = Performing update step for 'funchook_src'
 
 
@@ -193,7 +193,7 @@ build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-update | 
 # Custom command for src/deps/CMakeFiles/copy_luajit_files
 
 build src/deps/CMakeFiles/copy_luajit_files | ${cmake_ninja_workdir}src/deps/CMakeFiles/copy_luajit_files: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -E copy_directory /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -E copy_directory /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit
 
 
 #############################################
@@ -206,7 +206,7 @@ build src/deps/CMakeFiles/build_luajit | ${cmake_ninja_workdir}src/deps/CMakeFil
 # Custom command for lib/fyp_luajit.so
 
 build lib/fyp_luajit.so | ${cmake_ninja_workdir}lib/fyp_luajit.so: CUSTOM_COMMAND || src/deps/copy_luajit_files
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src && make CFLAGS=-march=native\ -mtune=native\ -mfpmath=both\ -fomit-frame-pointer\ -no-pie -j8 && /usr/bin/cmake -E copy /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src/libluajit.so /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/lib/fyp_luajit.so
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src && make CFLAGS=-march=native\ -mtune=native\ -mfpmath=both\ -fomit-frame-pointer\ -no-pie -j8 && /usr/bin/cmake -E copy /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src/libluajit.so /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/lib/fyp_luajit.so
   DESC = Building luajit
   restat = 1
 
@@ -220,7 +220,7 @@ build lib/fyp_luajit.so | ${cmake_ninja_workdir}lib/fyp_luajit.so: CUSTOM_COMMAN
 # Utility command for edit_cache
 
 build src/memutil/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -232,7 +232,7 @@ build src/memutil/edit_cache: phony src/memutil/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/memutil/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -249,7 +249,7 @@ build src/memutil/rebuild_cache: phony src/memutil/CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build src/loader/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -261,7 +261,7 @@ build src/loader/edit_cache: phony src/loader/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build src/loader/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -286,7 +286,7 @@ build src/loader/linux/CMakeFiles/loader.dir/loader.cc.o: CXX_COMPILER__loader_R
   DEFINES = -Dloader_EXPORTS
   DEP_FILE = src/loader/linux/CMakeFiles/loader.dir/loader.cc.o.d
   FLAGS = -fPIC -std=gnu++20
-  INCLUDES = -I/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/funchook_src -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail
+  INCLUDES = -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/funchook_src -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail
   OBJECT_DIR = src/loader/linux/CMakeFiles/loader.dir
   OBJECT_FILE_DIR = src/loader/linux/CMakeFiles/loader.dir
 
@@ -294,7 +294,7 @@ build src/loader/linux/CMakeFiles/loader.dir/__/__/sigscan.cc.o: CXX_COMPILER__l
   DEFINES = -Dloader_EXPORTS
   DEP_FILE = src/loader/linux/CMakeFiles/loader.dir/__/__/sigscan.cc.o.d
   FLAGS = -fPIC -std=gnu++20
-  INCLUDES = -I/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/funchook_src -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail
+  INCLUDES = -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/funchook_src -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail
   OBJECT_DIR = src/loader/linux/CMakeFiles/loader.dir
   OBJECT_FILE_DIR = src/loader/linux/CMakeFiles/loader.dir/__/__
 
@@ -355,7 +355,7 @@ build lib/fyp_shim_curl.so: C_SHARED_LIBRARY_LINKER__shim_curl_RelWithDebInfo sr
 # Utility command for edit_cache
 
 build src/loader/linux/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -367,7 +367,7 @@ build src/loader/linux/edit_cache: phony src/loader/linux/CMakeFiles/edit_cache.
 # Utility command for rebuild_cache
 
 build src/loader/linux/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -392,7 +392,7 @@ build src/modules/core/CMakeFiles/main.dir/main.cc.o: CXX_COMPILER__main_RelWith
   DEFINES = -DBUILD_FYP_LIB -Dmain_EXPORTS
   DEP_FILE = src/modules/core/CMakeFiles/main.dir/main.cc.o.d
   FLAGS = -flto=auto -fno-fat-lto-objects -fPIC -std=gnu++20
-  INCLUDES = -I/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
+  INCLUDES = -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
   OBJECT_DIR = src/modules/core/CMakeFiles/main.dir
   OBJECT_FILE_DIR = src/modules/core/CMakeFiles/main.dir
 
@@ -400,7 +400,7 @@ build src/modules/core/CMakeFiles/main.dir/core.cc.o: CXX_COMPILER__main_RelWith
   DEFINES = -DBUILD_FYP_LIB -Dmain_EXPORTS
   DEP_FILE = src/modules/core/CMakeFiles/main.dir/core.cc.o.d
   FLAGS = -flto=auto -fno-fat-lto-objects -fPIC -std=gnu++20
-  INCLUDES = -I/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
+  INCLUDES = -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
   OBJECT_DIR = src/modules/core/CMakeFiles/main.dir
   OBJECT_FILE_DIR = src/modules/core/CMakeFiles/main.dir
 
@@ -408,7 +408,7 @@ build src/modules/core/CMakeFiles/main.dir/module_loader.cc.o: CXX_COMPILER__mai
   DEFINES = -DBUILD_FYP_LIB -Dmain_EXPORTS
   DEP_FILE = src/modules/core/CMakeFiles/main.dir/module_loader.cc.o.d
   FLAGS = -flto=auto -fno-fat-lto-objects -fPIC -std=gnu++20
-  INCLUDES = -I/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
+  INCLUDES = -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
   OBJECT_DIR = src/modules/core/CMakeFiles/main.dir
   OBJECT_FILE_DIR = src/modules/core/CMakeFiles/main.dir
 
@@ -416,7 +416,7 @@ build src/modules/core/CMakeFiles/main.dir/__/__/sigscan.cc.o: CXX_COMPILER__mai
   DEFINES = -DBUILD_FYP_LIB -Dmain_EXPORTS
   DEP_FILE = src/modules/core/CMakeFiles/main.dir/__/__/sigscan.cc.o.d
   FLAGS = -flto=auto -fno-fat-lto-objects -fPIC -std=gnu++20
-  INCLUDES = -I/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
+  INCLUDES = -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
   OBJECT_DIR = src/modules/core/CMakeFiles/main.dir
   OBJECT_FILE_DIR = src/modules/core/CMakeFiles/main.dir/__/__
 
@@ -444,7 +444,7 @@ build lib/fyp_main.so: CXX_SHARED_LIBRARY_LINKER__main_RelWithDebInfo src/module
 # Utility command for edit_cache
 
 build src/modules/core/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -456,7 +456,7 @@ build src/modules/core/edit_cache: phony src/modules/core/CMakeFiles/edit_cache.
 # Utility command for rebuild_cache
 
 build src/modules/core/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -481,7 +481,7 @@ build src/modules/maphack/CMakeFiles/maphack.dir/maphack.cc.o: CXX_COMPILER__map
   DEFINES = -Dmaphack_EXPORTS
   DEP_FILE = src/modules/maphack/CMakeFiles/maphack.dir/maphack.cc.o.d
   FLAGS = -flto=auto -fno-fat-lto-objects -fPIC -std=gnu++20
-  INCLUDES = -I/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
+  INCLUDES = -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
   OBJECT_DIR = src/modules/maphack/CMakeFiles/maphack.dir
   OBJECT_FILE_DIR = src/modules/maphack/CMakeFiles/maphack.dir
 
@@ -489,7 +489,7 @@ build src/modules/maphack/CMakeFiles/maphack.dir/__/__/sigscan.cc.o: CXX_COMPILE
   DEFINES = -Dmaphack_EXPORTS
   DEP_FILE = src/modules/maphack/CMakeFiles/maphack.dir/__/__/sigscan.cc.o.d
   FLAGS = -flto=auto -fno-fat-lto-objects -fPIC -std=gnu++20
-  INCLUDES = -I/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
+  INCLUDES = -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/include -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack/../.. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/. -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux -I/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/linux/detail -isystem /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src
   OBJECT_DIR = src/modules/maphack/CMakeFiles/maphack.dir
   OBJECT_FILE_DIR = src/modules/maphack/CMakeFiles/maphack.dir/__/__
 
@@ -503,7 +503,7 @@ build src/modules/maphack/CMakeFiles/maphack.dir/__/__/sigscan.cc.o: CXX_COMPILE
 
 build lib/fyp_maphack.so: CXX_SHARED_LIBRARY_LINKER__maphack_RelWithDebInfo src/modules/maphack/CMakeFiles/maphack.dir/maphack.cc.o src/modules/maphack/CMakeFiles/maphack.dir/__/__/sigscan.cc.o | lib/fyp_main.so || src/deps/build_luajit
   LANGUAGE_COMPILE_FLAGS = -flto=auto -fno-fat-lto-objects
-  LINK_LIBRARIES = -Wl,-rpath,/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/lib  lib/fyp_main.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/lib  lib/fyp_main.so
   OBJECT_DIR = src/modules/maphack/CMakeFiles/maphack.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -517,7 +517,7 @@ build lib/fyp_maphack.so: CXX_SHARED_LIBRARY_LINKER__maphack_RelWithDebInfo src/
 # Utility command for edit_cache
 
 build src/modules/maphack/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -529,7 +529,7 @@ build src/modules/maphack/edit_cache: phony src/modules/maphack/CMakeFiles/edit_
 # Utility command for rebuild_cache
 
 build src/modules/maphack/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+  COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -567,49 +567,49 @@ build shim_curl: phony lib/fyp_shim_curl.so
 # =============================================================================
 
 #############################################
-# Folder: /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist
+# Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
 
 build all: phony src/deps/all src/memutil/all src/loader/all src/modules/core/all src/modules/maphack/all
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps
+# Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps
 
 build src/deps/all: phony src/deps/funchook_src src/deps/copy_luajit_files
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader
+# Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader
 
 build src/loader/all: phony src/loader/linux/all
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux
+# Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux
 
 build src/loader/linux/all: phony lib/fyp_loader.so lib/fyp_shim_curl.so
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil
+# Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil
 
 build src/memutil/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core
+# Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core
 
 build src/modules/core/all: phony lib/fyp_main.so
 
 # =============================================================================
 
 #############################################
-# Folder: /mnt/storage1/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack
+# Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack
 
 build src/modules/maphack/all: phony lib/fyp_maphack.so
 
@@ -620,14 +620,14 @@ build src/modules/maphack/all: phony lib/fyp_maphack.so
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/cmake/subdirlist.cmake /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack/CMakeLists.txt /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/ExternalProject.cmake /usr/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake
+build build.ninja: RERUN_CMAKE | /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/ExternalProject.cmake /usr/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake CMakeLists.txt cmake/subdirlist.cmake src/deps/CMakeLists.txt src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake src/loader/CMakeLists.txt src/loader/linux/CMakeLists.txt src/memutil/CMakeLists.txt src/modules/core/CMakeLists.txt src/modules/maphack/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/cmake/subdirlist.cmake /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core/CMakeLists.txt /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/maphack/CMakeLists.txt /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/ExternalProject.cmake /usr/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake: phony
+build /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/ExternalProject.cmake /usr/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake CMakeLists.txt cmake/subdirlist.cmake src/deps/CMakeLists.txt src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake src/loader/CMakeLists.txt src/loader/linux/CMakeLists.txt src/memutil/CMakeLists.txt src/modules/core/CMakeLists.txt src/modules/maphack/CMakeLists.txt: phony
 
 
 #############################################
