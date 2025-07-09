@@ -14,6 +14,7 @@ IFS=$'\n\t'       # Preserve newlines and tabs in word splitting.
 CONTAINER=false
 GO_VERSION="$(go version | awk '{print $3}')"
 FYP_OPTIONS="-DFYP_CCACHE=ON"
+CMAKE_BIN="/usr/bin/cmake"
 CMAKE_OPTIONS="-DCMAKE_EXPORT_COMPILE_COMMANDS=True -DCMAKE_BUILD_TYPE=RelWithDebInfo"
 COMBINED_OPTIONS="$FYP_OPTIONS $CMAKE_OPTIONS"
 DEBIAN_PKG=(cmake ninja-build generate-ninja)
@@ -181,7 +182,7 @@ function make_that_dir() {
 
 function install_deb_pkg() {
   log_header "install packages"
-  log_warn "$(/mnt/clusterfs/build/bin/cmake --version)" || log_error "Unable to find cmake"
+  log_warn "$(/usr/bin/cmake --version)" || log_error "Unable to find cmake"
   sudo DEBIAN_FRONTEND=noninteractive apt-get install -y "${DEBIAN_PKG[@]}"
 }
 
@@ -197,8 +198,11 @@ function main() {
   log_header "Running cmake"
   log_info  "Options chosen for this build:    ${COMBINED_OPTIONS}"
   log_header "Building for Linux"
-  /usr/bin/cmake "${COMBINED_OPTIONS}" -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" -GNinja "${BUILD_DIR}"
-  /usr/bin/cmake -G Ninja .
+  "${CMAKE_BIN} ${COMBINED_OPTIONS}" \
+	  -DCMAKE_TOOLCHAIN_FILE="${DIR}/toolchain/linux.cmake" \
+	  -DCC="/usr/bin/gcc" -DCXX="/usr/bin/g++" \
+	  -GNinja "${BUILD_DIR}"
+  ${CMAKE_BIN} -G Ninja .
   ninja
 
   #log_info "[$0] For Windows build using toolchain $toolchain_windows"
