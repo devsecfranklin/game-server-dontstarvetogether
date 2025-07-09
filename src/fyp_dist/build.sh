@@ -188,20 +188,23 @@ function install_deb_pkg() {
 
 function install_compiler() {
   GCC_VER="13.4.0"
-  if [ ! -f "/tmp" ]; then
-    wget https://gcc.gnu.org/pub/gcc/releases/gcc-${GCC_VER}/gcc-${GCC_VER}.tar.gz /tmp/${GCC_VER}.tar.gz
-    tar -xzf /tmp${GCC_VER}/.tar.gz
-  fi
-  pushd /tmp/gcc-${GCC_VER} || log_error "Unable to unpack new compiler"
+  log_header "Install new GCC compiler version: ${GCC_VER}"
 
+  if [ ! -f "/tmp" ]; then
+    wget -O /tmp/gcc-${GCC_VER}.tar.gz https://gcc.gnu.org/pub/gcc/releases/gcc-${GCC_VER}/gcc-${GCC_VER}.tar.gz
+    tar -xzf /tmp/gcc-${GCC_VER}.tar.gz -C /tmp
+  fi
+
+  pushd /tmp/gcc-${GCC_VER} || log_error "Unable to unpack new compiler"
   make distclean
-  ./contrib/download_prerequisites
+  /tmp/gcc-${GCC_VER}/contrib/download_prerequisites
   ./configure --disable-multilib --enable-languages=c,c++ --program-suffix=-13
   make -j3
 
   sudo make install
   sudo update-alternatives --install /usr/bin/cpp cpp /usr/local/bin/cpp-13 50
   sudo update-alternatives --install /usr/bin/gcc gcc /usr/local/bin/gcc-13 50
+  popd || log_error "unable to do the thing"
 }
 
 function main() {
@@ -212,6 +215,7 @@ function main() {
   # cp "${PWD}/toolchain/linux.cmake" "${PWD}/build_linux"
   make_that_dir "${BUILD_DIR}"
   install_deb_pkg
+  install_compiler
 
   log_header "Running cmake"
   log_info "Options chosen for this build:    ${COMBINED_OPTIONS}"
