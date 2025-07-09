@@ -1,0 +1,14 @@
+FROM alpine:3.22
+
+LABEL org.opencontainers.image.source=https://github.com/devsecfranklin/game-server-dontstarvetogether
+LABEL org.opencontainers.image.authors=franklin@bitsmasher.net
+LABEL org.opencontainers.image.vendor="alpine"
+LABEL org.opencontainers.image.licenses="GMIT"
+LABEL org.opencontainers.image.description="Game Server - Don't starve Together"
+
+
+RUN apk add --no-cache lua5.3 lua-filesystem lua-lyaml lua-http
+
+COPY fetch-latest-releases.lua /usr/local/bin
+
+ENTRYPOINT [ "/usr/local/bin/fetch-latest-releases.lua" ]
