@@ -22,9 +22,5 @@ return {
     ["workshop-398858801"]={
         configuration_options={ },
         enabled=true
-    },
-    ["workshop-398858801"]={
-        configuration_options={ },
-        enabled=true
     }
 }
