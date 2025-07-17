@@ -59,14 +59,19 @@ function set_password() {
   sed -i "s/cluster_password =/cluster_password = ${CLUSTER_TOKEN}/g" "${dontstarve_dir}/${cluster_name}/cluster.ini"
 }
 
-function main() {
-  # Caves has a soft link to the same file
-  log_header "Installing our custom server files"
+function mod_override(){
+  log_header "Installing modoverrides.lua"
   cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Master"
-  cp ${HOME}/saves/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
+  cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Caves"
   cp ${HOME}/saves/modoverrides.lua ${HOME}/saves/dedicated_server_mods_setup.lua "${DST_SERVER_DIR}/mods"
+}
+
+function main() {
+  log_header "Installing our custom server files"
+  mod_override
+  cp ${HOME}/saves/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
   cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/$cluster_name/Master"
-  cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/${cluster_name}/" # is this necessary?
+  #cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/${cluster_name}/" # is this necessary?
   cp ${HOME}/saves/worldgenoverride.lua-caves "${dontstarve_dir}/${cluster_name}/Caves/worldgenoverride.lua"
   log_header "Copying cluster token into server files"
   echo "${CLUSTER_TOKEN}" >"${dontstarve_dir}/${cluster_name}/cluster_token.txt"

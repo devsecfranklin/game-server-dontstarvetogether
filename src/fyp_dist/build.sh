@@ -198,7 +198,9 @@ function install_compiler() {
   pushd /tmp/gcc-${GCC_VER} || log_error "Unable to unpack new compiler"
   make distclean
   /tmp/gcc-${GCC_VER}/contrib/download_prerequisites
-  ./configure --disable-multilib --enable-languages=c,c++ --program-suffix=-13
+  CONFIG_OPTS=" --disable-multilib --enable-languages=c,c++ --program-suffix=-13"
+  if [ -d "/mnt/clusterfs" ]; then CONFIG_OPTS+=" --prefix=/mnt/clusterfs/build"; fi
+  ./configure "${CONFIG_OPTS}"
   make -j3
 
   sudo make install
@@ -215,7 +217,7 @@ function main() {
   # cp "${PWD}/toolchain/linux.cmake" "${PWD}/build_linux"
   make_that_dir "${BUILD_DIR}"
   install_deb_pkg
-  install_compiler
+  # install_compiler
 
   log_header "Running cmake"
   log_info "Options chosen for this build:    ${COMBINED_OPTIONS}"
