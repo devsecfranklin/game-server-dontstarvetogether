@@ -195,16 +195,12 @@ build src/deps/funchook_src-prefix/src/funchook_src-stamp/funchook_src-update | 
 build src/deps/CMakeFiles/copy_luajit_files | ${cmake_ninja_workdir}src/deps/CMakeFiles/copy_luajit_files: CUSTOM_COMMAND
   COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps && /usr/bin/cmake -E copy_directory /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit
 
-
 #############################################
 # Phony custom command for src/deps/CMakeFiles/build_luajit
-
 build src/deps/CMakeFiles/build_luajit | ${cmake_ninja_workdir}src/deps/CMakeFiles/build_luajit: phony lib/fyp_luajit.so || src/deps/copy_luajit_files
-
 
 #############################################
 # Custom command for lib/fyp_luajit.so
-
 build lib/fyp_luajit.so | ${cmake_ninja_workdir}lib/fyp_luajit.so: CUSTOM_COMMAND || src/deps/copy_luajit_files
   COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src && make CFLAGS=-march=native\ -mtune=native\ -mfpmath=both\ -fomit-frame-pointer\ -no-pie -j8 && /usr/bin/cmake -E copy /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps/dst_luajit/src/libluajit.so /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/lib/fyp_luajit.so
   DESC = Building luajit
@@ -215,10 +211,8 @@ build lib/fyp_luajit.so | ${cmake_ninja_workdir}lib/fyp_luajit.so: CUSTOM_COMMAN
 # /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/CMakeLists.txt
 # =============================================================================
 
-
 #############################################
 # Utility command for edit_cache
-
 build src/memutil/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
   COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil && /mnt/clusterfs/build/bin/ccmake -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake cache editor...
@@ -227,10 +221,8 @@ build src/memutil/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 
 build src/memutil/edit_cache: phony src/memutil/CMakeFiles/edit_cache.util
 
-
 #############################################
 # Utility command for rebuild_cache
-
 build src/memutil/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil && /usr/bin/cmake --regenerate-during-build -S/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist -B/home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
   DESC = Running CMake to regenerate build system...
@@ -243,7 +235,6 @@ build src/memutil/rebuild_cache: phony src/memutil/CMakeFiles/rebuild_cache.util
 # Write statements declared in CMakeLists.txt:
 # /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/CMakeLists.txt
 # =============================================================================
-
 
 #############################################
 # Utility command for edit_cache
@@ -265,7 +256,6 @@ build src/loader/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
-
 build src/loader/rebuild_cache: phony src/loader/CMakeFiles/rebuild_cache.util
 
 # =============================================================================
@@ -276,12 +266,10 @@ build src/loader/rebuild_cache: phony src/loader/CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target loader
 
-
 #############################################
 # Order-only phony target for loader
 
 build cmake_object_order_depends_target_loader: phony || src/deps/funchook_src
-
 build src/loader/linux/CMakeFiles/loader.dir/loader.cc.o: CXX_COMPILER__loader_RelWithDebInfo /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux/loader.cc || cmake_object_order_depends_target_loader
   DEFINES = -Dloader_EXPORTS
   DEP_FILE = src/loader/linux/CMakeFiles/loader.dir/loader.cc.o.d
@@ -298,10 +286,8 @@ build src/loader/linux/CMakeFiles/loader.dir/__/__/sigscan.cc.o: CXX_COMPILER__l
   OBJECT_DIR = src/loader/linux/CMakeFiles/loader.dir
   OBJECT_FILE_DIR = src/loader/linux/CMakeFiles/loader.dir/__/__
 
-
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target loader
-
 
 #############################################
 # Link the shared library lib/fyp_loader.so
@@ -332,10 +318,8 @@ build src/loader/linux/CMakeFiles/shim_curl.dir/shim_curl.c.o: C_COMPILER__shim_
   OBJECT_DIR = src/loader/linux/CMakeFiles/shim_curl.dir
   OBJECT_FILE_DIR = src/loader/linux/CMakeFiles/shim_curl.dir
 
-
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target shim_curl
-
 
 #############################################
 # Link the shared library lib/fyp_shim_curl.so
@@ -350,7 +334,6 @@ build lib/fyp_shim_curl.so: C_SHARED_LIBRARY_LINKER__shim_curl_RelWithDebInfo sr
   TARGET_FILE = lib/fyp_shim_curl.so
   TARGET_PDB = shim_curl.so.dbg
 
-
 #############################################
 # Utility command for edit_cache
 
@@ -362,7 +345,6 @@ build src/loader/linux/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 
 build src/loader/linux/edit_cache: phony src/loader/linux/CMakeFiles/edit_cache.util
 
-
 #############################################
 # Utility command for rebuild_cache
 
@@ -373,7 +355,6 @@ build src/loader/linux/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build src/loader/linux/rebuild_cache: phony src/loader/linux/CMakeFiles/rebuild_cache.util
-
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/CMakeLists.txt
@@ -381,7 +362,6 @@ build src/loader/linux/rebuild_cache: phony src/loader/linux/CMakeFiles/rebuild_
 
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target main
-
 
 #############################################
 # Order-only phony target for main
@@ -420,10 +400,8 @@ build src/modules/core/CMakeFiles/main.dir/__/__/sigscan.cc.o: CXX_COMPILER__mai
   OBJECT_DIR = src/modules/core/CMakeFiles/main.dir
   OBJECT_FILE_DIR = src/modules/core/CMakeFiles/main.dir/__/__
 
-
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target main
-
 
 #############################################
 # Link the shared library lib/fyp_main.so
@@ -439,7 +417,6 @@ build lib/fyp_main.so: CXX_SHARED_LIBRARY_LINKER__main_RelWithDebInfo src/module
   TARGET_FILE = lib/fyp_main.so
   TARGET_PDB = main.so.dbg
 
-
 #############################################
 # Utility command for edit_cache
 
@@ -450,7 +427,6 @@ build src/modules/core/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build src/modules/core/edit_cache: phony src/modules/core/CMakeFiles/edit_cache.util
-
 
 #############################################
 # Utility command for rebuild_cache
@@ -470,7 +446,6 @@ build src/modules/core/rebuild_cache: phony src/modules/core/CMakeFiles/rebuild_
 
 # =============================================================================
 # Object build statements for SHARED_LIBRARY target maphack
-
 
 #############################################
 # Order-only phony target for maphack
@@ -493,10 +468,8 @@ build src/modules/maphack/CMakeFiles/maphack.dir/__/__/sigscan.cc.o: CXX_COMPILE
   OBJECT_DIR = src/modules/maphack/CMakeFiles/maphack.dir
   OBJECT_FILE_DIR = src/modules/maphack/CMakeFiles/maphack.dir/__/__
 
-
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target maphack
-
 
 #############################################
 # Link the shared library lib/fyp_maphack.so
@@ -512,7 +485,6 @@ build lib/fyp_maphack.so: CXX_SHARED_LIBRARY_LINKER__maphack_RelWithDebInfo src/
   TARGET_FILE = lib/fyp_maphack.so
   TARGET_PDB = maphack.so.dbg
 
-
 #############################################
 # Utility command for edit_cache
 
@@ -524,7 +496,6 @@ build src/modules/maphack/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 
 build src/modules/maphack/edit_cache: phony src/modules/maphack/CMakeFiles/edit_cache.util
 
-
 #############################################
 # Utility command for rebuild_cache
 
@@ -535,75 +506,37 @@ build src/modules/maphack/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build src/modules/maphack/rebuild_cache: phony src/modules/maphack/CMakeFiles/rebuild_cache.util
-
 # =============================================================================
 # Target aliases.
 
 build build_luajit: phony src/deps/build_luajit
-
 build copy_luajit_files: phony src/deps/copy_luajit_files
-
 build funchook_src: phony src/deps/funchook_src
-
 build fyp_loader.so: phony lib/fyp_loader.so
-
 build fyp_main.so: phony lib/fyp_main.so
-
 build fyp_maphack.so: phony lib/fyp_maphack.so
-
 build fyp_shim_curl.so: phony lib/fyp_shim_curl.so
-
 build loader: phony lib/fyp_loader.so
-
 build main: phony lib/fyp_main.so
-
 build maphack: phony lib/fyp_maphack.so
-
 build shim_curl: phony lib/fyp_shim_curl.so
-
 # =============================================================================
 # Folder targets.
-
 # =============================================================================
-
 #############################################
 # Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist
 
 build all: phony src/deps/all src/memutil/all src/loader/all src/modules/core/all src/modules/maphack/all
-
-# =============================================================================
-
-#############################################
 # Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/deps
 
 build src/deps/all: phony src/deps/funchook_src src/deps/copy_luajit_files
-
-# =============================================================================
-
-#############################################
 # Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader
-
 build src/loader/all: phony src/loader/linux/all
-
-# =============================================================================
-
-#############################################
 # Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/loader/linux
-
 build src/loader/linux/all: phony lib/fyp_loader.so lib/fyp_shim_curl.so
-
-# =============================================================================
-
-#############################################
 # Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/memutil
-
 build src/memutil/all: phony
-
-# =============================================================================
-
-#############################################
 # Folder: /home/franklin/workspace/game-server-dontstarvetogether/src/fyp_dist/src/modules/core
-
 build src/modules/core/all: phony lib/fyp_main.so
 
 # =============================================================================
@@ -620,14 +553,14 @@ build src/modules/maphack/all: phony lib/fyp_maphack.so
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/ExternalProject.cmake /usr/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake CMakeLists.txt cmake/subdirlist.cmake src/deps/CMakeLists.txt src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake src/loader/CMakeLists.txt src/loader/linux/CMakeLists.txt src/memutil/CMakeLists.txt src/modules/core/CMakeLists.txt src/modules/maphack/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | /home/dst/src/fyp_dist/CMakeLists.txt /home/dst/src/fyp_dist/cmake/subdirlist.cmake /home/dst/src/fyp_dist/src/deps/CMakeLists.txt /home/dst/src/fyp_dist/src/loader/CMakeLists.txt /home/dst/src/fyp_dist/src/loader/linux/CMakeLists.txt /home/dst/src/fyp_dist/src/memutil/CMakeLists.txt /home/dst/src/fyp_dist/src/modules/core/CMakeLists.txt /home/dst/src/fyp_dist/src/modules/maphack/CMakeLists.txt /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/ExternalProject.cmake /usr/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/ExternalProject.cmake /usr/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake CMakeLists.txt cmake/subdirlist.cmake src/deps/CMakeLists.txt src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake src/loader/CMakeLists.txt src/loader/linux/CMakeLists.txt src/memutil/CMakeLists.txt src/modules/core/CMakeLists.txt src/modules/maphack/CMakeLists.txt: phony
+build /home/dst/src/fyp_dist/CMakeLists.txt /home/dst/src/fyp_dist/cmake/subdirlist.cmake /home/dst/src/fyp_dist/src/deps/CMakeLists.txt /home/dst/src/fyp_dist/src/loader/CMakeLists.txt /home/dst/src/fyp_dist/src/loader/linux/CMakeLists.txt /home/dst/src/fyp_dist/src/memutil/CMakeLists.txt /home/dst/src/fyp_dist/src/modules/core/CMakeLists.txt /home/dst/src/fyp_dist/src/modules/maphack/CMakeLists.txt /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/ExternalProject.cmake /usr/share/cmake-3.25/Modules/ExternalProject/RepositoryInfo.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/cfgcmd.txt.in /usr/share/cmake-3.25/Modules/ExternalProject/gitclone.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/gitupdate.cmake.in /usr/share/cmake-3.25/Modules/ExternalProject/mkdirs.cmake.in /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FindGit.cmake /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake src/deps/funchook_src-prefix/tmp/funchook_src-mkdirs.cmake: phony
 
 
 #############################################

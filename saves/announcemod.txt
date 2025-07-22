@@ -1,21 +1,21 @@
-["workshop-1077747217"] = { enabled = true,
+["workshop-1077747217"] = {
+    enabled = true,
     configuration_options = {
-        ANNOUNCE_OPEN = true , -- Announce
-        SAY_OPEN = true , -- Say
-        ANNOUNCE_CD = 3 , -- Announce Interval (min)
-        ANNOUNCE_ORDER = true , -- Announce Order
-        SAY_SHOWTIME = 3 , -- Say Show Time(sec)
-        SAY_DELAY = 1 , -- Say Delay (sec)
-        ANNOUNCE_TEXT = {
-                            -- Random players:%pds days %pns name, the number of players:%nws world %ncs cave.
-                                "you have no chance to survive make your time",
-                                "all your base are belong to  %pns" --  survive %pds days!",
-        } , -- Announce Message
-            ANNOUNCE_FIRSTJION_TEXT = "welcome to the struggle" , -- First Join Announce Text
-            SAY_FIRSTJION_TEXT = "welcome to wonderland" , -- First Join Say Text
-            SAY_EVERYJION_TEXT = "welcome to wonderland" , -- Every Join Say Text
-            SAY_DEATH_TEXT = "i cant believe i died last night" , -- Death Say Text
-            SAY_RESURRECTION_TEXT = "I LIVE" , -- Resurrection Say Text
+        ANNOUNCEMENT_INTERVAL=20,
+        ANNOUNCEMENT_SWITCH = true,
+        ANNOUNCEMENT_TEXTS = {
+          "[SYSOPS] you have no chance to survive make your time",
+          "[SYSOPS] all your base are belong to us", --  survive %pds days!",
+          "[SYSOPS] server name is wonderland if you want tojoin the game",
+          "[SYSOPS] watch the game stream at https://www.twitch.tv/s1y_b0rg"
+        },
+        ANNOUNCE_FIRST_TIME_JOIN = "welcome to the struggle", 
+        SPEAK_DURATION_SHOW = 5,
+        SPEAK_FIRST_TIME_JOIN = "welcome to wonderland",
+        SPEAK_EVERY_TIME_JOIN = "welcome to wonderland",
+        SPEAK_ON_DEATH = "i cant believe i died last night" , -- Death Say Text
+        SPEAK_ON__RESURRECT = "I LIVE" , -- Resurrection Say Text
+        SPEAK_SWITCH=true
+        }
     }
-}
 

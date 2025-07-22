@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 0d8d7433a54f67b613b44caf0227e46b25198b77 pancho <pancho@nurgle.(none)> 1703405181 -0700	clone: from 192.168.0.11:/home/pancho/re/dst/code/cmake_test
+0d8d7433a54f67b613b44caf0227e46b25198b77 43df4152f1ee77645262bbb2cdc48ac6ea7507a7 pancho <no@example.no.no> 1706837645 -0700	commit: fix lief build for linux
+43df4152f1ee77645262bbb2cdc48ac6ea7507a7 f20f13f984f4058a8fbbeb87b2ea43932842c832 pancho <no@example.no.no> 1706838038 -0700	commit: remove breaking -zexecstack
+f20f13f984f4058a8fbbeb87b2ea43932842c832 b5b562301001a19d3e08de6bd7847209b7eaab5a pancho <no@example.no.no> 1707286323 -0700	commit: fix lua_close sig
+b5b562301001a19d3e08de6bd7847209b7eaab5a a711ef0c4fe3f014454424eb2efe026d3a3506fb pancho <no@example.no.no> 1707458371 -0700	commit: improve loader
+a711ef0c4fe3f014454424eb2efe026d3a3506fb 539123225170810d0fcc2d2d2e0de0c0bf35057b pancho <no@example.no.no> 1710620404 -0600	commit: copy jit config parameters from fesily
+539123225170810d0fcc2d2d2e0de0c0bf35057b 08d7b1b8b28ff34c39fdf3a89f37acec42aa8089 pancho <no@example.no.no> 1716425946 -0600	commit: small changes and fix libcurl filepath search
