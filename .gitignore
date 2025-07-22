@@ -83,3 +83,32 @@ tmp
 .pre-commit-config.yaml
 
 **/files/
+
+*.swp
+
+# Ignore build artefacts
+*.o
+*.so
+*.a
+
+# Ignore luajit generated files and artefacts
+buildvm*
+minilua*
+vmdef.lua
+lj_bcdef.h
+lj_ffdef.h
+lj_folddef.h
+lj_libdef.h
+lj_recdef.h
+lj_vm.S
+luajit
+lua51.dll
+luajit.exe
+# Ignore build dirs
+build_*
+put.sh
+putl.sh
+# Ignore symlinked compile_options.json
+compile_commands.json
+util_lua
+.cache
