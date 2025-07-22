@@ -16,6 +16,5 @@ DST server manager
   - at longer intervals, make a cold-storage backup. Consider compression.
 * accept client log files
 
-
 4. Remove steam dependency by stubbing out steam api calls.
  - replace dst/klei server listings
