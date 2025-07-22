@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 08d7b1b8b28ff34c39fdf3a89f37acec42aa8089 pancho <no@example.no.no> 1718570443 -0600	branch: Created from master
+08d7b1b8b28ff34c39fdf3a89f37acec42aa8089 6cc789a71245a73ef3967ecd6c55f3e0fd56ef64 pancho <no@example.no.no> 1718574155 -0600	commit: remove lief, replace with header-only elf parser
+6cc789a71245a73ef3967ecd6c55f3e0fd56ef64 da46b9b560ff828ff874cc9f416379edd5d36fe6 pancho <no@example.no.no> 1718759373 -0600	commit: towards boost format removal

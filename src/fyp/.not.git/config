@@ -1,0 +1,20 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = 192.168.0.11:/home/pancho/re/dst/code/cmake_test
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "feature/core"]
+	remote = origin
+	merge = refs/heads/feature/core
+[remote "d.marduk"]
+	url = ssh://d.marduk:/home/hastur/code/personal/fyp_bare
+	fetch = +refs/heads/*:refs/remotes/d.marduk/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "d.baal"]
+	url = ssh://d.baal:/home/dst/repo/fyp
+	fetch = +refs/heads/*:refs/remotes/d.baal/*

@@ -1,0 +1,13 @@
+0000000000000000000000000000000000000000 5736783f49861951a021ee32a95bce38b872258f pancho <no@example.no.no> 1706829392 -0700	branch: Created from refs/remotes/origin/master
+5736783f49861951a021ee32a95bce38b872258f 08d7b1b8b28ff34c39fdf3a89f37acec42aa8089 pancho <no@example.no.no> 1718570413 -0600	rebase (finish): refs/heads/master onto 08d7b1b8b28ff34c39fdf3a89f37acec42aa8089
+08d7b1b8b28ff34c39fdf3a89f37acec42aa8089 b012ad49fa763f128fa09ccec87736fd55d79808 pancho <no@example.no.no> 1731375985 -0700	commit: remove red scan boundary text
+b012ad49fa763f128fa09ccec87736fd55d79808 07636052410c2ee5f4359681f1acfc388924d52b pancho <no@example.no.no> 1731376834 -0700	commit: more red log removal
+07636052410c2ee5f4359681f1acfc388924d52b 1e1244a46f3e6a8550b8a21ce31305273cdfa2a3 pancho <no@example.no.no> 1748397996 -0600	commit: try to fix lief building on linux
+1e1244a46f3e6a8550b8a21ce31305273cdfa2a3 1debe7be41da1b3b3b3314a2190ce30810f63e26 pancho <no@example.no.no> 1748398140 -0600	commit: fix the broken fix for lief
+1debe7be41da1b3b3b3314a2190ce30810f63e26 9a1c366f7800088f417366a9d19f86bd9a7fbe2e pancho <no@example.no.no> 1751585028 -0600	merge refactor/deps: Fast-forward
+9a1c366f7800088f417366a9d19f86bd9a7fbe2e 1181b75ec2b35d58e5b24fe82b661644db6ab0e8 pancho <no@example.no.no> 1751586547 -0600	commit: remove debug prints from sectionbounds.hh
+1181b75ec2b35d58e5b24fe82b661644db6ab0e8 e76ac0caf6ee0e2e8386e229636f1187cb7cfe67 pancho <no@example.no.no> 1751591453 -0600	commit: add ghidra script for lunar labeling
+e76ac0caf6ee0e2e8386e229636f1187cb7cfe67 05b69224375d55fde6d6cc0337eb9b48cede7ef7 pancho <no@example.no.no> 1751658046 -0600	commit: fix install script for linux
+05b69224375d55fde6d6cc0337eb9b48cede7ef7 5d3c88d44ef1d446262dfb74f0f3a80ce515d338 pancho <no@example.no.no> 1751658102 -0600	commit: figured out executable stack issue
+5d3c88d44ef1d446262dfb74f0f3a80ce515d338 920817922f90bf2e6fbad00b6816223a693ad047 devsecfranklin <franklin@bitsmasher.net> 1752202104 +0000	commit: switch compiler to clang-19 for linux
+920817922f90bf2e6fbad00b6816223a693ad047 5813d2e39eaae2f8a723bbdb2442d6ff9eba4531 devsecfranklin <franklin@bitsmasher.net> 1752202177 +0000	commit: rename pout logger from log to plog
