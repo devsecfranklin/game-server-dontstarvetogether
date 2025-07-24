@@ -5,13 +5,12 @@
 # SPDX-License-Identifier: MIT
 
 MODS=$(cat dedicated_server_mods_setup.lua | grep "^Server" | cut -f2 -d'"')
-OUTFILE="${HOME}/saves/modoverrides.lua"
+# OUTFILE="${HOME}/saves/modoverrides.lua"
+OUTFILE="./modoverrides.lua"
 
 cat << EOF > $OUTFILE
--- SPDX-FileCopyrightText: ©2025 franklin <franklin@bitsmasher.net>
---
--- SPDX-License-Identifier: MIT
-
+--- @file modoverrides.lua
+-- @brief This file determines which mods to load. It must be identical for each shard. 
 return {
 EOF
 

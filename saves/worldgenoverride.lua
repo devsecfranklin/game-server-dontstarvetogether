@@ -1,3 +1,6 @@
+--- @file  worldgenoverride.lua
+-- @brief On world generation this will determine any special settings in the Main Shard.
+
 KLEI     1 return {
 	--
     -- This is an example worldgenoverrides.lua file for Don't Starve Together.

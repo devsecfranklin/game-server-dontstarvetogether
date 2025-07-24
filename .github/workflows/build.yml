@@ -28,4 +28,4 @@ jobs:
     - name: Run Build Script
       run: |
         ls -la
-        cd src/fyp_dist && ./build.sh
+        cd src/fyp && ./build.sh
