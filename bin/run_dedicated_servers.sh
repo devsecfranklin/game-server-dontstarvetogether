@@ -71,7 +71,6 @@ function main() {
   mod_override
   cp ${HOME}/saves/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
   cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/$cluster_name/Master"
-  #cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/${cluster_name}/" # is this necessary?
   cp ${HOME}/saves/worldgenoverride.lua-caves "${dontstarve_dir}/${cluster_name}/Caves/worldgenoverride.lua"
   log_header "Copying cluster token into server files"
   echo "${CLUSTER_TOKEN}" >"${dontstarve_dir}/${cluster_name}/cluster_token.txt"
@@ -94,8 +93,6 @@ function main() {
   #screen -dmS "DST Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer"
   #screen -dmS "DST_caves Server" sh -c "cd /home/steam/steamapps/DST/bin; ./dontstarve_dedicated_server_nullrenderer -conf_dir DST_Cave"
   #/usr/bin/screen -S "DST" bash -c 'LD_LIBRARY_PATH=~/dst_lib ./dontstarve_dedicated_server_nullrenderer -console'
-
-  log_success "Ready to play!"
 }
 
 main "$@"

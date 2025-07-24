@@ -1,3 +1,13 @@
+/**
+ * @brief Brief description of the function.
+ *
+ * Detailed explanation of what the function does, its purpose,
+ * and any algorithms or complex logic.
+ *
+ * @param arg1 Description of the first argument.
+ * @param arg2 Description of the second argument.
+ * @return Description of the return value.
+ */
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
