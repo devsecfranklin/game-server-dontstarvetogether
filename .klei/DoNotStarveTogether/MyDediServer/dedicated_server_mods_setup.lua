@@ -12,7 +12,7 @@ ServerModSetup("398858801") -- AFK detection https://steamcommunity.com/sharedfi
 ServerModSetup("1751811434") -- fast work https://steamcommunity.com/sharedfiles/filedetails/?id=1751811434
 
 -- @brief These mods are under test, still suspect.
--- ServerModSetup("2880198735") -- skeleton revive https://steamcommunity.com/sharedfiles/filedetails/?id=2880198735!
+ServerModSetup("2880198735") -- skeleton revive https://steamcommunity.com/sharedfiles/filedetails/?id=2880198735!
 -- cool but not ready yet ServerModSetup("2594707725") -- https://github.com/gyroplast/mod-dont-starve-chat-announcements
 -- ServerModSetup("382177939") -- DST Storm Cellar
 ServerModSetup("1077747217") -- Server Announcement https://steamcommunity.com/sharedfiles/filedetails/?id=1077747217
