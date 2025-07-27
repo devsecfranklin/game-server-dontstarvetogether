@@ -18,11 +18,14 @@ curl -sfL https://direnv.net/install.sh | bash
 eval "$(direnv hook bash)"
 ```
 
-Now create a file called `.envrc` in this top level folder.
-It should have one line in it like so:
+Now create a file called `.envrc` in this top level folder. The `CLUSTER_TOKEN`
+line is mandatory!
 
 ```sh
 export CLUSTER_TOKEN="pef-g^KU_QrGp3bke^uerRdBrRFyKING2q9zypelrosOjFYc1g="
+export INSTALL_PATH="/opt/fyp_dist" # this is just for temporary testing, update for game server
+export FYP_OPTIONS="-DFYP_CCACHE=ON"
+export CXXFLAGS="-std=c++11"
 ```
 
 ## Edit config files
@@ -41,29 +44,12 @@ Use the `crontab -e` command to add this line to your dst service user crontab:
 
 ## Run Scripts
 
-These two scripts set up the environment and start the game server.
+Finally, these scripts set up the environment and start the game server. Be
+sure to run them in this order.
 
 ```sh
 ./bin/bootstrap.sh
+./saves/gen_mod_override.sh
 ./bin/run_dedicated_server.sh
 ```
 
-## Troubleshooting
-
-### Mod had no modworldgenmain.lua. Skipping.
-
-That means that mod (or mods) are no longer compatible with the current version of DST; or the
-files have become corrupt (which can happen even if others use the same mod without issue).
-
-You're going to need manually remove the mods from your game files (this happens quite often).
-This is an easy fix!:
-
-* Turn off auto-subscribe, if you have it on.
-* Unsubscribe from ALL mods, that are showing "workshop-xxxxxxx" for you, on the Steam Workshop page.
-* Go into your "Don't Starve Together" file/folder and manually delete ALL of those mods.
-  * manually delete ALL: "workshop-<number>" directories from your
-`steamapps\common\Don't Starve Together\mods` directory.
-
-
-Finally, you begin the process of adding those mods back in, one at a time, until you
-find the one(s) causing the issue.
