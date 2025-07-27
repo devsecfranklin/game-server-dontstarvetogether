@@ -1,7 +1,5 @@
--- SPDX-FileCopyrightText: ©2025 franklin <franklin@bitsmasher.net>
---
--- SPDX-License-Identifier: MIT
-
+--- @file modoverrides.lua
+-- @brief This file determines which mods to load. It must be identical for each shard. 
 return {
     ["workshop-3138571948"]={
         configuration_options={ },
@@ -24,10 +22,6 @@ return {
         enabled=true
     },
     ["workshop-1751811434"]={
-        configuration_options={ },
-        enabled=true
-    },
-    ["workshop-2880198735"]={
         configuration_options={ },
         enabled=true
     },
