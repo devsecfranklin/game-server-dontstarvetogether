@@ -56,13 +56,12 @@ server_chat_log*
 .wget-hsts
 .idea
 .idea
-.klei/DoNotStarveTogether/MyDediServer/*/save/
 .klei/DoNotStarveTogether/MyDediServer/Caves/server_chat_log.txt
 .klei/DoNotStarveTogether/MyDediServer/Caves/server_log.txt
 .klei/DoNotStarveTogether/MyDediServer/Master/server_chat_log.txt
 .klei/DoNotStarveTogether/MyDediServer/Master/server_log.txt
-.klei/DoNotStarveTogether/MyDediServer/Caves/save
-.klei/DoNotStarveTogether/MyDediServer/Master/save
+#.klei/DoNotStarveTogether/MyDediServer/Caves/save
+#.klei/DoNotStarveTogether/MyDediServer/Master/save
 
 # Palo auth codes
 authcodes
