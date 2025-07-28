@@ -25,6 +25,6 @@ for i in ${MODS[@]}; do
   echo "    }," >> $OUTFILE
 done
 
-head -n -1 ${OUTFILE} > /tmp/modoverrides.lua && mv /tmp/modoverrides.lua ${OUTFILE}
-
-echo -e "    }\n}" >> ${OUTFILE}
+#head -n -1 ${OUTFILE} > /tmp/modoverrides.lua && mv /tmp/modoverrides.lua ${OUTFILE}
+cat "${HOME}/saves/announcemod.txt" >> "${OUTFILE}"
+# echo -e "    }\n}" >> ${OUTFILE}
