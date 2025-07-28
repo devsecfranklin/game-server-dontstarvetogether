@@ -40,13 +40,13 @@ return {
                 "[SYSOPS] server name is wonderland if you want tojoin the game",
                 "[SYSOPS] watch the game stream at https://www.twitch.tv/s1y_b0rg"
             },
-            ANNOUNCE_FIRST_TIME_JOIN="welcome to the struggle",
-            SPEAK_DURATION_SHOW=5,
-            SPEAK_FIRST_TIME_JOIN="welcome to wonderland",
-            SPEAK_EVERY_TIME_JOIN="welcome to wonderland",
-            SPEAK_ON_DEATH="i cant believe i died last night" , -- Death Say Text
-            SPEAK_ON__RESURRECT="I LIVE" , -- Resurrection Say Text
-            SPEAK_SWITCH=true,
+            ANNOUNCE_FIRST_TIME_JOIN = "welcome to the struggle", 
+            SPEAK_DURATION_SHOW = 5,
+            SPEAK_FIRST_TIME_JOIN = "welcome to wonderland",
+            SPEAK_EVERY_TIME_JOIN = "welcome to wonderland",
+            SPEAK_ON_DEATH = "i cant believe i died last night" , -- Death Say Text
+            SPEAK_ON__RESURRECT = "I LIVE" , -- Resurrection Say Text
+            SPEAK_SWITCH=true
         }
     }
 }
