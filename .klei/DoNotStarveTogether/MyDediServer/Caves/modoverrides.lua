@@ -32,7 +32,7 @@ KLEI 1 return {
     ["workshop-1077747217"] = {
     enabled = true,
     configuration_options = {
-        ANNOUNCEMENT_INTERVAL=20,
+        ANNOUNCEMENT_INTERVAL=45,
         ANNOUNCEMENT_SWITCH = true,
         ANNOUNCEMENT_TEXTS = {
           "[SYSOPS] you have no chance to survive make your time",
