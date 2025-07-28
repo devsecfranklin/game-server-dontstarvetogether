@@ -87,7 +87,7 @@ function main() {
   check_for_file "$dontstarve_dir/$cluster_name/Master/server.ini"
   check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
   log_warn "If any players cannot see the server in the list, update the game files from steam"
-  game_update
+   #game_update
   pushd "/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server/bin64"
   log_info "Start servers"
 
