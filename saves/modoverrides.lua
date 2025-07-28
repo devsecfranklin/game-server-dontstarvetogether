@@ -1,6 +1,6 @@
 --- @file modoverrides.lua
 -- @brief This file determines which mods to load. It must be identical for each shard. 
-KLEI 1 return {
+return {
     ["workshop-3138571948"]={
         configuration_options={ },
         enabled=true
@@ -46,7 +46,7 @@ KLEI 1 return {
             SPEAK_EVERY_TIME_JOIN = "welcome to wonderland",
             SPEAK_ON_DEATH = "i cant believe i died last night" , -- Death Say Text
             SPEAK_ON__RESURRECT = "I LIVE" , -- Resurrection Say Text
-            SPEAK_SWITCH=true
+            SPEAK_SWITCH=true,
         }
     }
 }

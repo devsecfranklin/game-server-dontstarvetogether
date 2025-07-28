@@ -1,6 +1,6 @@
 --- @file modoverrides.lua
 -- @brief This file determines which mods to load. It must be identical for each shard. 
-KLEI 1 return {
+return {
     ["workshop-3138571948"]={
         configuration_options={ },
         enabled=true

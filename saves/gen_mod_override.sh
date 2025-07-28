@@ -11,7 +11,7 @@ OUTFILE="./modoverrides.lua"
 cat << EOF > $OUTFILE
 --- @file modoverrides.lua
 -- @brief This file determines which mods to load. It must be identical for each shard. 
-KLEI 1 return {
+return {
 EOF
 
 # check the list for dupes!
