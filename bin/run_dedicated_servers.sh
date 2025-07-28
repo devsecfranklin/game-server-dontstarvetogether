@@ -62,7 +62,7 @@ function set_password() {
 function mod_override(){
   log_header "Installing modoverrides.lua"
   cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Master"
-  cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Caves"
+  #cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Caves"
   cp ${HOME}/saves/modoverrides.lua ${HOME}/saves/dedicated_server_mods_setup.lua "${DST_SERVER_DIR}/mods"
 }
 

@@ -2,10 +2,10 @@ KLEI     1 return {
   enabled_mods={  },
   server={
     clan={ admin=false, id="", only=false },
-    description="kisses of the sun",
+    description="the b0rg will assimilate you",
     encode_user_path=true,
     game_mode="survival",
-    max_players=5,
+    max_players=8,
     name="wonderland",
     online_mode=true,
     password="",
