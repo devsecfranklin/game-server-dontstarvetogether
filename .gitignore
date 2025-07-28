@@ -29,6 +29,7 @@ cluster_token.txt
 .gitconfig
 .lesshst
 .local
+.luarocks
 mbox
 # .netrc contains secrets for service tokens
 .netrc

@@ -29,7 +29,7 @@ EOF
     libgl1-mesa-dri:i386 \
     libgl1-mesa-glx:amd64 \
     libgl1-mesa-glx:i386 \
-    lua5.4 build-essential bison steam-launcher bzip2
+    luarocks lua5.4 build-essential bison steam-launcher bzip2
 }
 
 function dst_user() {
@@ -50,6 +50,7 @@ function main() {
   echo -e "\n${LPURP}# --- updating dedi server application -------------------------------------------\n${NC}"
   steamcmd +login anonymous +app_update 343050 validate +quit
   # let the run_server script copy files into place and complete the configuration
+  luarocks install luacheck --local
 }
 
 main "$@"
