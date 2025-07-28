@@ -21,6 +21,7 @@ KLEI     1 return {
       enabled=true 
     },
     ["workshop-1751811434"]={ configuration_options={  }, enabled=true },
+    ["workshop-2880198735"]={ configuration_options={  }, enabled=true },
     ["workshop-3138571948"]={ configuration_options={  }, enabled=true },
     ["workshop-3361016346"]={ configuration_options={  }, enabled=true },
     ["workshop-373991022"]={ configuration_options={  }, enabled=true },
