@@ -69,8 +69,9 @@ function mod_override(){
 function config_shards() {
   log_header "COnfigure the shards"
   cp ${HOME}/saves/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
-  cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/$cluster_name/Master"
-  # cp ${HOME}/saves/worldgenoverride.lua-caves "${dontstarve_dir}/${cluster_name}/Caves/worldgenoverride.lua"
+  log_header "Copying worldgenoverride.lua"
+  # ${HOME}/.klei/DoNotStarveTogether/MyDediServer/worldgenoverride.lua
+  cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/${cluster_name}"
   log_header "Copying cluster token into server files"
   echo "${CLUSTER_TOKEN}" >"${dontstarve_dir}/${cluster_name}/cluster_token.txt"
   check_for_file "$dontstarve_dir/$cluster_name/cluster_token.txt"
