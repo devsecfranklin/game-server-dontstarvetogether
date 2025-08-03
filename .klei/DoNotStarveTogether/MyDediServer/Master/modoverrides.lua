@@ -1,34 +1,42 @@
 --- @file modoverrides.lua
 -- @brief This file determines which mods to load. It must be identical for each shard. 
 return {
+    -- global positions
     ["workshop-3138571948"]={
         configuration_options={ },
         enabled=true
     },
-    ["workshop-373991022"]={
-        configuration_options={ },
-        enabled=true
-    },
+    -- this mod does not appear to exist
+    -- ["workshop-373991022"]={
+    --     configuration_options={ },
+    --     enabled=true
+    -- },
+    -- health info
     ["workshop-375859599"]={
         configuration_options={ },
         enabled=true
     },
+    -- Finder (with bundle)
     ["workshop-3361016346"]={
         configuration_options={ },
         enabled=true
     },
+    -- Afk detection
     ["workshop-398858801"]={
         configuration_options={ },
         enabled=true
     },
+    -- Fast Work
     ["workshop-1751811434"]={
         configuration_options={ },
         enabled=true
     },
+    -- Skeleton Revive
     ["workshop-2880198735"]={
         configuration_options={ },
         enabled=true
     },
+    -- Server Announcement
     ["workshop-1077747217"] = {
         enabled = true,
         configuration_options = {
