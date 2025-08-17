@@ -25,6 +25,10 @@ return {
         configuration_options={ },
         enabled=true
     },
+    ["workshop-2880198735"]={
+        configuration_options={ },
+        enabled=true
+    },
     ["workshop-1077747217"] = {
         enabled = true,
         configuration_options = {

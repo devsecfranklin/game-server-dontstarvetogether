@@ -1,0 +1,78 @@
+KLEI     1 return {
+  enabled_mods={
+    ["workshop-1077747217"]={
+      configuration_options={
+        ANNOUNCEMENT_INTERVAL=45,
+        ANNOUNCEMENT_SWITCH=true,
+        ANNOUNCEMENT_TEXTS={
+          "[SYSOPS] you have no chance to survive make your time",
+          "[SYSOPS] all your base are belong to us",
+          "[SYSOPS] server name is wonderland if you want tojoin the game",
+          "[SYSOPS] watch the game stream at https://www.twitch.tv/s1y_b0rg" 
+        },
+        ANNOUNCE_FIRST_TIME_JOIN="welcome to the struggle",
+        SPEAK_DURATION_SHOW=5,
+        SPEAK_EVERY_TIME_JOIN="welcome to wonderland",
+        SPEAK_FIRST_TIME_JOIN="welcome to wonderland",
+        SPEAK_ON_DEATH="i cant believe i died last night",
+        SPEAK_ON__RESURRECT="I LIVE",
+        SPEAK_SWITCH=true 
+      },
+      enabled=true 
+    },
+    ["workshop-1751811434"]={ configuration_options={  }, enabled=true },
+    ["workshop-2880198735"]={ configuration_options={  }, enabled=true },
+    ["workshop-3138571948"]={ configuration_options={  }, enabled=true },
+    ["workshop-3361016346"]={ configuration_options={  }, enabled=true },
+    ["workshop-373991022"]={ configuration_options={  }, enabled=true },
+    ["workshop-375859599"]={ configuration_options={  }, enabled=true },
+    ["workshop-398858801"]={ configuration_options={  }, enabled=true } 
+  },
+  server={
+    clan={ admin=false, id="", only=false },
+    description="the b0rg will assimilate you",
+    encode_user_path=true,
+    game_mode="survival",
+    max_players=8,
+    name="wonderland",
+    online_mode=true,
+    password="",
+    playstyle="survival",
+    privacy_type=0,
+    pvp=false,
+    server_language="en" 
+  },
+  version=5,
+  world={
+    options={
+      background_node_range={ 0, 1 },
+      desc="Delve into the caves... together!",
+      hideminimap=false,
+      id="DST_CAVE",
+      location="cave",
+      max_playlist_position=999,
+      min_playlist_position=0,
+      name="The Caves",
+      numrandom_set_pieces=0,
+      override_level_string=false,
+      overrides={
+        layout_mode="RestrictNodesByKey",
+        roads="default",
+        season_start="default",
+        start_location="default",
+        task_set="default",
+        world_size="default",
+        wormhole_prefab="tentacle_pillar" 
+      },
+      required_prefabs={ "multiplayer_portal" },
+      settings_desc="Delve into the caves... together!",
+      settings_id="DST_CAVE",
+      settings_name="The Caves",
+      substitutes={  },
+      version=4,
+      worldgen_desc="Delve into the caves... together!",
+      worldgen_id="DST_CAVE",
+      worldgen_name="The Caves" 
+    } 
+  } 
+}

@@ -62,26 +62,33 @@ function set_password() {
 function mod_override(){
   log_header "Installing modoverrides.lua"
   cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Master"
-  cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Caves"
+  # cp ${HOME}/saves/modoverrides.lua "${dontstarve_dir}/${cluster_name}/Caves"
   cp ${HOME}/saves/modoverrides.lua ${HOME}/saves/dedicated_server_mods_setup.lua "${DST_SERVER_DIR}/mods"
 }
 
-function main() {
-  log_header "Installing our custom server files"
-  mod_override
+function config_shards() {
+  log_header "COnfigure the shards"
   cp ${HOME}/saves/dedicated_server_mods_setup.lua "${dontstarve_dir}/${cluster_name}"
-  cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/$cluster_name/Master"
-  cp ${HOME}/saves/worldgenoverride.lua-caves "${dontstarve_dir}/${cluster_name}/Caves/worldgenoverride.lua"
+  log_header "Copying worldgenoverride.lua"
+  # ${HOME}/.klei/DoNotStarveTogether/MyDediServer/worldgenoverride.lua
+  cp ${HOME}/saves/worldgenoverride.lua "${dontstarve_dir}/${cluster_name}"
   log_header "Copying cluster token into server files"
   echo "${CLUSTER_TOKEN}" >"${dontstarve_dir}/${cluster_name}/cluster_token.txt"
   check_for_file "$dontstarve_dir/$cluster_name/cluster_token.txt"
   cp "${HOME}/saves/cluster.ini" "$dontstarve_dir/$cluster_name/cluster.ini"
+
+}
+
+function main() {
+  log_header "Installing our custom server files"
+  # mod_override
+  # config_shards
   # set_password
   check_for_file "$dontstarve_dir/$cluster_name/cluster.ini"
   check_for_file "$dontstarve_dir/$cluster_name/Master/server.ini"
   check_for_file "$dontstarve_dir/$cluster_name/Caves/server.ini"
   log_warn "If any players cannot see the server in the list, update the game files from steam"
-  #game_update
+   #game_update
   pushd "/home/dst/.local/share/Steam/steamapps/common/Don't Starve Together Dedicated Server/bin64"
   log_info "Start servers"
 
